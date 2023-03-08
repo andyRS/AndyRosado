@@ -1,15 +1,17 @@
+'use strict'
+
 window.addEventListener('load', function () {
 
 
     /***************************toogle  icon menu bar******************************************/
-    let menuIocn = document.querySelector('#menu-icon');
+    let menuIcon = document.querySelector('#menu-icon');
     let navbar = document.querySelector('.navbar');
 
 
-    menuIocn.onclick = () => {
-        menuIocn.classList.toggle('bx-x')
-        navbar.classList.toggle('active')
-    }
+    menuIcon.onclick = () => {
+        menuIcon.classList.toggle('bx-x');
+        navbar.classList.toggle('active');
+    };
 
     /*************Scroll sections active link***********************/
     let sections = document.querySelectorAll('section');
@@ -32,19 +34,12 @@ window.addEventListener('load', function () {
     };
 
     /***************************Sticky navbar******************************************/
-
     let header = document.querySelector('header');
 
-
-    header.classList.toogle('sticky', window.scrollY > 100);
+    header.classList.toggle('sticky', window.scrollY > 100);
 
     /***************************remove toglle menu icon and navbar when click navbar link (Scroll) / Quitar menu cuando de un click******************************************/
-    menuIocn.classList.remove('bx-x')
-    navbar.classList.remove('active')
-
-
-    /***************************Tipado jS/ Typed JS******************************************/
-   
+        menuIcon.classList.remove('bx-x');
+        navbar.classList.remove('active');
 
 });
-
