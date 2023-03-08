@@ -18,8 +18,18 @@
     <!--Fin estilos CSS-->
 
     <!--Inicio Scripts de JS-->
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/scrollreveal.js"></script>
+    <script src="./js/tiped.js"></script>
     <!--Fin Scripts de JS-->
+
+    <!--Inicio Scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--FinScroll reveal-->
+
+    <!--Inicio Typecryspt Type JS-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!--Fin Typecryspt Type JS-->
   </head>
   <body>
     <!--Inicio del Header-->
@@ -43,7 +53,7 @@
       <div class="home-content">
         <h3>Hola Este soy yo</h3>
         <h1>Andy Rosado</h1>
-        <h3>Y soy un<span> Frontend Developer</span></h3>
+        <h3>Y soy un <span class="multiple-text"></span></h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel
           consectetur, nostrum praesentium reprehenderit expedita similique
@@ -100,8 +110,150 @@
           </p>
           <a href="#" class="btn">Leer mas</a>
         </div>
+
+        <div class="services-box">
+          <i class="bx bxs-paint"></i>
+          <h3>Diseño Grafico</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            nesciunt quidem voluptate eaque maiores iusto ad sunt porro eum
+            quos?
+          </p>
+          <a href="#" class="btn">Leer mas</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-bar-chart-alt"></i>
+          <h3>Marketing Digital</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            nesciunt quidem voluptate eaque maiores iusto ad sunt porro eum
+            quos?
+          </p>
+          <a href="#" class="btn">Leer mas</a>
+        </div>
       </div>
     </section>
     <!--Fin seccion servicios-->
+
+    <!--Inicio seccion portafolios-->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Ultimos <span>Proyectos</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="image/Proyecto1.png" alt="Portafolio1" />
+          <div class="portfolio-layer">
+            <h4>Desarrollo Web</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+              placeat?
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="image/Proyecto2.png" alt="Portafolio2" />
+          <div class="portfolio-layer">
+            <h4>Desarrollo Web</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+              placeat?
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="image/proyecto3.png" alt="Portafolio3" />
+          <div class="portfolio-layer">
+            <h4>Desarrollo Web</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+              placeat?
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="image/Proyecto4.png" alt="Portafolio4" />
+          <div class="portfolio-layer">
+            <h4>Desarrollo Web</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+              placeat?
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="image/proyecto5.jpg" alt="Portafolio5" />
+          <div class="portfolio-layer">
+            <h4>Desarrollo Web</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+              placeat?
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="image/Proyecto6.png" alt="Portafolio6" />
+          <div class="portfolio-layer">
+            <h4>Desarrollo Web</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+              placeat?
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Fin seccion portafolios-->
+
+    <!--Inicio seccion contacto-->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contactar a <span>Andy Rosado</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Nombre Completo" />
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Telefono Movil" />
+          <input type="text" placeholder="Asunto del Mensaje" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Escribe tu mensaje"
+        ></textarea>
+        <input type="submit" value="Enviar Mensaje" class="btn" />
+      </form>
+    </section>
+    <!--Fin seccion contacto-->
+
+    <!--Inicio footer-->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>
+          Copyright &copy; 2023 by Andy Rosado Web | Todos los derechos
+          reservados.
+        </p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+    <!--Fin footer-->
   </body>
 </html>
