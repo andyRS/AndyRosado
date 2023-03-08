@@ -415,7 +415,7 @@ span {
     }
 }
 
-@media(max-wdith:991px) {
+@media(max-width:991px) {
     header {
         padding: 2rem 3%;
     }
