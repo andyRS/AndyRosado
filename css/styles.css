@@ -409,7 +409,7 @@ span {
 
 /*Responsive*/
 
-@media(max-wdith:1200px) {
+@media(max-width:1200px) {
     html {
         font-size: 55%;
     }
@@ -442,7 +442,7 @@ span {
 }
 
 
-@media(max-wdith:768px) {
+@media(max-width:768px) {
     #menu-icon {
         display: block;
     }
