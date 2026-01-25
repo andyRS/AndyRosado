@@ -15,12 +15,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#service-marketing">Saltar al contenido principal</a>
     <header class="header">
       <a href="index.html#home" class="logo">Portfolio</a>
 
-      <nav class="navbar">
+      <button
+        class="menu-button"
+        id="menu-icon"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        type="button"
+      >
+        <i class="bx bx-menu" aria-hidden="true"></i>
+      </button>
+
+      <nav class="navbar" id="primary-navigation" aria-label="Navegación principal">
         <a href="index.html#home">Inicio</a>
         <a href="index.html#about">Sobre mi</a>
         <a href="index.html#services">Servicios</a>
@@ -41,7 +54,12 @@
 
       <div class="service-projects">
         <article class="service-project-card">
-          <img src="image/proyecto8.png" alt="Campaña social media" />
+          <img
+            src="image/proyecto8.png"
+            alt="Campaña social media"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="card-body">
             <h3>Social Media 360</h3>
             <p>Contenido mensual con enfoque en engagement y conversión.</p>
@@ -50,7 +68,12 @@
         </article>
 
         <article class="service-project-card">
-          <img src="image/Proyecto6.png" alt="Estrategia SEO local" />
+          <img
+            src="image/Proyecto6.png"
+            alt="Estrategia SEO local"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="card-body">
             <h3>SEO Local</h3>
             <p>Optimización de presencia local con keywords y perfiles.</p>
@@ -59,7 +82,12 @@
         </article>
 
         <article class="service-project-card">
-          <img src="image/Proyecto2.png" alt="Campaña de anuncios" />
+          <img
+            src="image/Proyecto2.png"
+            alt="Campaña de anuncios"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="card-body">
             <h3>Ads Performance</h3>
             <p>Campañas SEM con segmentación y creatividad optimizada.</p>
@@ -68,7 +96,12 @@
         </article>
 
         <article class="service-project-card">
-          <img src="image/Proyecto4.png" alt="Estrategia de contenidos" />
+          <img
+            src="image/Proyecto4.png"
+            alt="Estrategia de contenidos"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="card-body">
             <h3>Contenido SEO</h3>
             <p>Blog y recursos para posicionamiento orgánico sostenido.</p>
@@ -77,7 +110,12 @@
         </article>
 
         <article class="service-project-card">
-          <img src="image/Proyecto1.png" alt="Automatización de marketing" />
+          <img
+            src="image/Proyecto1.png"
+            alt="Automatización de marketing"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="card-body">
             <h3>Automatización CRM</h3>
             <p>Flujos de email y nurturing para fidelizar clientes.</p>
@@ -86,7 +124,12 @@
         </article>
 
         <article class="service-project-card">
-          <img src="image/proyecto5.jpg" alt="Branding digital" />
+          <img
+            src="image/proyecto5.jpg"
+            alt="Branding digital"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="card-body">
             <h3>Branding Digital</h3>
             <p>Guía visual y tono de comunicación para redes.</p>

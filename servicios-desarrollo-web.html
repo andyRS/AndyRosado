@@ -15,12 +15,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#service-web">Saltar al contenido principal</a>
     <header class="header">
       <a href="index.html#home" class="logo">Portfolio</a>
 
-      <nav class="navbar">
+      <button
+        class="menu-button"
+        id="menu-icon"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        type="button"
+      >
+        <i class="bx bx-menu" aria-hidden="true"></i>
+      </button>
+
+      <nav class="navbar" id="primary-navigation" aria-label="Navegación principal">
         <a href="index.html#home">Inicio</a>
         <a href="index.html#about">Sobre mi</a>
         <a href="index.html#services">Servicios</a>
@@ -41,7 +54,12 @@
 
       <div class="service-projects">
         <article class="service-project-card">
-          <img src="image/WebApiPoketApi.png" alt="Proyecto Pokedex API" />
+          <img
+            src="image/WebApiPoketApi.png"
+            alt="Proyecto Pokedex API"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="card-body">
             <h3>Pokedex API</h3>
             <p>Aplicación web con consumo de API y diseño responsive.</p>
@@ -56,7 +74,12 @@
         </article>
 
         <article class="service-project-card">
-          <img src="image/LadingPage.png" alt="Landing page creativa" />
+          <img
+            src="image/LadingPage.png"
+            alt="Landing page creativa"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="card-body">
             <h3>Landing Creativa</h3>
             <p>Landing page moderna con animaciones y CTA claros.</p>
@@ -71,7 +94,12 @@
         </article>
 
         <article class="service-project-card">
-          <img src="image/proyectoTrading.png" alt="Sitio Andy Trading" />
+          <img
+            src="image/proyectoTrading.png"
+            alt="Sitio Andy Trading"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="card-body">
             <h3>Andy Trading</h3>
             <p>Landing financiera con estructura visual y secciones claras.</p>
@@ -86,7 +114,12 @@
         </article>
 
         <article class="service-project-card">
-          <img src="image/proyectoTienda.png" alt="Tienda online demo" />
+          <img
+            src="image/proyectoTienda.png"
+            alt="Tienda online demo"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="card-body">
             <h3>Tienda Online</h3>
             <p>Catálogo digital con estructura e-commerce y navegación ágil.</p>
@@ -101,7 +134,12 @@
         </article>
 
         <article class="service-project-card">
-          <img src="image/proyecto8.png" alt="Sitio corporativo" />
+          <img
+            src="image/proyecto8.png"
+            alt="Sitio corporativo"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="card-body">
             <h3>Corporate Web</h3>
             <p>Web institucional con enfoque en marca y reputación digital.</p>
@@ -110,7 +148,12 @@
         </article>
 
         <article class="service-project-card">
-          <img src="image/Proyecto6.png" alt="Sitio informativo local" />
+          <img
+            src="image/Proyecto6.png"
+            alt="Sitio informativo local"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="card-body">
             <h3>Web Informativa</h3>
             <p>Proyecto para negocios locales con contenido claro y accesible.</p>
