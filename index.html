@@ -30,17 +30,27 @@
     <!--Fin Typecryspt Type JS-->
 
     <!--Inicio Scripts de JS-->
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
     <!--Fin Scripts de JS-->
   </head>
   <body>
+    <a class="skip-link" href="#home">Saltar al contenido principal</a>
     <!--Inicio del Header-->
     <header class="header">
       <a href="#home" class="logo">Portfolio</a>
 
-      <i class="bx bx-menu" id="menu-icon"></i>
+      <button
+        class="menu-button"
+        id="menu-icon"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        type="button"
+      >
+        <i class="bx bx-menu" aria-hidden="true"></i>
+      </button>
 
-      <nav class="navbar">
+      <nav class="navbar" id="primary-navigation" aria-label="Navegación principal">
         <a href="#home" class="active">Inicio</a>
         <a href="#about">Sobre mi</a>
         <a href="#services">Servicios</a>
@@ -84,6 +94,8 @@
           src="image/home.png"
           alt="Foto de Andy Rosado"
           title="Andy Rosado"
+          loading="lazy"
+          decoding="async"
         />
       </div>
     </section>
@@ -96,6 +108,8 @@
           src="image/about.png"
           alt="Andy Rosado trabajando en su escritorio"
           title="Andy Rosado"
+          loading="lazy"
+          decoding="async"
         />
       </div>
 
@@ -163,7 +177,12 @@
 
       <div class="portfolio-container">
         <div class="portfolio-box">
-          <img src="image/WebApiPoketApi.png" alt="Portafolio1" />
+          <img
+            src="image/WebApiPoketApi.png"
+            alt="Portafolio Pokedex API"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="portfolio-layer">
             <h4>Desarrollo Web</h4>
             <p>
@@ -182,7 +201,12 @@
         </div>
 
         <div class="portfolio-box">
-          <img src="image/LadingPage.png" alt="Portafolio2" />
+          <img
+            src="image/LadingPage.png"
+            alt="Portafolio Landing Page"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="portfolio-layer">
             <h4>Desarrollo Web</h4>
             <p>
@@ -201,7 +225,12 @@
         </div>
 
         <div class="portfolio-box">
-          <img src="image/proyectoTrading.png" alt="proyectoTienda" />
+          <img
+            src="image/proyectoTrading.png"
+            alt="Portafolio Andy Trading"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="portfolio-layer">
             <h4>Desarrollo Web</h4>
             <p>
@@ -219,7 +248,12 @@
         </div>
 
         <div class="portfolio-box">
-          <img src="image/proyectoTienda.png" alt="Portafolio4" />
+          <img
+            src="image/proyectoTienda.png"
+            alt="Portafolio tienda online"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="portfolio-layer">
             <h4>Desarrollo Web</h4>
             <p>Proyecto realizado con HTML5, CSS3 y JavaScript.</p>
@@ -235,7 +269,12 @@
         </div>
 
         <div class="portfolio-box">
-          <img src="image/proyecto8.png" alt="Portafolio5" />
+          <img
+            src="image/proyecto8.png"
+            alt="Portafolio corporativo"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="portfolio-layer">
             <h4>Desarrollo Web</h4>
             <p>Página corporativa con enfoque en presencia digital.</p>
@@ -246,7 +285,12 @@
         </div>
 
         <div class="portfolio-box">
-          <img src="image/Proyecto6.png" alt="Portafolio6" />
+          <img
+            src="image/Proyecto6.png"
+            alt="Portafolio informativo"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="portfolio-layer">
             <h4>Desarrollo Web</h4>
             <p>
@@ -265,23 +309,82 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contactar a <span>Andy Rosado</span></h2>
 
-      <form action="#">
+      <form action="#" id="contact-form" novalidate>
         <div class="input-box">
-          <input type="text" placeholder="Nombre Completo" aria-label="Nombre completo" />
-          <input type="email" placeholder="Email" aria-label="Correo electrónico" />
+          <div class="form-field">
+            <label class="visually-hidden" for="full-name"
+              >Nombre completo</label
+            >
+            <input
+              id="full-name"
+              name="full-name"
+              type="text"
+              placeholder="Nombre Completo"
+              autocomplete="name"
+              required
+              minlength="3"
+              maxlength="60"
+              aria-describedby="full-name-error"
+            />
+            <span class="error-message" id="full-name-error"></span>
+          </div>
+          <div class="form-field">
+            <label class="visually-hidden" for="email">Correo electrónico</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email"
+              autocomplete="email"
+              required
+              aria-describedby="email-error"
+            />
+            <span class="error-message" id="email-error"></span>
+          </div>
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Telefono Movil" aria-label="Teléfono móvil" />
-          <input type="text" placeholder="Asunto del Mensaje" aria-label="Asunto del mensaje" />
+          <div class="form-field">
+            <label class="visually-hidden" for="phone">Teléfono móvil</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="Telefono Movil"
+              autocomplete="tel"
+              inputmode="tel"
+              required
+              aria-describedby="phone-error"
+            />
+            <span class="error-message" id="phone-error"></span>
+          </div>
+          <div class="form-field">
+            <label class="visually-hidden" for="subject">Asunto del mensaje</label>
+            <input
+              id="subject"
+              name="subject"
+              type="text"
+              placeholder="Asunto del Mensaje"
+              required
+              minlength="3"
+              maxlength="80"
+              aria-describedby="subject-error"
+            />
+            <span class="error-message" id="subject-error"></span>
+          </div>
         </div>
         <textarea
-          name=""
+          name="message"
           id="textarea"
           cols="30"
           rows="10"
           placeholder="Escribe tu mensaje"
-          aria-label="Mensaje"
+          required
+          minlength="10"
+          maxlength="500"
+          aria-describedby="message-error"
         ></textarea>
+        <span class="error-message" id="message-error"></span>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         <input type="submit" value="Enviar Mensaje" class="btn" />
       </form>
     </section>

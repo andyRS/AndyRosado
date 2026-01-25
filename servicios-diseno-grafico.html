@@ -15,12 +15,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#service-design">Saltar al contenido principal</a>
     <header class="header">
       <a href="index.html#home" class="logo">Portfolio</a>
 
-      <nav class="navbar">
+      <button
+        class="menu-button"
+        id="menu-icon"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        type="button"
+      >
+        <i class="bx bx-menu" aria-hidden="true"></i>
+      </button>
+
+      <nav class="navbar" id="primary-navigation" aria-label="Navegación principal">
         <a href="index.html#home">Inicio</a>
         <a href="index.html#about">Sobre mi</a>
         <a href="index.html#services">Servicios</a>
@@ -41,7 +54,12 @@
 
       <div class="service-projects">
         <article class="service-project-card">
-          <img src="image/Proyecto1.png" alt="Branding para cafetería" />
+          <img
+            src="image/Proyecto1.png"
+            alt="Branding para cafetería"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="card-body">
             <h3>Branding Café</h3>
             <p>Identidad visual cálida con logotipo y paleta cromática.</p>
@@ -50,7 +68,12 @@
         </article>
 
         <article class="service-project-card">
-          <img src="image/Proyecto2.png" alt="Identidad visual tecnológica" />
+          <img
+            src="image/Proyecto2.png"
+            alt="Identidad visual tecnológica"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="card-body">
             <h3>Identidad Tech</h3>
             <p>Diseño de marca para startup con enfoque futurista.</p>
@@ -59,7 +82,12 @@
         </article>
 
         <article class="service-project-card">
-          <img src="image/proyecto3.png" alt="Mockups editoriales" />
+          <img
+            src="image/proyecto3.png"
+            alt="Mockups editoriales"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="card-body">
             <h3>Editorial Digital</h3>
             <p>Piezas editoriales y maquetación para revistas digitales.</p>
@@ -68,7 +96,12 @@
         </article>
 
         <article class="service-project-card">
-          <img src="image/Proyecto4.png" alt="Packaging minimalista" />
+          <img
+            src="image/Proyecto4.png"
+            alt="Packaging minimalista"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="card-body">
             <h3>Packaging Minimal</h3>
             <p>Empaques limpios con tipografía protagonista.</p>
@@ -77,7 +110,12 @@
         </article>
 
         <article class="service-project-card">
-          <img src="image/proyecto5.jpg" alt="Poster creativo" />
+          <img
+            src="image/proyecto5.jpg"
+            alt="Poster creativo"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="card-body">
             <h3>Posters Creativos</h3>
             <p>Campaña visual con composiciones gráficas dinámicas.</p>
@@ -86,7 +124,12 @@
         </article>
 
         <article class="service-project-card">
-          <img src="image/Portfolio4.jpg" alt="Presentación corporativa" />
+          <img
+            src="image/Portfolio4.jpg"
+            alt="Presentación corporativa"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="card-body">
             <h3>Presentación Pro</h3>
             <p>Deck corporativo con layout limpio y datos visuales.</p>
