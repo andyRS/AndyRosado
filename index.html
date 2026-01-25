@@ -1,13 +1,488 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!-- Other content -->
-    <img src="https://i.ibb.co/jvT1TkN4/pg.png" alt="Polanco Graphics Project Image">
-    <!-- Other content -->
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio de Andy Rosado con proyectos de desarrollo web, diseño gráfico y marketing digital."
+    />
+    <title>Personal Portafolio Andy Rosado</title>
+
+    <!--Inicio box icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--Fin box icons-->
+
+    <!--Inicio estilos CSS-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--Fin estilos CSS-->
+
+    <!--Inicio Scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--FinScroll reveal-->
+
+    <!--Inicio Typecryspt Type JS-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!--Fin Typecryspt Type JS-->
+
+    <!--Inicio Scripts de JS-->
+    <script src="./js/main.js" defer></script>
+    <!--Fin Scripts de JS-->
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Saltar al contenido principal</a>
+    <!--Inicio del Header-->
+    <header class="header">
+      <a href="#home" class="logo">Portfolio</a>
+
+      <button
+        class="menu-button"
+        id="menu-icon"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        type="button"
+      >
+        <i class="bx bx-menu" aria-hidden="true"></i>
+      </button>
+
+      <nav class="navbar" id="primary-navigation" aria-label="Navegación principal">
+        <a href="#home" class="active">Inicio</a>
+        <a href="#about">Sobre mi</a>
+        <a href="#services">Servicios</a>
+        <a href="#portfolio">Portafolio</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </header>
+    <!--Fin del Header-->
+
+    <!--Inicio seccion del home-->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hola, Mi nombre es</h3>
+        <h1>Andy Rosado</h1>
+        <h3>Y soy un <span class="multiple-text"></span></h3>
+        <p>
+          Soy un apasionado por el desarrollo web, y puedo adaptarme para
+          desarrollar tu proyecto web. <br />
+          Mi objetivo es poder trasladar tu idea de
+          negocio a una realidad.
+        </p>
+        <div class="social-media">
+          <a href="#" aria-label="Facebook">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <i class="bx bxl-instagram-alt"></i>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+        </div>
+        <a href="#" class="btn">Descargar CV</a>
+      </div>
+
+      <div class="home-img">
+        <img
+          src="image/home.png"
+          alt="Foto de Andy Rosado"
+          title="Andy Rosado"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    </section>
+    <!--Fin seccion del home-->
+
+    <!--Inicio seccion sobre mi-->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img
+          src="image/about.png"
+          alt="Andy Rosado trabajando en su escritorio"
+          title="Andy Rosado"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">Sobre <span>Mi</span></h2>
+        <h3>Desarrollador Frontend</h3>
+        <p>
+          Soy un profesional del desarrollo web e Ingeniero de Sistemas
+          Computacionales, enfocado en crear experiencias digitales sólidas y
+          funcionales. Me apasiona colaborar en proyectos que transformen ideas
+          en realidades y aporten valor a personas y negocios.
+        </p>
+        <a href="#" class="btn">Leer mas</a>
+      </div>
+    </section>
+    <!--Fin seccion sobre mi-->
+
+    <!--Inicio seccion servicios-->
+    <section class="services" id="services">
+      <h2 class="heading">Nuestros <span>Servicios</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Desarrollo Web</h3>
+          <p>
+            Desarrollamos tus diseños web con alta calidad, damos forma a tu
+            idea o emprendimiento en la web.
+          </p>
+          <a href="servicios-desarrollo-web.html" class="btn"
+            >Ver proyectos</a
+          >
+        </div>
+
+        <div class="services-box">
+          <i class="bx bxs-paint"></i>
+          <h3>Diseño Grafico</h3>
+          <p>
+            Realizamos tus diseños gráficos, desde la creación de un logo hasta
+            lo más complejo para ti. Damos forma a tus ideas.
+          </p>
+          <a href="servicios-diseno-grafico.html" class="btn"
+            >Ver proyectos</a
+          >
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-bar-chart-alt"></i>
+          <h3>Marketing Digital</h3>
+          <p>
+            Realizamos Marketing Digital, SEO, SEM. Hacemos que tu web esté bien
+            posicionada en el motor de búsqueda de Google.
+          </p>
+          <a href="servicios-marketing-digital.html" class="btn"
+            >Ver proyectos</a
+          >
+        </div>
+      </div>
+    </section>
+    <!--Fin seccion servicios-->
+
+    <!--Inicio seccion portafolios-->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Ultimos <span>Proyectos</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img
+            src="image/pg.png"
+            alt="Portafolio Polanco Graphics"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="portfolio-layer">
+            <h4>Desarrollo Web</h4>
+            <p>
+              Sitio web para estudio creativo con presentación de servicios e
+              identidad visual.
+            </p>
+            <a
+              href="https://andyrs.github.io/PolancoGraphics/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Ver proyecto Polanco Graphics"
+            >
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img
+            src="image/WebApiPoketApi.png"
+            alt="Portafolio Pokedex API"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="portfolio-layer">
+            <h4>Desarrollo Web</h4>
+            <p>
+              Proyecto Web usando HTML5, CSS3 y JS, conectando con una API
+              PokeAPI y totalmente responsive.
+            </p>
+            <a
+              href="https://andyrs.github.io/ProyectoPokedexAPI/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Ver proyecto Pokedex API"
+            >
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img
+            src="image/LadingPage.png"
+            alt="Portafolio Landing Page"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="portfolio-layer">
+            <h4>Desarrollo Web</h4>
+            <p>
+              Una landing page utilizando HTML5, CSS3 y JS, totalmente
+              responsive.
+            </p>
+            <a
+              href="https://andyrs.github.io/landingPage/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Ver proyecto Landing Page"
+            >
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img
+            src="image/proyectoTrading.png"
+            alt="Portafolio Andy Trading"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="portfolio-layer">
+            <h4>Desarrollo Web</h4>
+            <p>
+              Web desarrollada con HTML5, CSS3 y JS, totalmente responsive.
+            </p>
+            <a
+              href="https://andyrs.github.io/Andytrading/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Ver proyecto Andy Trading"
+            >
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img
+            src="image/proyectoTienda.png"
+            alt="Portafolio tienda online"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="portfolio-layer">
+            <h4>Desarrollo Web</h4>
+            <p>Proyecto realizado con HTML5, CSS3 y JavaScript.</p>
+            <a
+              href="https://andyrs.github.io/ProyectoTienda/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Ver proyecto Tienda"
+            >
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img
+            src="image/freisiweb-screenshot.jpg"
+            alt="FreisiWeb - Sitio web de trading y mentoría financiera"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="portfolio-layer">
+            <h4>Desarrollo Web</h4>
+            <p>Sitio web de trading y mentoría financiera con diseño profesional.</p>
+            <a
+              href="https://andyrs.github.io/FreisiWeb/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Ver proyecto FreisiWeb"
+            >
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img
+            src="image/angular-blog-screenshot.jpg"
+            alt="Angular Blog - Blog interactivo con Angular"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="portfolio-layer">
+            <h4>Desarrollo Web</h4>
+            <p>
+              Blog interactivo desarrollado con Angular, con funcionalidades modernas.
+            </p>
+            <a
+              href="https://andyrs.github.io/project_angularWebApp/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Ver proyecto Angular Blog"
+            >
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img
+            src="image/coopdinamic-screenshot.jpg"
+            alt="CoopDinamic - Proyecto cooperativo"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="portfolio-layer">
+            <h4>Desarrollo Web</h4>
+            <p>
+              Sistema cooperativo desarrollado con tecnologías modernas.
+            </p>
+            <a
+              href="https://github.com/andyRS/CoopDinamic"
+              target="_blank"
+              rel="noopener"
+              aria-label="Ver proyecto CoopDinamic"
+            >
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img
+            src="image/proy-eli-screenshot.jpg"
+            alt="Proy Eli - Proyecto PHP"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="portfolio-layer">
+            <h4>Desarrollo Web</h4>
+            <p>
+              Proyecto desarrollado con PHP y tecnologías web modernas.
+            </p>
+            <a
+              href="https://andyrs.github.io/proy_eli/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Ver proyecto Proy Eli"
+            >
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Fin seccion portafolios-->
+
+    <!--Inicio seccion contacto-->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contactar a <span>Andy Rosado</span></h2>
+
+      <form action="#" id="contact-form" novalidate>
+        <div class="input-box">
+          <div class="form-field">
+            <label class="visually-hidden" for="full-name"
+              >Nombre completo</label
+            >
+            <input
+              id="full-name"
+              name="full-name"
+              type="text"
+              placeholder="Nombre Completo"
+              autocomplete="name"
+              required
+              minlength="3"
+              maxlength="60"
+              aria-describedby="full-name-error"
+            />
+            <span class="error-message" id="full-name-error"></span>
+          </div>
+          <div class="form-field">
+            <label class="visually-hidden" for="email">Correo electrónico</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email"
+              autocomplete="email"
+              required
+              aria-describedby="email-error"
+            />
+            <span class="error-message" id="email-error"></span>
+          </div>
+        </div>
+        <div class="input-box">
+          <div class="form-field">
+            <label class="visually-hidden" for="phone">Teléfono móvil</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="Telefono Movil"
+              autocomplete="tel"
+              inputmode="tel"
+              required
+              aria-describedby="phone-error"
+            />
+            <span class="error-message" id="phone-error"></span>
+          </div>
+          <div class="form-field">
+            <label class="visually-hidden" for="subject">Asunto del mensaje</label>
+            <input
+              id="subject"
+              name="subject"
+              type="text"
+              placeholder="Asunto del Mensaje"
+              required
+              minlength="3"
+              maxlength="80"
+              aria-describedby="subject-error"
+            />
+            <span class="error-message" id="subject-error"></span>
+          </div>
+        </div>
+        <textarea
+          name="message"
+          id="textarea"
+          cols="30"
+          rows="10"
+          placeholder="Escribe tu mensaje"
+          required
+          minlength="10"
+          maxlength="500"
+          aria-describedby="message-error"
+        ></textarea>
+        <span class="error-message" id="message-error"></span>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        <input type="submit" value="Enviar Mensaje" class="btn" />
+      </form>
+    </section>
+    <!--Fin seccion contacto-->
+
+    <!--Inicio footer-->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>
+          Copyright &copy; 2023 by Andy Rosado Web | Todos los derechos
+          reservados.
+        </p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+    <!--Fin footer-->
+  </body>
 </html>
