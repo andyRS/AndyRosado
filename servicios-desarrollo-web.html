@@ -1,180 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Proyectos de desarrollo web realizados por Andy Rosado."
-    />
-    <title>Servicios | Desarrollo Web</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Proyectos de desarrollo web profesional por Andy Rosado — SPAs con React, landing pages, e-commerce y sitios corporativos en Santo Domingo, RD." />
+  <title>Desarrollo Web — Proyectos de Andy Rosado | Desarrollador Web en RD</title>
+  <link rel="canonical" href="https://andyrosado.com/servicios-desarrollo-web.html" />
 
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-      <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="./js/main.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#service-web">Saltar al contenido principal</a>
-    <header class="header">
-      <a href="index.html#home" class="logo">Portfolio</a>
+  <meta property="og:title" content="Proyectos de Desarrollo Web — Andy Rosado" />
+  <meta property="og:description" content="SPAs con React, landing pages, e-commerce y sitios corporativos." />
+  <meta property="og:url" content="https://andyrosado.com/servicios-desarrollo-web.html" />
+  <meta property="og:type" content="website" />
 
-      <button
-        class="menu-button"
-        id="menu-icon"
-        aria-label="Abrir menú"
-        aria-expanded="false"
-        aria-controls="primary-navigation"
-        type="button"
-      >
-        <i class="bx bx-menu" aria-hidden="true"></i>
-      </button>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="./js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#service-web">Saltar al contenido principal</a>
 
-      <nav class="navbar" id="primary-navigation" aria-label="Navegación principal">
-        <a href="index.html#home">Inicio</a>
-        <a href="index.html#about">Sobre mi</a>
-        <a href="index.html#services">Servicios</a>
-        <a href="index.html#portfolio">Portafolio</a>
-        <a href="index.html#contact">Contacto</a>
-      </nav>
-    </header>
+  <header class="header">
+    <a href="index.html#home" class="logo">Andy<span>Dev</span></a>
+    <button class="menu-button" id="menu-icon" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-navigation" type="button">
+      <i class="bx bx-menu" aria-hidden="true"></i>
+    </button>
+    <nav class="navbar" id="primary-navigation" aria-label="Navegación principal">
+      <ul role="list">
+        <li><a href="index.html#home">Inicio</a></li>
+        <li><a href="index.html#about">Sobre mí</a></li>
+        <li><a href="index.html#services">Servicios</a></li>
+        <li><a href="index.html#portfolio">Portafolio</a></li>
+        <li><a href="index.html#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="service-page" id="service-web">
-      <div class="service-hero">
-        <h1>Proyectos de Desarrollo Web</h1>
-        <p>
-          Selección de seis proyectos web para mostrar landing pages, tiendas y
-          sitios informativos. Puedes editar cada tarjeta con nuevos trabajos.
-        </p>
-        <a href="index.html#services" class="btn">Volver a servicios</a>
-      </div>
+  <section class="service-page" id="service-web" aria-labelledby="service-web-heading">
+    <div class="service-hero">
+      <h1 id="service-web-heading">Proyectos de <span>Desarrollo Web</span></h1>
+      <p>Selección de proyectos web que incluyen landing pages, tiendas online, aplicaciones interactivas y sitios corporativos con tecnologías modernas.</p>
+      <a href="index.html#services" class="btn"><i class="bx bx-arrow-back" aria-hidden="true"></i> Volver a servicios</a>
+    </div>
 
-      <div class="service-projects">
-        <article class="service-project-card">
-          <img
-            src="image/WebApiPoketApi.png"
-            alt="Proyecto Pokedex API"
-            loading="lazy"
-            decoding="async"
-          />
-          <div class="card-body">
-            <h3>Pokedex API</h3>
-            <p>Aplicación web con consumo de API y diseño responsive.</p>
-            <a
-              href="https://andyrs.github.io/ProyectoPokedexAPI/"
-              class="btn"
-              target="_blank"
-              rel="noopener"
-              >Ver proyecto</a
-            >
-          </div>
-        </article>
+    <div class="service-projects">
+      <article class="service-project-card">
+        <picture>
+          <source srcset="image/WebApiPoketApi.webp" type="image/webp" />
+          <img src="image/WebApiPoketApi.png" alt="Pokedex API — Aplicación web con consumo de REST API" width="600" height="400" loading="lazy" decoding="async" />
+        </picture>
+        <div class="card-body">
+          <h3>Pokedex API</h3>
+          <p>Aplicación web interactiva con consumo de API REST, búsqueda en tiempo real y diseño responsive.</p>
+          <a href="https://andyrs.github.io/ProyectoPokedexAPI/" class="btn" target="_blank" rel="noopener">Ver proyecto</a>
+        </div>
+      </article>
 
-        <article class="service-project-card">
-          <img
-            src="image/LadingPage.png"
-            alt="Landing page creativa"
-            loading="lazy"
-            decoding="async"
-          />
-          <div class="card-body">
-            <h3>Landing Creativa</h3>
-            <p>Landing page moderna con animaciones y CTA claros.</p>
-            <a
-              href="https://andyrs.github.io/landingPage/"
-              class="btn"
-              target="_blank"
-              rel="noopener"
-              >Ver proyecto</a
-            >
-          </div>
-        </article>
+      <article class="service-project-card">
+        <picture>
+          <source srcset="image/LadingPage.webp" type="image/webp" />
+          <img src="image/LadingPage.png" alt="Landing page creativa con animaciones y CTA claros" width="600" height="400" loading="lazy" decoding="async" />
+        </picture>
+        <div class="card-body">
+          <h3>Landing Creativa</h3>
+          <p>Landing page moderna con animaciones CSS, estructura de conversión y CTAs optimizados.</p>
+          <a href="https://andyrs.github.io/landingPage/" class="btn" target="_blank" rel="noopener">Ver proyecto</a>
+        </div>
+      </article>
 
-        <article class="service-project-card">
-          <img
-            src="image/proyectoTrading.png"
-            alt="Sitio Andy Trading"
-            loading="lazy"
-            decoding="async"
-          />
-          <div class="card-body">
-            <h3>Andy Trading</h3>
-            <p>Landing financiera con estructura visual y secciones claras.</p>
-            <a
-              href="https://andyrs.github.io/Andytrading/"
-              class="btn"
-              target="_blank"
-              rel="noopener"
-              >Ver proyecto</a
-            >
-          </div>
-        </article>
+      <article class="service-project-card">
+        <picture>
+          <source srcset="image/proyectoTrading.webp" type="image/webp" />
+          <img src="image/proyectoTrading.png" alt="Andy Trading — Landing financiera profesional" width="600" height="400" loading="lazy" decoding="async" />
+        </picture>
+        <div class="card-body">
+          <h3>Andy Trading</h3>
+          <p>Landing page financiera con estructura visual clara y secciones de captación de leads.</p>
+          <a href="https://andyrs.github.io/Andytrading/" class="btn" target="_blank" rel="noopener">Ver proyecto</a>
+        </div>
+      </article>
 
-        <article class="service-project-card">
-          <img
-            src="image/proyectoTienda.png"
-            alt="Tienda online demo"
-            loading="lazy"
-            decoding="async"
-          />
-          <div class="card-body">
-            <h3>Tienda Online</h3>
-            <p>Catálogo digital con estructura e-commerce y navegación ágil.</p>
-            <a
-              href="https://andyrs.github.io/ProyectoTienda/"
-              class="btn"
-              target="_blank"
-              rel="noopener"
-              >Ver proyecto</a
-            >
-          </div>
-        </article>
+      <article class="service-project-card">
+        <picture>
+          <source srcset="image/proyectoTienda.webp" type="image/webp" />
+          <img src="image/proyectoTienda.png" alt="Tienda online con catálogo e-commerce" width="600" height="400" loading="lazy" decoding="async" />
+        </picture>
+        <div class="card-body">
+          <h3>Tienda Online</h3>
+          <p>Catálogo digital con estructura e-commerce, navegación ágil y diseño orientado a conversión.</p>
+          <a href="https://andyrs.github.io/ProyectoTienda/" class="btn" target="_blank" rel="noopener">Ver proyecto</a>
+        </div>
+      </article>
 
-        <article class="service-project-card">
-          <img
-            src="image/proyecto8.png"
-            alt="Sitio corporativo"
-            loading="lazy"
-            decoding="async"
-          />
-          <div class="card-body">
-            <h3>Corporate Web</h3>
-            <p>Web institucional con enfoque en marca y reputación digital.</p>
-            <a href="#" class="btn">Ver proyecto</a>
-          </div>
-        </article>
+      <article class="service-project-card">
+        <picture>
+          <source srcset="image/proyecto8.webp" type="image/webp" />
+          <img src="image/proyecto8.png" alt="Sitio web corporativo con enfoque en marca" width="600" height="400" loading="lazy" decoding="async" />
+        </picture>
+        <div class="card-body">
+          <h3>Corporate Web</h3>
+          <p>Web institucional con enfoque en marca, reputación digital y presentación profesional.</p>
+          <a href="index.html#contact" class="btn">Solicitar similar</a>
+        </div>
+      </article>
 
-        <article class="service-project-card">
-          <img
-            src="image/Proyecto6.png"
-            alt="Sitio informativo local"
-            loading="lazy"
-            decoding="async"
-          />
-          <div class="card-body">
-            <h3>Web Informativa</h3>
-            <p>Proyecto para negocios locales con contenido claro y accesible.</p>
-            <a href="#" class="btn">Ver proyecto</a>
-          </div>
-        </article>
-      </div>
-    </section>
+      <article class="service-project-card">
+        <picture>
+          <source srcset="image/Proyecto6.webp" type="image/webp" />
+          <img src="image/Proyecto6.png" alt="Web informativa para negocios locales" width="600" height="400" loading="lazy" decoding="async" />
+        </picture>
+        <div class="card-body">
+          <h3>Web Informativa</h3>
+          <p>Proyecto para negocios locales con contenido claro, accesible y optimizado para SEO local.</p>
+          <a href="index.html#contact" class="btn">Solicitar similar</a>
+        </div>
+      </article>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <div class="footer-text">
-        <p>
-          Copyright &copy; <span id="current-year">2026</span> by Andy Rosado Web | Todos los derechos
-          reservados.
-        </p>
-      </div>
-
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> Andy Rosado Web | Todos los derechos reservados.</p>
       <div class="footer-iconTop">
-        <a href="#service-web"><i class="bx bx-up-arrow-alt"></i></a>
+        <a href="#service-web" aria-label="Volver arriba"><i class="bx bx-up-arrow-alt" aria-hidden="true"></i></a>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
 </html>

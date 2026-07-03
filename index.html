@@ -1,566 +1,772 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portafolio de Andy Rosado con proyectos de desarrollo web, diseño gráfico y marketing digital."
-    />
-    <meta name="theme-color" content="#1f242d" />
-    <link rel="canonical" href="https://andyrs.github.io/AndyRosado/" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="es_ES" />
-    <meta property="og:title" content="Andy Rosado | Desarrollador Frontend" />
-    <meta
-      property="og:description"
-      content="Portafolio de Andy Rosado con proyectos de desarrollo web, diseño gráfico y marketing digital."
-    />
-    <meta property="og:url" content="https://andyrs.github.io/AndyRosado/" />
-    <meta property="og:image" content="https://andyrs.github.io/AndyRosado/image/home.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Andy Rosado | Desarrollador Frontend" />
-    <meta
-      name="twitter:description"
-      content="Portafolio de Andy Rosado con proyectos de desarrollo web, diseño gráfico y marketing digital."
-    />
-    <meta name="twitter:image" content="https://andyrs.github.io/AndyRosado/image/home.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Personal Portafolio Andy Rosado</title>
+  <title>Andy Rosado | Desarrollador Web en República Dominicana — Sitios Web, E-commerce y Landing Pages</title>
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Andy Rosado",
-        "jobTitle": "Desarrollador Frontend",
-        "url": "https://andyrs.github.io/AndyRosado/"
-      }
-    </script>
+  <meta name="description"
+    content="Soy Andy Rosado, desarrollador web en Santo Domingo. Creo sitios web profesionales, tiendas online y landing pages con React, Node.js y diseño moderno. Solicita tu cotización gratis." />
 
-    <!--Inicio box icons-->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!--Fin box icons-->
+  <!-- Canonical -->
+  <link rel="canonical" href="https://andyrosado.com/" />
 
-    <!--Inicio estilos CSS-->
-    <link rel="stylesheet" href="css/styles.css" />
-    <!--Fin estilos CSS-->
+  <!-- Open Graph -->
+  <meta property="og:title" content="Andy Rosado — Desarrollador Web Profesional" />
+  <meta property="og:description"
+    content="Desarrollo de sitios web, e-commerce y landing pages en República Dominicana. React, Node.js, diseño moderno." />
+  <meta property="og:image" content="https://andyrosado.com/image/og-preview.jpg" />
+  <meta property="og:url" content="https://andyrosado.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_DO" />
 
-    <!--Inicio Scroll reveal-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!--FinScroll reveal-->
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Andy Rosado — Desarrollador Web en RD" />
+  <meta name="twitter:description"
+    content="Sitios web profesionales, e-commerce y landing pages en Santo Domingo." />
+  <meta name="twitter:image" content="https://andyrosado.com/image/og-preview.jpg" />
 
-    <!--Inicio Typecryspt Type JS-->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <!--Fin Typecryspt Type JS-->
+  <!-- Geo -->
+  <meta name="geo.region" content="DO" />
+  <meta name="geo.placename" content="Santo Domingo" />
 
-    <!--Inicio Scripts de JS-->
-    <script src="./js/main.js" defer></script>
-    <!--Fin Scripts de JS-->
-  </head>
-  <body>
-    <a class="skip-link" href="#home">Saltar al contenido principal</a>
-    <!--Inicio del Header-->
-    <header class="header">
-      <a href="#home" class="logo">Portfolio</a>
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-      <button
-        class="menu-button"
-        id="menu-icon"
-        aria-label="Abrir menú"
-        aria-expanded="false"
-        aria-controls="primary-navigation"
-        type="button"
-      >
-        <i class="bx bx-menu" aria-hidden="true"></i>
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts (only weights we use) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Box Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Preload hero image -->
+  <link rel="preload" href="image/home.webp" as="image" type="image/webp" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Scripts (all deferred) -->
+  <script src="https://unpkg.com/scrollreveal" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+  <script src="./js/main.js" defer></script>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Andy Rosado Web",
+    "description": "Desarrollo web profesional — sitios web, e-commerce, landing pages y aplicaciones modernas en República Dominicana",
+    "url": "https://andyrosado.com",
+    "image": "https://andyrosado.com/image/og-preview.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santo Domingo",
+      "addressCountry": "DO"
+    },
+    "sameAs": [
+      "https://github.com/andyrs",
+      "https://www.linkedin.com/in/andy-rosado"
+    ],
+    "priceRange": "$$",
+    "knowsAbout": ["React", "Node.js", "MongoDB", "E-commerce", "Landing Pages", "SEO"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#home">Saltar al contenido principal</a>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="#home" class="logo">Andy<span>Dev</span></a>
+
+    <button class="menu-button" id="menu-icon" aria-label="Abrir menú" aria-expanded="false"
+      aria-controls="primary-navigation" type="button">
+      <i class="bx bx-menu" aria-hidden="true"></i>
+    </button>
+
+    <nav class="navbar" id="primary-navigation" aria-label="Navegación principal">
+      <ul role="list">
+        <li><a href="#home" aria-current="page">Inicio</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#portfolio">Portafolio</a></li>
+        <li><a href="#testimonials">Testimonios</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HOME -->
+  <section class="home" id="home" aria-labelledby="home-heading">
+    <div class="home-content">
+      <h3>Hola, Mi nombre es</h3>
+      <h1 id="home-heading">Andy Rosado</h1>
+      <h3>Y soy un <span class="multiple-text"></span></h3>
+      <p>
+        Ingeniero de Sistemas y desarrollador web especializado en crear experiencias digitales que
+        convierten visitantes en clientes.<br />
+        Transformo tu idea de negocio en una realidad digital.
+      </p>
+
+      <div class="social-media">
+        <a href="https://github.com/andyrs" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="bx bxl-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/andy-rosado" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="bx bxl-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/andyrosadoweb" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="bx bxl-instagram-alt" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <a href="/docs/cv-andy-rosado.pdf" class="btn" download>
+        <i class="bx bx-download" aria-hidden="true"></i> Descargar CV
+      </a>
+    </div>
+
+    <div class="home-img">
+      <img
+        src="image/home.png"
+        alt="Andy Rosado — Desarrollador web profesional en Santo Domingo"
+        decoding="async"
+      />
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about" aria-labelledby="about-heading">
+    <div class="about-img">
+      <img
+        src="image/about.png"
+        alt="Andy Rosado trabajando en su escritorio"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+
+    <div class="about-content">
+      <h2 class="heading" id="about-heading">Sobre <span>Mí</span></h2>
+      <h3>Ingeniero de Sistemas &amp; Desarrollador Web</h3>
+      <p>
+        Soy Ingeniero de Sistemas Computacionales con experiencia creando soluciones web completas — desde
+        landing pages de alto impacto hasta plataformas e-commerce con backend robusto. Me especializo en
+        React, Node.js, MongoDB y diseño responsive, siempre con un enfoque en la experiencia del usuario
+        y los resultados del negocio.
+      </p>
+
+      <div class="about-stats">
+        <div class="stat-box">
+          <span class="stat-number">9+</span>
+          <span class="stat-label">Proyectos Entregados</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Clientes Satisfechos</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">3+</span>
+          <span class="stat-label">Años de Experiencia</span>
+        </div>
+      </div>
+
+      <div class="tech-stack">
+        <h4>Stack Tecnológico</h4>
+        <div class="tech-tags">
+          <span class="tech-tag"><i class="bx bxl-react" aria-hidden="true"></i> React</span>
+          <span class="tech-tag"><i class="bx bxl-nodejs" aria-hidden="true"></i> Node.js</span>
+          <span class="tech-tag"><i class="bx bxl-mongodb" aria-hidden="true"></i> MongoDB</span>
+          <span class="tech-tag"><i class="bx bxl-javascript" aria-hidden="true"></i> JavaScript</span>
+          <span class="tech-tag"><i class="bx bxl-tailwind-css" aria-hidden="true"></i> Tailwind</span>
+          <span class="tech-tag"><i class="bx bxl-php" aria-hidden="true"></i> PHP</span>
+          <span class="tech-tag"><i class="bx bxl-html5" aria-hidden="true"></i> HTML5</span>
+          <span class="tech-tag"><i class="bx bxl-css3" aria-hidden="true"></i> CSS3</span>
+          <span class="tech-tag"><i class="bx bxl-git" aria-hidden="true"></i> Git</span>
+          <span class="tech-tag"><i class="bx bxl-figma" aria-hidden="true"></i> Figma</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services" aria-labelledby="services-heading">
+    <h2 class="heading" id="services-heading">Mis <span>Servicios</span></h2>
+
+    <div class="services-container">
+      <article class="services-box">
+        <i class="bx bx-code-alt" aria-hidden="true"></i>
+        <h3>Desarrollo Web</h3>
+        <p>
+          Sitios web profesionales, SPAs con React, plataformas e-commerce y aplicaciones web a medida.
+          Código limpio, responsive y optimizado para SEO.
+        </p>
+        <a href="servicios-desarrollo-web.html" class="btn-outline">Ver proyectos</a>
+      </article>
+
+      <article class="services-box">
+        <i class="bx bxs-paint" aria-hidden="true"></i>
+        <h3>Diseño Gráfico</h3>
+        <p>
+          Identidad visual, branding, mockups y materiales gráficos profesionales que comunican
+          la esencia de tu marca con impacto visual.
+        </p>
+        <a href="servicios-diseno-grafico.html" class="btn-outline">Ver proyectos</a>
+      </article>
+
+      <article class="services-box">
+        <i class="bx bx-bar-chart-alt" aria-hidden="true"></i>
+        <h3>Marketing Digital</h3>
+        <p>
+          Estrategias de SEO, SEM y posicionamiento en Google para que tu negocio sea encontrado
+          por los clientes correctos en el momento indicado.
+        </p>
+        <a href="servicios-marketing-digital.html" class="btn-outline">Ver proyectos</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio" aria-labelledby="portfolio-heading">
+    <h2 class="heading" id="portfolio-heading">Últimos <span>Proyectos</span></h2>
+
+    <div class="portfolio-filters" role="tablist" aria-label="Filtrar proyectos">
+      <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">Todos</button>
+      <button class="filter-btn" role="tab" aria-selected="false" data-filter="fullstack">Full-Stack</button>
+      <button class="filter-btn" role="tab" aria-selected="false" data-filter="frontend">Frontend</button>
+      <button class="filter-btn" role="tab" aria-selected="false" data-filter="ecommerce">E-commerce</button>
+    </div>
+
+    <div class="portfolio-container">
+
+      <!-- FEATURED: LuxeShop -->
+      <article class="portfolio-box featured" data-category="fullstack ecommerce">
+        <div class="portfolio-badge">Destacado</div>
+        <img src="image/proyectoTienda.png"
+            alt="LuxeShop — Plataforma e-commerce full-stack con React, Node.js y MongoDB"
+            loading="lazy" decoding="async" />
+        <div class="portfolio-layer">
+          <h3>LuxeShop E-commerce</h3>
+          <p>
+            Plataforma e-commerce completa con panel admin, gestión de productos, autenticación
+            de usuarios e integración con WhatsApp Business para conversiones directas.
+          </p>
+          <div class="portfolio-tech">
+            <span>React</span><span>Node.js</span><span>MongoDB</span><span>WhatsApp API</span>
+          </div>
+          <a href="https://andyrs.github.io/ProyectoTienda/" target="_blank" rel="noopener"
+            aria-label="Ver proyecto LuxeShop E-commerce">
+            <i class="bx bx-link-external" aria-hidden="true"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- FEATURED: CoopDinámica -->
+      <article class="portfolio-box featured" data-category="fullstack">
+        <div class="portfolio-badge">Destacado</div>
+        <img src="image/copDinamica.png"
+            alt="CoopDinámica — Sitio web moderno para cooperativa financiera dominicana"
+            loading="lazy" decoding="async" />
+        <div class="portfolio-layer">
+          <h3>CoopDinámica</h3>
+          <p>
+            Sitio web moderno para cooperativa financiera con React, glassmorphism, dark mode,
+            animaciones con Framer Motion y navegación con mega menú.
+          </p>
+          <div class="portfolio-tech">
+            <span>React</span><span>Framer Motion</span><span>Vercel</span>
+          </div>
+          <a href="https://coopdinamica-8nh6mrfrr-andy-rosados-projects.vercel.app/#/" target="_blank"
+            rel="noopener" aria-label="Ver proyecto CoopDinámica">
+            <i class="bx bx-link-external" aria-hidden="true"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Elizabeth Mendez -->
+      <article class="portfolio-box" data-category="fullstack ecommerce">
+        <img src="image/Proyecto_Eli.png"
+            alt="Elizabeth Mendez — Portafolio de diseñadora de moda con catálogo y calculadora de presupuesto"
+            loading="lazy" decoding="async" />
+        <div class="portfolio-layer">
+          <h3>Elizabeth Mendez</h3>
+          <p>
+            Portafolio para diseñadora de moda de lujo con catálogo interactivo, calculadora de presupuesto
+            dual-currency y filtrado inteligente de colecciones.
+          </p>
+          <div class="portfolio-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+          <a href="https://andyrs.github.io/proy_eli/" target="_blank" rel="noopener"
+            aria-label="Ver proyecto Elizabeth Mendez">
+            <i class="bx bx-link-external" aria-hidden="true"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Blog IA -->
+      <article class="portfolio-box" data-category="fullstack">
+        <img src="image/Blog_IA.png"
+            alt="AI Trends Blog — Blog moderno de tendencias en IA con React y Tailwind"
+            loading="lazy" decoding="async" />
+        <div class="portfolio-layer">
+          <h3>AI Trends Blog</h3>
+          <p>
+            Blog interactivo sobre tendencias en IA, desarrollado con React + Vite + Tailwind.
+            Optimizado para Google AdSense y SEO avanzado.
+          </p>
+          <div class="portfolio-tech">
+            <span>React</span><span>Vite</span><span>Tailwind</span><span>SEO</span>
+          </div>
+          <a href="https://ai-blog-redesign.vercel.app/" target="_blank" rel="noopener"
+            aria-label="Ver proyecto AI Trends Blog">
+            <i class="bx bx-link-external" aria-hidden="true"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Landing Premium -->
+      <article class="portfolio-box" data-category="frontend">
+        <img src="image/landing-premium.png"
+            alt="Landing Page Premium con sistema multi-tema para 5 industrias"
+            loading="lazy" decoding="async" />
+        <div class="portfolio-layer">
+          <h3>Landing Premium Multi-Tema</h3>
+          <p>
+            Sistema de landing page con 5 temas intercambiables para diferentes industrias:
+            Cafetería, Tech, Fitness, Restaurante y Spa.
+          </p>
+          <div class="portfolio-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+          <a href="https://landing-premium-git-gh-pages-andy-rosados-projects.vercel.app/" target="_blank"
+            rel="noopener" aria-label="Ver proyecto Landing Premium">
+            <i class="bx bx-link-external" aria-hidden="true"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Polanco Graphics -->
+      <article class="portfolio-box" data-category="frontend">
+        <img src="image/pg.png"
+            alt="Polanco Graphics — Sitio web profesional para estudio creativo"
+            loading="lazy" decoding="async" />
+        <div class="portfolio-layer">
+          <h3>Polanco Graphics</h3>
+          <p>
+            Sitio web para estudio creativo con presentación de servicios,
+            galería de portafolio e identidad visual profesional.
+          </p>
+          <div class="portfolio-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+          <a href="https://andyrs.github.io/PolancoGraphics/" target="_blank" rel="noopener"
+            aria-label="Ver proyecto Polanco Graphics">
+            <i class="bx bx-link-external" aria-hidden="true"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- FreisiWeb -->
+      <article class="portfolio-box" data-category="frontend">
+        <img src="image/fschez.png"
+            alt="FreisiWeb — Sitio web de trading y mentoría financiera"
+            loading="lazy" decoding="async" />
+        <div class="portfolio-layer">
+          <h3>FreisiWeb</h3>
+          <p>
+            Sitio web profesional de trading y mentoría financiera con diseño premium,
+            secciones de cursos y testimonios.
+          </p>
+          <div class="portfolio-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+          <a href="https://andyrs.github.io/FreisiWeb/" target="_blank" rel="noopener"
+            aria-label="Ver proyecto FreisiWeb">
+            <i class="bx bx-link-external" aria-hidden="true"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Pokedex API -->
+      <article class="portfolio-box" data-category="frontend">
+        <img src="image/WebApiPoketApi.png"
+            alt="Pokedex API — Aplicación web con consumo de API REST"
+            loading="lazy" decoding="async" />
+        <div class="portfolio-layer">
+          <h3>Pokedex API</h3>
+          <p>
+            Aplicación web interactiva que consume la PokeAPI con búsqueda en tiempo real,
+            filtros y diseño totalmente responsive.
+          </p>
+          <div class="portfolio-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>REST API</span>
+          </div>
+          <a href="https://andyrs.github.io/ProyectoPokedexAPI/" target="_blank" rel="noopener"
+            aria-label="Ver proyecto Pokedex API">
+            <i class="bx bx-link-external" aria-hidden="true"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Andy Trading -->
+      <article class="portfolio-box" data-category="frontend">
+        <img src="image/proyectoTrading.png"
+            alt="Andy Trading — Landing page financiera profesional"
+            loading="lazy" decoding="async" />
+        <div class="portfolio-layer">
+          <h3>Andy Trading</h3>
+          <p>
+            Landing page financiera con estructura visual clara, secciones de servicios
+            y formulario de captación de leads.
+          </p>
+          <div class="portfolio-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+          <a href="https://andyrs.github.io/Andytrading/" target="_blank" rel="noopener"
+            aria-label="Ver proyecto Andy Trading">
+            <i class="bx bx-link-external" aria-hidden="true"></i>
+          </a>
+        </div>
+      </article>
+      
+      
+      <!-- Luxe-Shop -->
+<article class="portfolio-box" data-category="fullstack ecommerce">
+  <img
+    src="image/luxe-shop.png"
+    alt="Luxe-Shop — Tienda e-commerce moderna"
+    loading="lazy"
+    decoding="async"
+  />
+  <div class="portfolio-layer">
+    <h3>Luxe-Shop</h3>
+    <p>
+      Tienda e-commerce moderna enfocada en productos premium, con catálogo,
+      carrito de compras y experiencia de usuario optimizada.
+    </p>
+    <div class="portfolio-tech">
+      <span>React</span><span>Node.js</span><span>MongoDB</span>
+    </div>
+    <a href="https://frontend-nine-tan-82.vercel.app/" aria-label="Proyecto Luxe-Shop">
+      <i class="bx bx-link-external" aria-hidden="true"></i>
+    </a>
+  </div>
+</article>
+
+<!-- CRM Lite -->
+<article class="portfolio-box" data-category="fullstack">
+  <img
+    src="image/crm-lite.png"
+    alt="CRM Lite — Sistema CRM para gestión de clientes"
+    loading="lazy"
+    decoding="async"
+  />
+  <div class="portfolio-layer">
+    <h3>CRM Lite</h3>
+    <p>
+      Sistema CRM ligero para gestión de clientes, usuarios, roles,
+      seguimiento de actividades y panel administrativo.
+    </p>
+    <div class="portfolio-tech">
+      <span>React</span><span>Node.js</span><span>MySQL</span>
+    </div>
+    <a href="https://crm-lite-six.vercel.app/" aria-label="Proyecto CRM Lite">
+      <i class="bx bx-link-external" aria-hidden="true"></i>
+    </a>
+  </div>
+</article>
+
+<!-- Task Manager API -->
+<article class="portfolio-box" data-category="fullstack">
+  <img
+    src="image/task-manager.png"
+    alt="Task Manager API — API REST para gestión de tareas"
+    loading="lazy"
+    decoding="async"
+  />
+  <div class="portfolio-layer">
+    <h3>Task Manager API</h3>
+    <p>
+      API REST para gestión de tareas con autenticación JWT,
+      roles de usuario y estructura escalable.
+    </p>
+    <div class="portfolio-tech">
+      <span>Node.js</span><span>Express</span><span>JWT</span>
+    </div>
+    <a href="https://task-manager-api-689t.onrender.com/api/docs/#/">
+      <i class="bx bx-link-external" aria-hidden="true"></i>
+    </a>
+  </div>
+</article>
+
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+    <h2 class="heading" id="testimonials-heading">Lo que dicen mis <span>Clientes</span></h2>
+
+    <div class="carousel-wrapper">
+      <button class="carousel-btn carousel-prev" aria-label="Testimonio anterior">
+        <i class="bx bx-chevron-left" aria-hidden="true"></i>
       </button>
 
-      <nav class="navbar" id="primary-navigation" aria-label="Navegación principal">
-        <a href="#home" class="active">Inicio</a>
-        <a href="#about">Sobre mi</a>
-        <a href="#services">Servicios</a>
-        <a href="#portfolio">Portafolio</a>
-        <a href="#contact">Contacto</a>
-      </nav>
-    </header>
-    <!--Fin del Header-->
+      <div class="carousel-track-container">
+        <div class="carousel-track">
 
-    <!--Inicio seccion del home-->
-    <section class="home" id="home">
-      <div class="home-content">
-        <p class="greeting">Hola, Mi nombre es</p>
-        <h1>Andy Rosado</h1>
-        <h2 class="role">Y soy un <span class="multiple-text"></span></h2>
-        <p>
-          Soy un apasionado por el desarrollo web, y puedo adaptarme para
-          desarrollar tu proyecto web. <br />
-          Mi objetivo es poder trasladar tu idea de
-          negocio a una realidad.
-        </p>
-        <div class="social-media">
-          <a href="#" aria-label="Facebook">
-            <i class="bx bxl-facebook"></i>
-          </a>
-          <a href="#" aria-label="Twitter">
-            <i class="bx bxl-twitter"></i>
-          </a>
-          <a href="#" aria-label="Instagram">
-            <i class="bx bxl-instagram-alt"></i>
-          </a>
-          <a href="#" aria-label="LinkedIn">
-            <i class="bx bxl-linkedin"></i>
-          </a>
-        </div>
-        <a href="#" class="btn">Descargar CV</a>
-      </div>
+          <article class="testimonial-slide">
+            <div class="testimonial-quote">
+              <i class="bx bxs-quote-alt-left testimonial-quote-icon" aria-hidden="true"></i>
+              <p>
+                Andy entendió exactamente lo que necesitaba para mi marca. El sitio web que creó superó mis
+                expectativas y ha ayudado a atraer nuevos clientes. Su comunicación fue excelente durante
+                todo el proceso.
+              </p>
+            </div>
+            <div class="testimonial-stars" aria-label="5 de 5 estrellas">
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+            </div>
+            <div class="testimonial-author">
+              <img src="image/avatar-cliente1.png" alt="Elizabeth M." class="testimonial-avatar" width="60" height="60" />
+              <div class="testimonial-info">
+                <strong>Elizabeth M.</strong>
+                <span>Diseñadora de Moda</span>
+              </div>
+            </div>
+          </article>
 
-      <div class="home-img">
-        <img
-          src="image/home.png"
-          alt="Foto de Andy Rosado"
-          title="Andy Rosado"
-          loading="lazy"
-          decoding="async"
-        />
-      </div>
-    </section>
-    <!--Fin seccion del home-->
+          <article class="testimonial-slide">
+            <div class="testimonial-quote">
+              <i class="bx bxs-quote-alt-left testimonial-quote-icon" aria-hidden="true"></i>
+              <p>
+                Profesional, puntual y muy detallista. Andy modernizó nuestro sitio web con un diseño que
+                transmite confianza y profesionalismo. Los socios quedaron impresionados con el resultado final.
+              </p>
+            </div>
+            <div class="testimonial-stars" aria-label="5 de 5 estrellas">
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+            </div>
+            <div class="testimonial-author">
+              <img src="image/avatar-cliente2.png" alt="CoopDinámica" class="testimonial-avatar" width="60" height="60" />
+              <div class="testimonial-info">
+                <strong>CoopDinámica</strong>
+                <span>Cooperativa Financiera</span>
+              </div>
+            </div>
+          </article>
 
-    <!--Inicio seccion sobre mi-->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img
-          src="image/about.png"
-          alt="Andy Rosado trabajando en su escritorio"
-          title="Andy Rosado"
-          loading="lazy"
-          decoding="async"
-        />
-      </div>
+          <article class="testimonial-slide">
+            <div class="testimonial-quote">
+              <i class="bx bxs-quote-alt-left testimonial-quote-icon" aria-hidden="true"></i>
+              <p>
+                Necesitábamos una presencia online profesional y Andy lo hizo realidad. El diseño es moderno,
+                rápido y nuestros clientes nos contactan mucho más desde que lanzamos el sitio.
+              </p>
+            </div>
+            <div class="testimonial-stars" aria-label="5 de 5 estrellas">
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+            </div>
+            <div class="testimonial-author">
+              <img src="image/avatar-cliente3.png" alt="Polanco Graphics" class="testimonial-avatar" width="60" height="60" />
+              <div class="testimonial-info">
+                <strong>Polanco G.</strong>
+                <span>Estudio Creativo</span>
+              </div>
+            </div>
+          </article>
 
-      <div class="about-content">
-        <h2 class="heading">Sobre <span>Mi</span></h2>
-        <h3>Desarrollador Frontend</h3>
-        <p>
-          Soy un profesional del desarrollo web e Ingeniero de Sistemas
-          Computacionales, enfocado en crear experiencias digitales sólidas y
-          funcionales. Me apasiona colaborar en proyectos que transformen ideas
-          en realidades y aporten valor a personas y negocios.
-        </p>
-        <a href="#" class="btn">Leer mas</a>
-      </div>
-    </section>
-    <!--Fin seccion sobre mi-->
+          <article class="testimonial-slide">
+            <div class="testimonial-quote">
+              <i class="bx bxs-quote-alt-left testimonial-quote-icon" aria-hidden="true"></i>
+              <p>
+                Andy creó un sitio web que refleja la seriedad de nuestro servicio. La navegación es intuitiva
+                y el diseño inspira confianza. Recomendado al 100%.
+              </p>
+            </div>
+            <div class="testimonial-stars" aria-label="5 de 5 estrellas">
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+            </div>
+            <div class="testimonial-author">
+              <img src="image/avatar-cliente4.png" alt="FreisiWeb" class="testimonial-avatar" width="60" height="60" />
+              <div class="testimonial-info">
+                <strong>FreisiWeb</strong>
+                <span>Trading &amp; Mentoría</span>
+              </div>
+            </div>
+          </article>
 
-    <!--Inicio seccion servicios-->
-    <section class="services" id="services">
-      <h2 class="heading">Nuestros <span>Servicios</span></h2>
+          <article class="testimonial-slide">
+            <div class="testimonial-quote">
+              <i class="bx bxs-quote-alt-left testimonial-quote-icon" aria-hidden="true"></i>
+              <p>
+                El blog que Andy diseñó tiene un look increíble y está totalmente optimizado para SEO.
+                El tráfico orgánico creció notablemente desde el rediseño. Muy profesional.
+              </p>
+            </div>
+            <div class="testimonial-stars" aria-label="5 de 5 estrellas">
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+              <i class="bx bxs-star" aria-hidden="true"></i>
+            </div>
+            <div class="testimonial-author">
+              <img src="image/avatar-cliente5.png" alt="Juan R." class="testimonial-avatar" width="60" height="60" />
+              <div class="testimonial-info">
+                <strong>Juan R.</strong>
+                <span>Blog de Tecnología</span>
+              </div>
+            </div>
+          </article>
 
-      <div class="services-container">
-        <div class="services-box">
-          <i class="bx bx-code-alt"></i>
-          <h3>Desarrollo Web</h3>
-          <p>
-            Desarrollamos tus diseños web con alta calidad, damos forma a tu
-            idea o emprendimiento en la web.
-          </p>
-          <a href="servicios-desarrollo-web.html" class="btn"
-            >Ver proyectos</a
-          >
-        </div>
-
-        <div class="services-box">
-          <i class="bx bxs-paint"></i>
-          <h3>Diseño Grafico</h3>
-          <p>
-            Realizamos tus diseños gráficos, desde la creación de un logo hasta
-            lo más complejo para ti. Damos forma a tus ideas.
-          </p>
-          <a href="servicios-diseno-grafico.html" class="btn"
-            >Ver proyectos</a
-          >
-        </div>
-
-        <div class="services-box">
-          <i class="bx bx-bar-chart-alt"></i>
-          <h3>Marketing Digital</h3>
-          <p>
-            Realizamos Marketing Digital, SEO, SEM. Hacemos que tu web esté bien
-            posicionada en el motor de búsqueda de Google.
-          </p>
-          <a href="servicios-marketing-digital.html" class="btn"
-            >Ver proyectos</a
-          >
-        </div>
-      </div>
-    </section>
-    <!--Fin seccion servicios-->
-
-    <!--Inicio seccion portafolios-->
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading">Ultimos <span>Proyectos</span></h2>
-
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-          <img
-            src="image/pg.png"
-            alt="Portafolio Polanco Graphics"
-            loading="lazy"
-            decoding="async"
-          />
-          <div class="portfolio-layer">
-            <h4>Desarrollo Web</h4>
-            <p>
-              Sitio web para estudio creativo con presentación de servicios e
-              identidad visual.
-            </p>
-            <a
-              href="https://andyrs.github.io/PolancoGraphics/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Ver proyecto Polanco Graphics"
-            >
-              <i class="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img
-            src="image/WebApiPoketApi.png"
-            alt="Portafolio Pokedex API"
-            loading="lazy"
-            decoding="async"
-          />
-          <div class="portfolio-layer">
-            <h4>Desarrollo Web</h4>
-            <p>
-              Proyecto Web usando HTML5, CSS3 y JS, conectando con una API
-              PokeAPI y totalmente responsive.
-            </p>
-            <a
-              href="https://andyrs.github.io/ProyectoPokedexAPI/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Ver proyecto Pokedex API"
-            >
-              <i class="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img
-            src="image/landing-premium.png"
-            alt="Portafolio Landing Page"
-            loading="lazy"
-            decoding="async"
-          />
-          <div class="portfolio-layer">
-            <h4>Desarrollo Web</h4>
-            <p>
-              Una landing page utilizando HTML5, CSS3 y JS, totalmente
-              responsive.
-            </p>
-            <a
-              href="https://landing-premium-git-gh-pages-andy-rosados-projects.vercel.app/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Ver proyecto Landing Page"
-            >
-              <i class="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img
-            src="image/proyectoTrading.png"
-            alt="Portafolio Andy Trading"
-            loading="lazy"
-            decoding="async"
-          />
-          <div class="portfolio-layer">
-            <h4>Desarrollo Web</h4>
-            <p>
-              Web desarrollada con HTML5, CSS3 y JS, totalmente responsive.
-            </p>
-            <a
-              href="https://andyrs.github.io/Andytrading/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Ver proyecto Andy Trading"
-            >
-              <i class="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img
-            src="image/proyectoTienda.png"
-            alt="Portafolio tienda online"
-            loading="lazy"
-            decoding="async"
-          />
-          <div class="portfolio-layer">
-            <h4>Desarrollo Web</h4>
-            <p>Proyecto realizado con HTML5, CSS3 y JavaScript.</p>
-            <a
-              href="https://andyrs.github.io/ProyectoTienda/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Ver proyecto Tienda"
-            >
-              <i class="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img
-            src="image/fschez.png"
-            alt="FreisiWeb - Sitio web de trading y mentoría financiera"
-            loading="lazy"
-            decoding="async"
-          />
-          <div class="portfolio-layer">
-            <h4>Desarrollo Web</h4>
-            <p>Sitio web de trading y mentoría financiera con diseño profesional.</p>
-            <a
-              href="https://andyrs.github.io/FreisiWeb/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Ver proyecto FreisiWeb"
-            >
-              <i class="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img
-            src="image/Blog_IA.png"
-            alt="Angular Blog - Blog interactivo con REACT"
-            loading="lazy"
-            decoding="async"
-          />
-          <div class="portfolio-layer">
-            <h4>Desarrollo Web</h4>
-            <p>
-              Blog interactivo desarrollado con REACT + VITE + TAILWIND, con funcionalidades modernas.
-            </p>
-            <a
-              href="https://ai-blog-redesign.vercel.app/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Ver proyecto REACT Blog"
-            >
-              <i class="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img
-            src="image/copDinamica.png"
-            alt="CoopDinamic - Proyecto cooperativo"
-            loading="lazy"
-            decoding="async"
-          />
-          <div class="portfolio-layer">
-            <h4>Desarrollo Web</h4>
-            <p>
-              Sistema cooperativo desarrollado con tecnologías modernas.
-            </p>
-            <a
-              href="https://coopdinamica-8nh6mrfrr-andy-rosados-projects.vercel.app/#/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Ver proyecto CoopDinamic"
-            >
-              <i class="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img
-            src="image/Proyecto_Eli.png"
-            alt="Proy Eli - Proyecto PHP"
-            loading="lazy"
-            decoding="async"
-          />
-          <div class="portfolio-layer">
-            <h4>Desarrollo Web</h4>
-            <p>
-              Proyecto desarrollado con PHP y tecnologías web modernas.
-            </p>
-            <a
-              href="https://andyrs.github.io/proy_eli/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Ver proyecto Proy Eli"
-            >
-              <i class="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img
-            src="image/restaura-matrimonio.png"
-            alt="Restaura Tu Matrimonio - Landing page de consejería matrimonial"
-            loading="lazy"
-            decoding="async"
-          />
-          <div class="portfolio-layer">
-            <h4>Landing Page</h4>
-            <p>
-              Landing page para curso de recuperación matrimonial, enfocada en
-              conversión, confianza y captación de leads.
-            </p>
-            <a
-              href="https://restauratumatrimonio.org/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Ver proyecto Restaura Tu Matrimonio"
-            >
-              <i class="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img
-            src="image/kingdom-studio-dashboard.png"
-            alt="Kingdom Studio - Plataforma SaaS de automatización editorial con IA"
-            loading="lazy"
-            decoding="async"
-          />
-          <div class="portfolio-layer">
-            <h4>SaaS · Inteligencia Artificial</h4>
-            <p>
-              Plataforma SaaS que genera, revisa, aprueba, programa y publica
-              contenido editorial con IA. FastAPI, Next.js y Supabase.
-            </p>
-            <a
-              href="https://kingdom-studio.vercel.app/login"
-              target="_blank"
-              rel="noopener"
-              aria-label="Ver proyecto Kingdom Studio"
-            >
-              <i class="bx bx-link-external"></i>
-            </a>
-          </div>
         </div>
       </div>
-    </section>
-    <!--Fin seccion portafolios-->
 
-    <!--Inicio seccion contacto-->
-    <section class="contact" id="contact">
-      <h2 class="heading">Contactar a <span>Andy Rosado</span></h2>
+      <button class="carousel-btn carousel-next" aria-label="Siguiente testimonio">
+        <i class="bx bx-chevron-right" aria-hidden="true"></i>
+      </button>
+    </div>
 
-      <form action="#" id="contact-form" novalidate>
-        <div class="input-box">
-          <div class="form-field">
-            <label class="visually-hidden" for="full-name"
-              >Nombre completo</label
-            >
-            <input
-              id="full-name"
-              name="full-name"
-              type="text"
-              placeholder="Nombre Completo"
-              autocomplete="name"
-              required
-              minlength="3"
-              maxlength="60"
-              aria-describedby="full-name-error"
-            />
-            <span class="error-message" id="full-name-error"></span>
-          </div>
-          <div class="form-field">
-            <label class="visually-hidden" for="email">Correo electrónico</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="Email"
-              autocomplete="email"
-              required
-              aria-describedby="email-error"
-            />
-            <span class="error-message" id="email-error"></span>
-          </div>
+    <div class="carousel-dots" role="tablist" aria-label="Indicadores de testimonio"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+    <h2 class="heading" id="contact-heading">Contactar a <span>Andy Rosado</span></h2>
+    <p class="contact-subtitle">
+      ¿Tienes un proyecto en mente? Cuéntame tu idea y te respondo en menos de 24 horas.
+    </p>
+
+    <form id="contact-form" novalidate>
+      <input type="text" name="company" autocomplete="off" tabindex="-1"
+        style="position:absolute;left:-9999px;opacity:0" aria-hidden="true" />
+
+      <div class="input-box">
+        <div class="form-field">
+          <label class="visually-hidden" for="full-name">Nombre completo</label>
+          <input id="full-name" name="full-name" type="text" placeholder="Nombre completo"
+            autocomplete="name" aria-describedby="full-name-error" />
+          <span class="error-message" id="full-name-error"></span>
         </div>
-        <div class="input-box">
-          <div class="form-field">
-            <label class="visually-hidden" for="phone">Teléfono móvil</label>
-            <input
-              id="phone"
-              name="phone"
-              type="tel"
-              placeholder="Telefono Movil"
-              autocomplete="tel"
-              inputmode="tel"
-              required
-              aria-describedby="phone-error"
-            />
-            <span class="error-message" id="phone-error"></span>
-          </div>
-          <div class="form-field">
-            <label class="visually-hidden" for="subject">Asunto del mensaje</label>
-            <input
-              id="subject"
-              name="subject"
-              type="text"
-              placeholder="Asunto del Mensaje"
-              required
-              minlength="3"
-              maxlength="80"
-              aria-describedby="subject-error"
-            />
-            <span class="error-message" id="subject-error"></span>
-          </div>
+        <div class="form-field">
+          <label class="visually-hidden" for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" placeholder="Email"
+            autocomplete="email" aria-describedby="email-error" />
+          <span class="error-message" id="email-error"></span>
         </div>
-        <textarea
-          name="message"
-          id="textarea"
-          cols="30"
-          rows="10"
-          placeholder="Escribe tu mensaje"
-          required
-          minlength="10"
-          maxlength="500"
-          aria-describedby="message-error"
-        ></textarea>
+      </div>
+
+      <div class="input-box">
+        <div class="form-field">
+          <label class="visually-hidden" for="phone">Teléfono</label>
+          <input id="phone" name="phone" type="tel" placeholder="Teléfono"
+            autocomplete="tel" aria-describedby="phone-error" />
+          <span class="error-message" id="phone-error"></span>
+        </div>
+        <div class="form-field">
+          <label class="visually-hidden" for="subject">Asunto</label>
+          <input id="subject" name="topic" type="text" placeholder="Asunto"
+            aria-describedby="subject-error" />
+          <span class="error-message" id="subject-error"></span>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label class="visually-hidden" for="message">Mensaje</label>
+        <textarea id="message" name="msg" placeholder="Cuéntame sobre tu proyecto..." rows="6"
+          aria-describedby="message-error"></textarea>
         <span class="error-message" id="message-error"></span>
-        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-        <input type="submit" value="Enviar Mensaje" class="btn" />
-      </form>
-    </section>
-    <!--Fin seccion contacto-->
-
-    <!--Inicio footer--> <footer class="footer">
-      <div class="footer-text">
-        <p>
-          Copyright &copy; <span id="current-year">2026</span> by Andy Rosado Web | Todos los derechos
-          reservados.
-        </p>
       </div>
 
+      <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+
+      <button type="submit" class="btn">
+        <i class="bx bx-send" aria-hidden="true"></i> Enviar Mensaje
+      </button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="footer-logo">Andy<span>Dev</span></span>
+        <p>Desarrollo web profesional en Santo Domingo, República Dominicana.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <nav aria-label="Navegación del footer">
+          <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#portfolio">Portafolio</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p><i class="bx bx-envelope" aria-hidden="true"></i> soporte@andyrosado.com</p>
+        <p><i class="bx bx-map" aria-hidden="true"></i> Santo Domingo, RD</p>
+        <div class="footer-social">
+          <a href="https://github.com/andyrs" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="bx bxl-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/andy-rosado" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="bx bxl-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/andyrosadoweb" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="bx bxl-instagram-alt" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> Andy Rosado Web | Todos los derechos reservados.</p>
       <div class="footer-iconTop">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        <a href="#home" aria-label="Volver arriba"><i class="bx bx-up-arrow-alt" aria-hidden="true"></i></a>
       </div>
-    </footer>
-    <!--Fin footer-->
-  </body>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a href="https://wa.me/18492763532?text=Hola%20Andy%2C%20me%20interesa%20un%20proyecto%20web"
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <i class="bx bxl-whatsapp" aria-hidden="true"></i>
+  </a>
+
+</body>
 </html>
