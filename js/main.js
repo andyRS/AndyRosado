@@ -1,4 +1,10 @@
 window.addEventListener('load', () => {
+    /***************************current year in footer******************************************/
+    const yearEl = document.querySelector('#current-year');
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
+
     /***************************toogle  icon menu bar******************************************/
     const menuButton = document.querySelector('#menu-icon');
     const menuIcon = menuButton ? menuButton.querySelector('i') : null;
