@@ -141,12 +141,13 @@ section {
     }
 }
 
-.home-content h3 {
+.home-content .greeting,
+.home-content .role {
     font-size: 3.2rem;
     font-weight: 700;
 }
 
-.home-content h3:nth-of-type(2) {
+.home-content .role {
     margin-bottom: 2rem;
 }
 
@@ -592,7 +593,8 @@ span {
 
     }
 
-    .home-content h3 {
+    .home-content .greeting,
+    .home-content .role {
         font-size: 2.6rem;
     }
 

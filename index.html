@@ -8,7 +8,38 @@
       name="description"
       content="Portafolio de Andy Rosado con proyectos de desarrollo web, diseño gráfico y marketing digital."
     />
+    <meta name="theme-color" content="#1f242d" />
+    <link rel="canonical" href="https://andyrs.github.io/AndyRosado/" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:title" content="Andy Rosado | Desarrollador Frontend" />
+    <meta
+      property="og:description"
+      content="Portafolio de Andy Rosado con proyectos de desarrollo web, diseño gráfico y marketing digital."
+    />
+    <meta property="og:url" content="https://andyrs.github.io/AndyRosado/" />
+    <meta property="og:image" content="https://andyrs.github.io/AndyRosado/image/home.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Andy Rosado | Desarrollador Frontend" />
+    <meta
+      name="twitter:description"
+      content="Portafolio de Andy Rosado con proyectos de desarrollo web, diseño gráfico y marketing digital."
+    />
+    <meta name="twitter:image" content="https://andyrs.github.io/AndyRosado/image/home.png" />
+
     <title>Personal Portafolio Andy Rosado</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Andy Rosado",
+        "jobTitle": "Desarrollador Frontend",
+        "url": "https://andyrs.github.io/AndyRosado/"
+      }
+    </script>
 
     <!--Inicio box icons-->
     <link
@@ -63,9 +94,9 @@
     <!--Inicio seccion del home-->
     <section class="home" id="home">
       <div class="home-content">
-        <h3>Hola, Mi nombre es</h3>
+        <p class="greeting">Hola, Mi nombre es</p>
         <h1>Andy Rosado</h1>
-        <h3>Y soy un <span class="multiple-text"></span></h3>
+        <h2 class="role">Y soy un <span class="multiple-text"></span></h2>
         <p>
           Soy un apasionado por el desarrollo web, y puedo adaptarme para
           desarrollar tu proyecto web. <br />
@@ -381,6 +412,54 @@
             </a>
           </div>
         </div>
+
+        <div class="portfolio-box">
+          <img
+            src="image/restaura-matrimonio.png"
+            alt="Restaura Tu Matrimonio - Landing page de consejería matrimonial"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="portfolio-layer">
+            <h4>Landing Page</h4>
+            <p>
+              Landing page para curso de recuperación matrimonial, enfocada en
+              conversión, confianza y captación de leads.
+            </p>
+            <a
+              href="https://restauratumatrimonio.org/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Ver proyecto Restaura Tu Matrimonio"
+            >
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img
+            src="image/kingdom-studio-dashboard.png"
+            alt="Kingdom Studio - Plataforma SaaS de automatización editorial con IA"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="portfolio-layer">
+            <h4>SaaS · Inteligencia Artificial</h4>
+            <p>
+              Plataforma SaaS que genera, revisa, aprueba, programa y publica
+              contenido editorial con IA. FastAPI, Next.js y Supabase.
+            </p>
+            <a
+              href="https://kingdom-studio.vercel.app/login"
+              target="_blank"
+              rel="noopener"
+              aria-label="Ver proyecto Kingdom Studio"
+            >
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
     <!--Fin seccion portafolios-->
@@ -473,7 +552,7 @@
     <!--Inicio footer--> <footer class="footer">
       <div class="footer-text">
         <p>
-          Copyright &copy; 2023 by Andy Rosado Web | Todos los derechos
+          Copyright &copy; <span id="current-year">2026</span> by Andy Rosado Web | Todos los derechos
           reservados.
         </p>
       </div>
