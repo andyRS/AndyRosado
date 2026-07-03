@@ -190,6 +190,38 @@ span {
     line-height: 1.6;
 }
 
+.home-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.home-cta .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: .8rem;
+    padding: 1rem 2.8rem;
+    background: #25D366;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem rgba(37, 211, 102, .5);
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: .05rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn-whatsapp:hover {
+    box-shadow: none;
+}
+
 .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -201,7 +233,7 @@ span {
     border-radius: 50%;
     font-size: 2rem;
     color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
+    margin: 1.5rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
 
@@ -1111,4 +1143,35 @@ span {
         text-align: center;
         margin-top: 2rem;
     }
+}
+
+/*Página 404*/
+.not-found {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10rem 9% 2rem;
+}
+
+.not-found-code {
+    display: block;
+    font-size: 12rem;
+    font-weight: 800;
+    color: var(--main-color);
+    line-height: 1;
+    text-shadow: 0 0 3rem var(--main-color);
+}
+
+.not-found-content h1 {
+    font-size: 3.2rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.not-found-content p {
+    font-size: 1.6rem;
+    color: #d9dde5;
+    max-width: 50rem;
+    margin: 0 auto 3rem;
 }

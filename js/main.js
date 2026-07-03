@@ -250,6 +250,7 @@ window.addEventListener('load', () => {
     {
       input: phoneEl,
       validate: (v) => {
+        if (v.trim() === '') return true;
         const cleaned = normalizePhone(v);
         const digits = cleaned.replace(/\D/g, '');
         return digits.length >= 7 ? true : 'Ingresa un teléfono válido (mínimo 7 dígitos).';
@@ -257,7 +258,7 @@ window.addEventListener('load', () => {
     },
     {
       input: subjectEl,
-      validate: (v) => (v.trim().length >= 3 ? true : 'Agrega un asunto claro.')
+      validate: (v) => (v.trim() === '' || v.trim().length >= 3 ? true : 'Agrega un asunto claro.')
     },
     {
       input: msgEl,

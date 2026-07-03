@@ -36,27 +36,8 @@ if (!empty($_POST['company'])) {
   respond(403, false, 'Acceso denegado');
 }
 
-// ---------- Rate limit (simple) ----------
-$ip = get_client_ip();
-$rateDir = __DIR__ . '/leads';
-if (!is_dir($rateDir)) {
-  // Intenta crearla (o créala tú desde cPanel)
-  @mkdir($rateDir, 0755, true);
-}
-
-$rateFile = $rateDir . '/rate_' . preg_replace('/[^a-zA-Z0-9_\-\.]/', '_', $ip) . '.txt';
-$now = time();
-$cooldownSeconds = 20; // 1 envío cada 20s por IP
-
-if (file_exists($rateFile)) {
-  $last = (int) @file_get_contents($rateFile);
-  if ($last && ($now - $last) < $cooldownSeconds) {
-    respond(429, false, 'Demasiados intentos. Intenta en unos segundos.');
-  }
-}
-@file_put_contents($rateFile, (string)$now, LOCK_EX);
-
 // ---------- Inputs ----------
+$ip       = get_client_ip();
 $nombre   = trim($_POST['full-name'] ?? '');
 $email    = trim($_POST['email'] ?? '');
 $telefono = trim($_POST['phone'] ?? '');
@@ -70,6 +51,26 @@ if ($nombre === '' || $email === '' || $mensaje === '') {
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   respond(400, false, 'Email inválido.');
 }
+
+// ---------- Rate limit (por IP + email, no bloquea a otras personas en la misma red) ----------
+$rateDir = __DIR__ . '/leads';
+if (!is_dir($rateDir)) {
+  // Intenta crearla (o créala tú desde cPanel)
+  @mkdir($rateDir, 0755, true);
+}
+
+$rateKey = $ip . '|' . mb_strtolower($email);
+$rateFile = $rateDir . '/rate_' . preg_replace('/[^a-zA-Z0-9_\-\.]/', '_', md5($rateKey)) . '.txt';
+$now = time();
+$cooldownSeconds = 20; // 1 envío cada 20s por IP+email
+
+if (file_exists($rateFile)) {
+  $last = (int) @file_get_contents($rateFile);
+  if ($last && ($now - $last) < $cooldownSeconds) {
+    respond(429, false, 'Demasiados intentos. Intenta en unos segundos.');
+  }
+}
+@file_put_contents($rateFile, (string)$now, LOCK_EX);
 
 // Limpieza anti header injection
 $nombre_safe = clean_header_value($nombre);
