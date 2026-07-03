@@ -561,6 +561,133 @@ span {
     align-self: flex-start;
 }
 
+/*Blog*/
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--bgcolor);
+    padding: 3rem 2.5rem;
+    border-radius: 2rem;
+    border: .2rem solid var(--second-bgcolor);
+    transition: .3s ease;
+}
+
+.blog-card:hover {
+    border-color: var(--main-color);
+    transform: translateY(-.5rem);
+}
+
+.blog-card > i {
+    font-size: 4rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.blog-date {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    color: #9aa1ad;
+    margin-bottom: .8rem;
+}
+
+.blog-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.blog-card p {
+    font-size: 1.4rem;
+    color: #c8ced8;
+    margin-bottom: 2rem;
+    flex: 1;
+}
+
+.blog-card .btn-outline {
+    align-self: flex-start;
+}
+
+/*Artículo individual*/
+.article-page {
+    background: var(--second-bgcolor);
+    min-height: 100vh;
+}
+
+.article-hero {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.article-hero .blog-date {
+    display: inline-block;
+}
+
+.article-hero h1 {
+    font-size: 3.6rem;
+    max-width: 80rem;
+    margin: 1rem auto;
+}
+
+.article-body {
+    max-width: 76rem;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #d9dde5;
+}
+
+.article-body h2 {
+    font-size: 2.4rem;
+    color: var(--text-color);
+    margin: 3rem 0 1.5rem;
+}
+
+.article-body p {
+    margin-bottom: 1.8rem;
+}
+
+.article-body ul,
+.article-body ol {
+    margin: 0 0 1.8rem 2rem;
+}
+
+.article-body li {
+    margin-bottom: .8rem;
+}
+
+.article-cta {
+    max-width: 76rem;
+    margin: 4rem auto 0;
+    text-align: center;
+    background: var(--bgcolor);
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.article-cta h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.article-cta p {
+    font-size: 1.5rem;
+    color: #d9dde5;
+    margin-bottom: 2rem;
+}
+
+.article-cta .cta-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
 /*Portafolios*/
 
 .portfolio {
@@ -1205,6 +1332,10 @@ span {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .pricing-container {
         grid-template-columns: 1fr;
         max-width: 45rem;
@@ -1218,6 +1349,10 @@ span {
 
 @media(max-width: 617px) {
     .service-projects {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-grid {
         grid-template-columns: 1fr;
     }
 
