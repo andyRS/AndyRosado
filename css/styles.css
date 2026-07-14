@@ -968,6 +968,22 @@ span {
     object-fit: cover;
 }
 
+.testimonial-avatar-initials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.5rem;
+    height: 5.5rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--main-color), var(--second-bgcolor));
+    color: var(--bgcolor);
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    box-shadow: 0 0 1rem rgba(0, 238, 255, .35);
+}
+
 .testimonial-info {
     display: flex;
     flex-direction: column;
