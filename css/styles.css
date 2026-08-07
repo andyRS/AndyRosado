@@ -543,6 +543,13 @@ span {
     gap: 2.5rem;
 }
 
+.seo-cases-grid {
+    grid-template-columns: repeat(2, minmax(30rem, 45rem));
+    justify-content: center;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
 .service-project-card {
     background: var(--bgcolor);
     border-radius: 2rem;
