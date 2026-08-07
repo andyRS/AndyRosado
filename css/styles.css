@@ -1483,3 +1483,42 @@ span {
     max-width: 50rem;
     margin: 0 auto 3rem;
 }
+
+/* FAQ */
+.faq-item {
+    background: var(--second-bgcolor);
+    border: .1rem solid rgba(255, 255, 255, .08);
+    border-radius: 1rem;
+    padding: 1.6rem 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: 600;
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: '+';
+    float: right;
+    color: var(--main-color);
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+.faq-item[open] summary::after {
+    content: '−';
+}
+
+.faq-item p {
+    margin-top: 1.2rem;
+    color: #d9dde5;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
