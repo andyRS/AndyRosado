@@ -403,6 +403,19 @@ span {
     margin: 0 auto 4rem;
 }
 
+.pricing-group-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin: 0 0 2.5rem;
+}
+
+.pricing-container + .pricing-group-title {
+    margin-top: 5rem;
+}
+
 .pricing-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
