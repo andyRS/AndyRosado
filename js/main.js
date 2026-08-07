@@ -105,10 +105,10 @@ window.addEventListener('load', () => {
   if (window.Typed && document.querySelector('.multiple-text')) {
     new Typed('.multiple-text', {
       strings: [
-        'Desarrollador Web',
-        'Especialista en React',
-        'Creador de E-commerce',
-        'Diseñador de Landing Pages'
+        'Consultor SEO',
+        'Auditor Técnico Web',
+        'Desarrollador Full-Stack',
+        'Especialista en Google Ads'
       ],
       typeSpeed: 80,
       backSpeed: 60,
