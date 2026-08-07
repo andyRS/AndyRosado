@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RD83KQL7E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3RD83KQL7E');
+  </script>
+  <meta name="description" content="Qué significa 'rastreada actualmente sin indexar' en Google Search Console, por qué ocurre, y cómo afecta el crawl budget de tu sitio. Explicado sin tecnicismos." />
+  <title>Páginas rastreadas pero no indexadas: el problema de SEO que casi nadie revisa | Andy Rosado</title>
+  <link rel="canonical" href="https://andyrosado.com/blog/paginas-rastreadas-no-indexadas.html" />
+
+  <meta property="og:title" content="Páginas rastreadas pero no indexadas" />
+  <meta property="og:description" content="Por qué Google rastrea tus páginas y decide no indexarlas, y cómo eso le resta prioridad a tu contenido nuevo." />
+  <meta property="og:url" content="https://andyrosado.com/blog/paginas-rastreadas-no-indexadas.html" />
+  <meta property="og:image" content="https://andyrosado.com/image/blog-seo.webp" />
+  <meta property="og:type" content="article" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="../js/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Páginas rastreadas pero no indexadas: el problema de SEO que casi nadie revisa",
+    "author": { "@type": "Person", "name": "Andy Rosado" },
+    "publisher": { "@type": "Organization", "name": "Andy Rosado Web" },
+    "mainEntityOfPage": "https://andyrosado.com/blog/paginas-rastreadas-no-indexadas.html"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#article-content">Saltar al contenido principal</a>
+
+  <header class="header">
+    <a href="../index.html#home" class="logo">Andy<span>Dev</span></a>
+    <button class="menu-button" id="menu-icon" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-navigation" type="button">
+      <i class="bx bx-menu" aria-hidden="true"></i>
+    </button>
+    <nav class="navbar" id="primary-navigation" aria-label="Navegación principal">
+      <ul role="list">
+        <li><a href="../index.html#home">Inicio</a></li>
+        <li><a href="../index.html#about">Sobre mí</a></li>
+        <li><a href="../index.html#services">Servicios</a></li>
+        <li><a href="../index.html#pricing">Precios</a></li>
+        <li><a href="../index.html#portfolio">Portafolio</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../index.html#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="article-page" id="article-content">
+    <div class="article-hero">
+      <img class="article-cover" src="../image/blog-seo.webp" alt="" loading="eager" decoding="async" />
+      <span class="blog-date">SEO Técnico</span>
+      <h1>Páginas rastreadas pero no indexadas: el problema de SEO que casi nadie revisa</h1>
+    </div>
+
+    <div class="article-body">
+      <p>
+        Si entras a Google Search Console y vas a "Páginas" (antes "Cobertura"), es muy probable que veas una
+        categoría llamada <strong>"Rastreada actualmente sin indexar"</strong>. La mayoría de los dueños de
+        sitios web nunca la revisan porque técnicamente no es un "error" — no rompe nada visualmente. Pero
+        en sitios grandes, esta categoría puede acumular miles de páginas, y eso sí tiene un costo real.
+      </p>
+
+      <h2>¿Qué significa exactamente?</h2>
+      <p>
+        Que Google visitó esa página (la rastreó), pero decidió, por su propio criterio, no incluirla en su
+        índice de búsqueda. Es distinto a un error 404 o a un bloqueo por <code>robots.txt</code> — la página
+        existe, funciona, y Google la vio. Simplemente no consideró que valiera la pena indexarla, casi
+        siempre por una de estas razones:
+      </p>
+      <ul>
+        <li><strong>Contenido duplicado o muy similar</strong> a otra página ya indexada del mismo sitio.</li>
+        <li><strong>Contenido de bajo valor percibido</strong> — páginas muy delgadas, generadas automáticamente, o con poco texto único.</li>
+        <li><strong>Señales de calidad insuficientes</strong> — sin enlaces internos apuntando hacia ella, sin tráfico, sin autoridad acumulada.</li>
+      </ul>
+
+      <h2>Por qué le importa a tu presupuesto de rastreo</h2>
+      <p>
+        Google no tiene recursos infinitos para rastrear tu sitio todos los días — le asigna un
+        <strong>presupuesto de rastreo</strong> (crawl budget) proporcional al tamaño y autoridad de tu
+        dominio. Cada vez que ese presupuesto se gasta visitando páginas que nunca se indexarán, es
+        presupuesto que no se usa para descubrir y volver a indexar tu contenido nuevo o actualizado más
+        rápido. En sitios con miles de páginas — típicamente medios de noticias, e-commerce grandes o blogs
+        muy antiguos — este efecto puede ser significativo.
+      </p>
+
+      <h2>Cómo detectarlo (sin herramientas de pago)</h2>
+      <ol class="clean" style="max-width:70ch">
+        <li>Entra a Search Console → Páginas → sección "¿Por qué las páginas no se indexan?"</li>
+        <li>Busca específicamente "Rastreada actualmente sin indexar" y "Detectada actualmente sin indexar".</li>
+        <li>Revisa una muestra de esas URLs: ¿son páginas de filtro, paginación infinita, contenido duplicado, o simplemente páginas viejas de muy bajo valor?</li>
+        <li>Cruza esa lista contra tu Analytics: si además de no estar indexadas tampoco reciben tráfico directo ni interno relevante, son candidatas fuertes a mejorar, consolidar o eliminar.</li>
+      </ol>
+
+      <h2>Qué hacer una vez lo detectas</h2>
+      <p>
+        No existe una solución única — depende de por qué Google decidió no indexarlas. Las opciones típicas
+        son: mejorar y expandir el contenido si tiene potencial real, consolidar varias páginas similares en
+        una sola más completa (evitando canibalización de keywords), agregar enlaces internos desde páginas
+        con más autoridad, o marcar con <code>noindex</code> explícitamente las páginas que nunca deberían
+        competir por posicionamiento (como resultados de filtros o páginas administrativas). Esta es
+        precisamente el tipo de decisión que reviso como parte del Método 4F en cada auditoría: cruzar el
+        informe de indexación con el rendimiento real en Analytics antes de decidir qué hacer con cada grupo
+        de páginas.
+      </p>
+    </div>
+
+    <div class="article-cta">
+      <h3>¿No sabes cuántas páginas de tu sitio están en esta situación?</h3>
+      <p>Reviso tu estado de indexación completo como parte de cada auditoría SEO técnica.</p>
+      <div class="cta-buttons">
+        <a href="../servicios-marketing-digital.html" class="btn-outline"><i class="bx bx-search-alt" aria-hidden="true"></i> Ver Servicio de SEO</a>
+        <a href="../index.html#contact" class="btn"><i class="bx bx-send" aria-hidden="true"></i> Solicitar Cotización</a>
+        <a href="https://wa.me/18492763532?text=Hola%20Andy%2C%20me%20interesa%20una%20auditor%C3%ADa%20SEO" class="btn-whatsapp" target="_blank" rel="noopener">
+          <i class="bx bxl-whatsapp" aria-hidden="true"></i> Escríbeme por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> Andy Rosado Web | Todos los derechos reservados.</p>
+      <div class="footer-iconTop">
+        <a href="#article-content" aria-label="Volver arriba"><i class="bx bx-up-arrow-alt" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/18492763532?text=Hola%20Andy%2C%20me%20interesa%20una%20auditor%C3%ADa%20SEO"
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <i class="bx bxl-whatsapp" aria-hidden="true"></i>
+  </a>
+</body>
+</html>
