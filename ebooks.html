@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RD83KQL7E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3RD83KQL7E');
+  </script>
+  <meta name="description" content="Ebooks infantiles de Andy Rosado — Pequeños Exploradores: aventuras bíblicas para colorear." />
+  <title>Ebooks Infantiles | Pequeños Exploradores — Andy Rosado</title>
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="./js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#ebooks-content">Saltar al contenido principal</a>
+
+  <header class="header">
+    <a href="index.html#home" class="logo">Andy<span>Dev</span></a>
+    <button class="menu-button" id="menu-icon" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-navigation" type="button">
+      <i class="bx bx-menu" aria-hidden="true"></i>
+    </button>
+    <nav class="navbar" id="primary-navigation" aria-label="Navegación principal">
+      <ul role="list">
+        <li><a href="index.html#home">Inicio</a></li>
+        <li><a href="index.html#about">Sobre mí</a></li>
+        <li><a href="index.html#services">Servicios</a></li>
+        <li><a href="index.html#portfolio">Portafolio</a></li>
+        <li><a href="index.html#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="service-page" id="ebooks-content" aria-labelledby="ebooks-heading">
+    <div class="service-hero">
+      <p style="color:var(--main-color); font-weight:600; letter-spacing:.1rem; text-transform:uppercase; font-size:1.3rem; margin-bottom:1rem;">
+        Pequeños Exploradores
+      </p>
+      <h1 id="ebooks-heading">Ebooks <span>Infantiles</span></h1>
+      <p>Cuadernos de actividades y colorear con aventuras bíblicas para niños, creados y publicados de forma independiente en Amazon KDP y Hotmart.</p>
+    </div>
+
+    <div class="service-projects">
+      <article class="service-project-card">
+        <picture>
+          <source srcset="image/ebook-exploradores.webp" type="image/webp" />
+          <img src="image/ebook-exploradores.webp" alt="Pequeños Exploradores — Aventuras de la Biblia para Colorear" width="600" height="774" loading="lazy" decoding="async" />
+        </picture>
+        <div class="card-body">
+          <h3>Aventuras de la Biblia para Colorear</h3>
+          <p>20 aventuras bíblicas para leer, colorear y descubrir en familia. Incluye actividades, pósteres y certificado en un PDF listo para imprimir.</p>
+          <div class="cta-buttons" style="margin-top: 1.5rem;">
+            <a href="https://pequenos-exploradores-landing.vercel.app" target="_blank" rel="noopener" class="btn-outline">Ver más</a>
+            <a href="https://pay.hotmart.com/J107069218D" target="_blank" rel="noopener" class="btn">Comprar</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="service-project-card">
+        <picture>
+          <source srcset="image/ebook-jonas.webp" type="image/webp" />
+          <img src="image/ebook-jonas.webp" alt="Jonás y el Gran Pez para Colorear — Pequeños Exploradores" width="600" height="774" loading="lazy" decoding="async" />
+        </picture>
+        <div class="card-body">
+          <h3>Jonás y el Gran Pez para Colorear</h3>
+          <p>La historia bíblica de Jonás con páginas para colorear, actividades imprimibles, diploma y medalla. Para niños de 4 a 8 años.</p>
+          <div class="cta-buttons" style="margin-top: 1.5rem;">
+            <a href="https://landing-pages-jonas.vercel.app/#beneficios" target="_blank" rel="noopener" class="btn-outline">Ver más</a>
+            <a href="https://pay.hotmart.com/I107083005Y" target="_blank" rel="noopener" class="btn">Comprar</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> Andy Rosado | Todos los derechos reservados.</p>
+      <div class="footer-iconTop">
+        <a href="#ebooks-content" aria-label="Volver arriba"><i class="bx bx-up-arrow-alt" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
