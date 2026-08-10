@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RD83KQL7E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3RD83KQL7E');
+  </script>
+  <meta name="description" content="Experiencia de Andy Rosado creando ebooks infantiles: concepto, diseño, ilustración e publicación en Amazon KDP y Hotmart." />
+  <title>Creación de Ebooks Infantiles | Andy Rosado</title>
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --cream: #fff6e6;
+      --paper: #ffffff;
+      --ink: #2c2440;
+      --ink-soft: #5b5270;
+      --sun: #ffb347;
+      --sun-deep: #f2932a;
+      --sky: #4fb0e0;
+      --coral: #ff7a63;
+      --leaf: #5cb37e;
+      --line: #f0e2c8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'Quicksand', sans-serif;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Baloo 2', sans-serif;
+      font-weight: 700;
+    }
+
+    a { text-decoration: none; }
+
+    .eb-logo {
+      display: block;
+      text-align: center;
+      font-family: 'Baloo 2', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--ink);
+      padding: 3rem 6% 0;
+    }
+
+    .eb-logo span { color: var(--sun-deep); }
+
+    .eb-hero {
+      text-align: center;
+      max-width: 76rem;
+      margin: 2rem auto 5rem;
+      padding: 0 2rem;
+    }
+
+    .eb-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      background: var(--paper);
+      border: .2rem solid var(--sun);
+      color: var(--sun-deep);
+      font-weight: 700;
+      font-size: 1.3rem;
+      padding: .6rem 1.6rem;
+      border-radius: 5rem;
+      margin-bottom: 2rem;
+    }
+
+    .eb-hero h1 {
+      font-size: clamp(3rem, 5vw, 5rem);
+      line-height: 1.1;
+      margin: 0 0 2rem;
+    }
+
+    .eb-hero h1 span { color: var(--coral); }
+
+    .eb-hero p {
+      font-size: 1.8rem;
+      color: var(--ink-soft);
+      max-width: 60ch;
+      margin: 0 auto;
+    }
+
+    .eb-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+      max-width: 110rem;
+      margin: 0 auto;
+      padding: 0 6% 6rem;
+    }
+
+    @media (max-width: 850px) {
+      .eb-grid { grid-template-columns: 1fr; }
+    }
+
+    .eb-card {
+      background: var(--paper);
+      border-radius: 3rem;
+      overflow: hidden;
+      box-shadow: 0 1.5rem 3rem rgba(44, 36, 64, .1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .eb-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .eb-card-body {
+      padding: 3rem;
+    }
+
+    .eb-card-body h3 {
+      font-size: 2.2rem;
+      margin: 0 0 1.2rem;
+    }
+
+    .eb-card-body p {
+      color: var(--ink-soft);
+      font-size: 1.5rem;
+      margin: 0 0 1.8rem;
+    }
+
+    .eb-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: #eefaf1;
+      color: var(--leaf);
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding: .5rem 1.2rem;
+      border-radius: 5rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .eb-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+    }
+
+    .eb-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      font-weight: 700;
+      font-size: 1.4rem;
+      padding: 1.1rem 2.2rem;
+      border-radius: 5rem;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .eb-btn-outline {
+      color: var(--ink);
+      border: .2rem solid var(--line);
+      background: var(--paper);
+    }
+
+    .eb-btn-outline:hover { border-color: var(--sun); transform: translateY(-.2rem); }
+
+    .eb-btn-fill {
+      color: #fff;
+      background: var(--coral);
+      box-shadow: 0 .8rem 1.6rem rgba(255, 122, 99, .35);
+    }
+
+    .eb-btn-fill:hover { transform: translateY(-.2rem); box-shadow: 0 1.2rem 2rem rgba(255, 122, 99, .45); }
+
+    .eb-cta {
+      max-width: 90rem;
+      margin: 0 auto 8rem;
+      padding: 5rem 4%;
+      background: var(--sky);
+      border-radius: 3rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    .eb-cta h2 {
+      font-size: 2.8rem;
+      margin: 0 0 1.5rem;
+    }
+
+    .eb-cta p {
+      font-size: 1.6rem;
+      max-width: 60ch;
+      margin: 0 auto 2.5rem;
+      opacity: .95;
+    }
+
+    .eb-cta .eb-btn-fill {
+      background: #fff;
+      color: var(--sky);
+      box-shadow: 0 .8rem 1.6rem rgba(0, 0, 0, .15);
+    }
+
+    .eb-footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      color: var(--ink-soft);
+      font-size: 1.3rem;
+    }
+
+    .eb-footer a { color: var(--sky); font-weight: 600; }
+  </style>
+</head>
+<body>
+  <span class="eb-logo">Pequeños <span>Exploradores</span></span>
+
+  <section class="eb-hero">
+    <span class="eb-eyebrow"><i class="bx bxs-magic-wand"></i> Experiencia comprobable</span>
+    <h1>Creación de <span>Ebooks Infantiles</span></h1>
+    <p>
+      Concepto, diseño, ilustración (asistida con IA) y publicación de principio a fin. Estos son 2
+      ebooks reales que creé y publiqué de forma independiente en Amazon KDP y Hotmart — la prueba de
+      que puedo llevar un ebook infantil desde la idea hasta la venta.
+    </p>
+  </section>
+
+  <div class="eb-grid">
+    <article class="eb-card">
+      <img src="../image/ebook-exploradores.webp" alt="Pequeños Exploradores — Aventuras de la Biblia para Colorear" loading="lazy" decoding="async" />
+      <div class="eb-card-body">
+        <span class="eb-tag"><i class="bx bx-store-alt"></i> Publicado en Hotmart</span>
+        <h3>Aventuras de la Biblia para Colorear</h3>
+        <p>20 aventuras bíblicas para leer, colorear y descubrir en familia. Incluye actividades, pósteres y certificado en un PDF listo para imprimir.</p>
+        <div class="eb-buttons">
+          <a href="https://pequenos-exploradores-landing.vercel.app" target="_blank" rel="noopener" class="eb-btn eb-btn-outline">Ver landing</a>
+          <a href="https://pay.hotmart.com/J107069218D" target="_blank" rel="noopener" class="eb-btn eb-btn-fill">Ver producto</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="eb-card">
+      <img src="../image/ebook-jonas.webp" alt="Jonás y el Gran Pez para Colorear — Pequeños Exploradores" loading="lazy" decoding="async" />
+      <div class="eb-card-body">
+        <span class="eb-tag"><i class="bx bx-store-alt"></i> Publicado en Hotmart</span>
+        <h3>Jonás y el Gran Pez para Colorear</h3>
+        <p>La historia bíblica de Jonás con páginas para colorear, actividades imprimibles, diploma y medalla. Para niños de 4 a 8 años.</p>
+        <div class="eb-buttons">
+          <a href="https://landing-pages-jonas.vercel.app/#beneficios" target="_blank" rel="noopener" class="eb-btn eb-btn-outline">Ver landing</a>
+          <a href="https://pay.hotmart.com/I107083005Y" target="_blank" rel="noopener" class="eb-btn eb-btn-fill">Ver producto</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div class="eb-cta">
+    <h2>¿Quieres un ebook infantil como este para tu marca?</h2>
+    <p>Diseño, ilustro con IA, maqueto y dejo listo para publicar en Amazon KDP, Hotmart o donde lo necesites — cuadernos de actividades, libros para colorear, lead magnets infantiles y más.</p>
+    <a href="https://wa.me/18492763532?text=Hola%20Andy%2C%20quiero%20hablar%20sobre%20un%20ebook%20infantil" target="_blank" rel="noopener" class="eb-btn eb-btn-fill">
+      <i class="bx bxl-whatsapp"></i> Escríbeme por WhatsApp
+    </a>
+  </div>
+
+  <footer class="eb-footer">
+    &copy; <span id="eb-year"></span> Pequeños Exploradores. Todos los derechos reservados.
+  </footer>
+
+  <script>document.getElementById('eb-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
