@@ -2,6 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /leads/
 Disallow: /phpmailer/
-Disallow: /ebooks/
 
 Sitemap: https://andyrosado.com/sitemap.xml

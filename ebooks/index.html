@@ -10,276 +10,1215 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-3RD83KQL7E');
   </script>
-  <meta name="description" content="Experiencia de Andy Rosado creando ebooks infantiles: concepto, diseño, ilustración e publicación en Amazon KDP y Hotmart." />
-  <title>Creación de Ebooks Infantiles | Andy Rosado</title>
-  <meta name="robots" content="noindex, nofollow" />
+
+  <title>Creación Profesional de eBooks y Amazon KDP | Andy Rosado</title>
+  <meta name="description" content="Diseño, maquetación y creación profesional de eBooks listos para Amazon KDP, Hotmart y distribución digital. Portadas, interiores, imágenes y publicación." />
+  <link rel="canonical" href="https://andyrosado.com/ebooks/" />
+
+  <meta property="og:title" content="Creación Profesional de eBooks | Andy Rosado" />
+  <meta property="og:description" content="Diseño editorial, maquetación y preparación técnica para Amazon KDP, Hotmart o distribución directa. De la idea al archivo final." />
+  <meta property="og:url" content="https://andyrosado.com/ebooks/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://andyrosado.com/image/ebook-exploradores.webp" />
+  <meta property="og:locale" content="es_ES" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Creación Profesional de eBooks | Andy Rosado" />
+  <meta name="twitter:description" content="Diseño editorial, maquetación y preparación técnica para Amazon KDP, Hotmart o distribución directa." />
+  <meta name="twitter:image" content="https://andyrosado.com/image/ebook-exploradores.webp" />
 
   <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Diseño y creación editorial de eBooks",
+    "name": "Creación Profesional de eBooks — Andy Rosado",
+    "description": "Diseño editorial, maquetación, ilustración asistida con IA y preparación técnica de eBooks para Amazon KDP, Hotmart y distribución digital directa.",
+    "provider": {
+      "@type": "Person",
+      "name": "Andy Rosado",
+      "url": "https://andyrosado.com"
+    },
+    "areaServed": "Global",
+    "url": "https://andyrosado.com/ebooks/"
+  }
+  </script>
 
   <style>
     :root {
-      --cream: #fff6e6;
-      --paper: #ffffff;
-      --ink: #2c2440;
-      --ink-soft: #5b5270;
-      --sun: #ffb347;
-      --sun-deep: #f2932a;
-      --sky: #4fb0e0;
-      --coral: #ff7a63;
-      --leaf: #5cb37e;
-      --line: #f0e2c8;
+      --paper: #faf7f2;
+      --paper-raised: #ffffff;
+      --ink: #1e1b29;
+      --ink-soft: #57536a;
+      --line: #e8e1d3;
+      --navy: #1d3557;
+      --navy-deep: #14263f;
+      --gold: #b8894a;
+      --whatsapp: #25d366;
+      --font-display: 'Fraunces', serif;
+      --font-body: 'Inter', sans-serif;
     }
 
     * { box-sizing: border-box; }
 
+    html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
-      background: var(--cream);
+      background: var(--paper);
       color: var(--ink);
-      font-family: 'Quicksand', sans-serif;
-      line-height: 1.6;
+      font-family: var(--font-body);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
     }
 
-    h1, h2, h3 {
-      font-family: 'Baloo 2', sans-serif;
-      font-weight: 700;
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
     }
 
-    a { text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
 
-    .eb-logo {
-      display: block;
-      text-align: center;
-      font-family: 'Baloo 2', sans-serif;
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--ink);
-      padding: 3rem 6% 0;
+    .container {
+      max-width: 122rem;
+      margin: 0 auto;
+      padding: 0 2.4rem;
     }
 
-    .eb-logo span { color: var(--sun-deep); }
+    h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; }
 
+    :focus-visible {
+      outline: .2rem solid var(--navy);
+      outline-offset: .3rem;
+    }
+
+    /* ---------- Header ---------- */
+    .eb-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2.4rem 2.4rem;
+      max-width: 122rem;
+      margin: 0 auto;
+    }
+
+    .eb-wordmark {
+      font-family: var(--font-display);
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: .01em;
+    }
+
+    .eb-nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      background: var(--navy);
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.3rem;
+      padding: .9rem 1.8rem;
+      border-radius: .6rem;
+      transition: background .2s ease, transform .2s ease;
+    }
+
+    .eb-nav-cta:hover { background: var(--navy-deep); transform: translateY(-.15rem); }
+
+    /* ---------- Hero ---------- */
     .eb-hero {
-      text-align: center;
-      max-width: 76rem;
-      margin: 2rem auto 5rem;
-      padding: 0 2rem;
+      padding: 3rem 0 8rem;
+    }
+
+    .eb-hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 6rem;
+      align-items: center;
+    }
+
+    @media (max-width: 960px) {
+      .eb-hero-grid { grid-template-columns: 1fr; gap: 4rem; }
     }
 
     .eb-eyebrow {
       display: inline-flex;
       align-items: center;
-      gap: .6rem;
-      background: var(--paper);
-      border: .2rem solid var(--sun);
-      color: var(--sun-deep);
+      gap: .8rem;
+      font-family: var(--font-body);
+      font-size: 1.2rem;
       font-weight: 700;
-      font-size: 1.3rem;
-      padding: .6rem 1.6rem;
-      border-radius: 5rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold);
       margin-bottom: 2rem;
     }
 
+    .eb-eyebrow::before { content: ""; width: 2.4rem; height: .15rem; background: var(--gold); }
+
     .eb-hero h1 {
-      font-size: clamp(3rem, 5vw, 5rem);
-      line-height: 1.1;
-      margin: 0 0 2rem;
+      font-size: clamp(3.2rem, 4.6vw, 5.4rem);
+      line-height: 1.08;
+      text-wrap: balance;
+      margin-bottom: 2.2rem;
     }
 
-    .eb-hero h1 span { color: var(--coral); }
-
-    .eb-hero p {
-      font-size: 1.8rem;
+    .eb-hero-sub {
+      font-size: 1.75rem;
       color: var(--ink-soft);
-      max-width: 60ch;
-      margin: 0 auto;
+      max-width: 54ch;
+      margin-bottom: 3rem;
     }
 
-    .eb-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 4rem;
-      max-width: 110rem;
-      margin: 0 auto;
-      padding: 0 6% 6rem;
-    }
-
-    @media (max-width: 850px) {
-      .eb-grid { grid-template-columns: 1fr; }
-    }
-
-    .eb-card {
-      background: var(--paper);
-      border-radius: 3rem;
-      overflow: hidden;
-      box-shadow: 0 1.5rem 3rem rgba(44, 36, 64, .1);
-      display: flex;
-      flex-direction: column;
-    }
-
-    .eb-card img {
-      width: 100%;
-      display: block;
-    }
-
-    .eb-card-body {
-      padding: 3rem;
-    }
-
-    .eb-card-body h3 {
-      font-size: 2.2rem;
-      margin: 0 0 1.2rem;
-    }
-
-    .eb-card-body p {
-      color: var(--ink-soft);
-      font-size: 1.5rem;
-      margin: 0 0 1.8rem;
-    }
-
-    .eb-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: .5rem;
-      background: #eefaf1;
-      color: var(--leaf);
-      font-weight: 700;
-      font-size: 1.2rem;
-      padding: .5rem 1.2rem;
-      border-radius: 5rem;
-      margin-bottom: 1.8rem;
-    }
-
-    .eb-buttons {
+    .eb-cta-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.2rem;
+      gap: 1.4rem;
+      margin-bottom: 2.6rem;
     }
 
     .eb-btn {
       display: inline-flex;
       align-items: center;
-      gap: .6rem;
+      gap: .8rem;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 1.5rem;
+      padding: 1.4rem 2.6rem;
+      border-radius: .7rem;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+      white-space: nowrap;
+    }
+
+    .eb-btn-primary {
+      background: var(--whatsapp);
+      color: #fff;
+      box-shadow: 0 1rem 2.4rem rgba(37, 211, 102, .28);
+    }
+
+    .eb-btn-primary:hover { transform: translateY(-.2rem); box-shadow: 0 1.4rem 2.8rem rgba(37, 211, 102, .38); }
+
+    .eb-btn-secondary {
+      background: transparent;
+      color: var(--ink);
+      border: .15rem solid var(--line);
+    }
+
+    .eb-btn-secondary:hover { border-color: var(--navy); color: var(--navy); }
+
+    .eb-trustline {
+      font-size: 1.3rem;
+      color: var(--ink-soft);
+      font-weight: 500;
+    }
+
+    .eb-trustline strong { color: var(--ink); font-weight: 600; }
+
+    /* Hero visual */
+    .eb-hero-visual {
+      position: relative;
+      height: 46rem;
+    }
+
+    @media (max-width: 960px) {
+      .eb-hero-visual { height: 38rem; max-width: 42rem; margin: 0 auto; }
+    }
+
+    .eb-hero-visual::before {
+      content: "";
+      position: absolute;
+      inset: 4rem 10% 10% 4rem;
+      background: radial-gradient(circle, rgba(29,53,87,.09), transparent 70%);
+      filter: blur(2rem);
+      z-index: 0;
+    }
+
+    .eb-cover-main {
+      position: absolute;
+      top: 2rem;
+      right: 6rem;
+      width: 62%;
+      border-radius: 1.2rem;
+      box-shadow: 0 3rem 5rem rgba(30, 27, 41, .28);
+      z-index: 3;
+    }
+
+    .eb-cover-behind {
+      position: absolute;
+      bottom: 1rem;
+      left: 0;
+      width: 46%;
+      border-radius: 1rem;
+      box-shadow: 0 2rem 4rem rgba(30, 27, 41, .22);
+      transform: rotate(-7deg);
+      z-index: 2;
+    }
+
+    .eb-page-float {
+      position: absolute;
+      bottom: 6rem;
+      right: -1rem;
+      width: 30%;
+      border-radius: .8rem;
+      box-shadow: 0 1.6rem 3rem rgba(30, 27, 41, .2);
+      transform: rotate(6deg);
+      z-index: 4;
+      border: .5rem solid #fff;
+    }
+
+    .eb-badge-float {
+      position: absolute;
+      top: 1rem;
+      left: -1rem;
+      background: var(--paper-raised);
+      border: .1rem solid var(--line);
+      border-radius: 1rem;
+      padding: 1.2rem 1.6rem;
+      box-shadow: 0 1.2rem 2.4rem rgba(30, 27, 41, .12);
+      font-size: 1.3rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      z-index: 5;
+    }
+
+    .eb-badge-float i { color: var(--gold); font-size: 1.8rem; }
+
+    /* ---------- Authority strip ---------- */
+    .eb-authority {
+      background: var(--navy);
+      color: #fff;
+      padding: 4rem 0;
+    }
+
+    .eb-authority h2 {
+      text-align: center;
+      font-size: 1.3rem;
+      font-family: var(--font-body);
       font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.65);
+      margin-bottom: 3rem;
+    }
+
+    .eb-flow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+
+    .eb-flow-step { display: flex; align-items: center; gap: 1.2rem; }
+    .eb-flow-step i { font-size: 2rem; color: var(--gold); }
+    .eb-flow-arrow { color: rgba(255,255,255,.4); font-size: 1.6rem; }
+
+    /* ---------- Generic sections ---------- */
+    .eb-section { padding: 9rem 0; }
+    .eb-section-alt { background: var(--paper-raised); }
+
+    .eb-section-head {
+      max-width: 70ch;
+      margin: 0 auto 5.5rem;
+      text-align: center;
+    }
+
+    .eb-kicker {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.4rem;
+    }
+
+    .eb-section-head h2 {
+      font-size: clamp(2.6rem, 3.4vw, 3.8rem);
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    .eb-section-head p {
+      font-size: 1.6rem;
+      color: var(--ink-soft);
+      margin-top: 1.6rem;
+    }
+
+    /* ---------- Problem ---------- */
+    .eb-problem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    @media (max-width: 850px) { .eb-problem-grid { grid-template-columns: 1fr; } }
+
+    .eb-problem-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 1.4rem;
+    }
+
+    .eb-problem-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.2rem;
+      font-size: 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    .eb-problem-list i { color: #c65b4e; font-size: 1.8rem; flex-shrink: 0; margin-top: .2rem; }
+
+    .eb-bridge {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      line-height: 1.4;
+      color: var(--navy);
+    }
+
+    /* ---------- Services ---------- */
+    .eb-services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      border-radius: 1.4rem;
+      overflow: hidden;
+    }
+
+    .eb-service-item {
+      background: var(--paper-raised);
+      padding: 3rem 2.6rem;
+    }
+
+    .eb-service-item i { font-size: 2.4rem; color: var(--navy); margin-bottom: 1.4rem; }
+    .eb-service-item h3 { font-size: 1.7rem; margin-bottom: .8rem; }
+    .eb-service-item p { font-size: 1.4rem; color: var(--ink-soft); margin: 0; }
+
+    /* ---------- Case studies ---------- */
+    .eb-case {
+      background: var(--paper-raised);
+      border-radius: 2rem;
+      border: 1px solid var(--line);
+      overflow: hidden;
+      margin-bottom: 4rem;
+    }
+
+    .eb-case-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+    }
+
+    @media (max-width: 850px) { .eb-case-grid { grid-template-columns: 1fr; } }
+
+    .eb-case-visual {
+      background: var(--paper);
+      padding: 4rem 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .eb-case-cover {
+      width: 60%;
+      border-radius: .8rem;
+      box-shadow: 0 2rem 3.5rem rgba(30,27,41,.2);
+      z-index: 2;
+      position: relative;
+    }
+
+    .eb-case-pages {
+      position: absolute;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .eb-case-pages img {
+      width: 9rem;
+      border-radius: .5rem;
+      box-shadow: 0 1rem 2rem rgba(30,27,41,.18);
+      border: .4rem solid #fff;
+    }
+
+    .eb-case-pages.eb-pages-left { left: -1rem; bottom: 1rem; }
+    .eb-case-pages.eb-pages-left img:first-child { transform: rotate(-8deg); }
+    .eb-case-pages.eb-pages-left img:last-child { transform: rotate(4deg); margin-top: 2rem; }
+
+    .eb-case-body { padding: 4rem; }
+
+    .eb-case-num {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .eb-case-body h3 { font-size: 2.4rem; margin-bottom: .6rem; }
+    .eb-case-body .eb-case-sub { color: var(--ink-soft); font-size: 1.5rem; margin-bottom: 2rem; }
+
+    .eb-case-facts {
+      list-style: none;
+      margin: 0 0 2.6rem;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem 2rem;
+    }
+
+    .eb-case-facts li {
       font-size: 1.4rem;
+      color: var(--ink-soft);
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+    }
+
+    .eb-case-facts i { color: var(--navy); font-size: 1.5rem; }
+
+    .eb-case-buttons { display: flex; flex-wrap: wrap; gap: 1.2rem; }
+
+    .eb-btn-sm {
+      font-size: 1.3rem;
+      padding: 1rem 2rem;
+    }
+
+    /* ---------- KDP / Hotmart ---------- */
+    .eb-channels {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    @media (max-width: 850px) { .eb-channels { grid-template-columns: 1fr; } }
+
+    .eb-channel-card {
+      background: var(--paper-raised);
+      border: 1px solid var(--line);
+      border-radius: 1.6rem;
+      padding: 3.5rem;
+    }
+
+    .eb-channel-card .eb-channel-head {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .eb-channel-card .eb-channel-head i { font-size: 2.8rem; color: var(--navy); }
+    .eb-channel-card h3 { font-size: 2rem; }
+    .eb-channel-card p { color: var(--ink-soft); font-size: 1.45rem; margin-bottom: 1.6rem; }
+
+    .eb-chip-row { display: flex; flex-wrap: wrap; gap: .8rem; }
+
+    .eb-chip {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--navy);
+      background: rgba(29,53,87,.07);
+      padding: .5rem 1.2rem;
+      border-radius: 5rem;
+    }
+
+    .eb-channel-note {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 1.3rem;
+      color: var(--ink-soft);
+      max-width: 70ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ---------- AI block ---------- */
+    .eb-ai-block {
+      background: var(--navy);
+      color: #fff;
+      border-radius: 2rem;
+      padding: 5rem;
+      text-align: center;
+      max-width: 90rem;
+      margin: 0 auto;
+    }
+
+    .eb-ai-block .eb-kicker { color: var(--gold); }
+    .eb-ai-block h2 { font-size: 2.4rem; margin-bottom: 2rem; }
+    .eb-ai-block p { font-size: 1.65rem; opacity: .92; max-width: 68ch; margin: 0 auto; }
+
+    /* ---------- Process ---------- */
+    .eb-process {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2rem;
+    }
+
+    @media (max-width: 960px) { .eb-process { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 550px) { .eb-process { grid-template-columns: 1fr; } }
+
+    .eb-process-step { text-align: left; }
+
+    .eb-process-num {
+      font-family: var(--font-display);
+      font-size: 3.2rem;
+      color: var(--line);
+      -webkit-text-stroke: .1rem var(--navy);
+      color: transparent;
+      margin-bottom: 1.2rem;
+      display: block;
+    }
+
+    .eb-process-step h3 { font-size: 1.6rem; margin-bottom: .8rem; }
+    .eb-process-step p { font-size: 1.35rem; color: var(--ink-soft); margin: 0; }
+
+    /* ---------- What I can create ---------- */
+    .eb-create-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.2rem;
+    }
+
+    .eb-create-tag {
+      font-size: 1.45rem;
+      font-weight: 600;
       padding: 1.1rem 2.2rem;
       border-radius: 5rem;
-      transition: transform .2s ease, box-shadow .2s ease;
+      border: .15rem solid var(--line);
+      background: var(--paper-raised);
     }
 
-    .eb-btn-outline {
-      color: var(--ink);
-      border: .2rem solid var(--line);
-      background: var(--paper);
+    /* ---------- Why work with me ---------- */
+    .eb-why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+      gap: 2.4rem;
     }
 
-    .eb-btn-outline:hover { border-color: var(--sun); transform: translateY(-.2rem); }
+    .eb-why-item { display: flex; gap: 1.6rem; }
+    .eb-why-item i { font-size: 2.2rem; color: var(--gold); flex-shrink: 0; }
+    .eb-why-item h3 { font-size: 1.6rem; margin-bottom: .5rem; }
+    .eb-why-item p { font-size: 1.4rem; color: var(--ink-soft); margin: 0; }
 
-    .eb-btn-fill {
+    /* ---------- Not just a PDF ---------- */
+    .eb-notpdf {
+      background: var(--ink);
       color: #fff;
-      background: var(--coral);
-      box-shadow: 0 .8rem 1.6rem rgba(255, 122, 99, .35);
+      border-radius: 2rem;
+      padding: 6rem 5rem;
     }
 
-    .eb-btn-fill:hover { transform: translateY(-.2rem); box-shadow: 0 1.2rem 2rem rgba(255, 122, 99, .45); }
+    .eb-notpdf-head { text-align: center; max-width: 70ch; margin: 0 auto 4.5rem; }
+    .eb-notpdf-head span { color: var(--gold); font-weight: 700; letter-spacing: .1em; font-size: 1.2rem; text-transform: uppercase; display: block; margin-bottom: 1.4rem; }
+    .eb-notpdf-head h2 { font-size: clamp(2.4rem, 3.2vw, 3.4rem); line-height: 1.25; }
 
-    .eb-cta {
-      max-width: 90rem;
-      margin: 0 auto 8rem;
-      padding: 5rem 4%;
-      background: var(--sky);
-      border-radius: 3rem;
+    .eb-notpdf-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      gap: 2.4rem;
+    }
+
+    .eb-notpdf-item { display: flex; align-items: center; gap: 1.4rem; }
+    .eb-notpdf-item i { font-size: 2rem; color: var(--whatsapp); flex-shrink: 0; }
+    .eb-notpdf-item span { font-size: 1.45rem; font-weight: 500; }
+
+    /* ---------- Final CTA ---------- */
+    .eb-final-cta {
       text-align: center;
+      max-width: 74rem;
+      margin: 0 auto;
+    }
+
+    .eb-final-cta h2 { font-size: clamp(2.6rem, 3.4vw, 4rem); margin-bottom: 1.8rem; }
+    .eb-final-cta p { font-size: 1.7rem; color: var(--ink-soft); margin-bottom: 3rem; }
+    .eb-final-cta small { display: block; margin-top: 1.6rem; color: var(--ink-soft); font-size: 1.3rem; }
+
+    /* ---------- FAQ ---------- */
+    .eb-faq { max-width: 90rem; margin: 0 auto; }
+
+    .eb-faq-item {
+      border-bottom: 1px solid var(--line);
+      padding: 2.2rem 0;
+    }
+
+    .eb-faq-item summary {
+      cursor: pointer;
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 600;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .eb-faq-item summary::-webkit-details-marker { display: none; }
+    .eb-faq-item summary::after {
+      content: '+';
+      font-family: var(--font-body);
+      font-size: 2.4rem;
+      color: var(--gold);
+      flex-shrink: 0;
+      transition: transform .2s ease;
+    }
+    .eb-faq-item[open] summary::after { content: '−'; }
+
+    .eb-faq-item p { margin-top: 1.4rem; font-size: 1.5rem; color: var(--ink-soft); max-width: 75ch; }
+
+    /* ---------- Floating WhatsApp ---------- */
+    .eb-float {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: .9rem;
+      background: var(--whatsapp);
       color: #fff;
+      font-weight: 600;
+      font-size: 1.4rem;
+      padding: 1.2rem 1.8rem;
+      border-radius: 5rem;
+      box-shadow: 0 1rem 2.4rem rgba(37,211,102,.4);
+      transition: transform .2s ease;
     }
 
-    .eb-cta h2 {
-      font-size: 2.8rem;
-      margin: 0 0 1.5rem;
+    .eb-float:hover { transform: translateY(-.2rem); }
+    .eb-float i { font-size: 2rem; }
+
+    @media (max-width: 600px) {
+      .eb-float span { display: none; }
+      .eb-float { padding: 1.4rem; bottom: 1.6rem; right: 1.6rem; }
     }
 
-    .eb-cta p {
-      font-size: 1.6rem;
-      max-width: 60ch;
-      margin: 0 auto 2.5rem;
-      opacity: .95;
-    }
-
-    .eb-cta .eb-btn-fill {
-      background: #fff;
-      color: var(--sky);
-      box-shadow: 0 .8rem 1.6rem rgba(0, 0, 0, .15);
-    }
-
+    /* ---------- Footer ---------- */
     .eb-footer {
-      text-align: center;
-      padding: 3rem 2rem;
-      color: var(--ink-soft);
-      font-size: 1.3rem;
+      border-top: 1px solid var(--line);
+      padding: 5rem 0 3rem;
     }
 
-    .eb-footer a { color: var(--sky); font-weight: 600; }
+    .eb-footer-grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .eb-footer-brand h3 { font-size: 1.8rem; margin-bottom: .6rem; }
+    .eb-footer-brand p { font-size: 1.35rem; color: var(--ink-soft); margin: 0; max-width: 40ch; }
+
+    .eb-footer-links { display: flex; gap: 2.4rem; list-style: none; padding: 0; margin: 0; }
+    .eb-footer-links a { font-size: 1.4rem; font-weight: 600; color: var(--ink-soft); }
+    .eb-footer-links a:hover { color: var(--navy); }
+
+    .eb-footer-bottom {
+      font-size: 1.25rem;
+      color: var(--ink-soft);
+      border-top: 1px solid var(--line);
+      padding-top: 2.4rem;
+    }
   </style>
 </head>
 <body>
-  <span class="eb-logo">Pequeños <span>Exploradores</span></span>
+  <a href="#eb-main" style="position:absolute; left:-999px; top:0; background:#fff; padding:1rem; z-index:1000;" onfocus="this.style.left='1rem'" onblur="this.style.left='-999px'">Saltar al contenido principal</a>
 
-  <section class="eb-hero">
-    <span class="eb-eyebrow"><i class="bx bxs-magic-wand"></i> Experiencia comprobable</span>
-    <h1>Creación de <span>Ebooks Infantiles</span></h1>
-    <p>
-      Concepto, diseño, ilustración (asistida con IA) y publicación de principio a fin. Estos son 2
-      ebooks reales que creé y publiqué de forma independiente en Amazon KDP y Hotmart — la prueba de
-      que puedo llevar un ebook infantil desde la idea hasta la venta.
-    </p>
-  </section>
-
-  <div class="eb-grid">
-    <article class="eb-card">
-      <img src="../image/ebook-exploradores.webp" alt="Pequeños Exploradores — Aventuras de la Biblia para Colorear" loading="lazy" decoding="async" />
-      <div class="eb-card-body">
-        <span class="eb-tag"><i class="bx bx-store-alt"></i> Publicado en Hotmart</span>
-        <h3>Aventuras de la Biblia para Colorear</h3>
-        <p>20 aventuras bíblicas para leer, colorear y descubrir en familia. Incluye actividades, pósteres y certificado en un PDF listo para imprimir.</p>
-        <div class="eb-buttons">
-          <a href="https://pequenos-exploradores-landing.vercel.app" target="_blank" rel="noopener" class="eb-btn eb-btn-outline">Ver landing</a>
-          <a href="https://pay.hotmart.com/J107069218D" target="_blank" rel="noopener" class="eb-btn eb-btn-fill">Ver producto</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="eb-card">
-      <img src="../image/ebook-jonas.webp" alt="Jonás y el Gran Pez para Colorear — Pequeños Exploradores" loading="lazy" decoding="async" />
-      <div class="eb-card-body">
-        <span class="eb-tag"><i class="bx bx-store-alt"></i> Publicado en Hotmart</span>
-        <h3>Jonás y el Gran Pez para Colorear</h3>
-        <p>La historia bíblica de Jonás con páginas para colorear, actividades imprimibles, diploma y medalla. Para niños de 4 a 8 años.</p>
-        <div class="eb-buttons">
-          <a href="https://landing-pages-jonas.vercel.app/#beneficios" target="_blank" rel="noopener" class="eb-btn eb-btn-outline">Ver landing</a>
-          <a href="https://pay.hotmart.com/I107083005Y" target="_blank" rel="noopener" class="eb-btn eb-btn-fill">Ver producto</a>
-        </div>
-      </div>
-    </article>
-  </div>
-
-  <div class="eb-cta">
-    <h2>¿Quieres un ebook infantil como este para tu marca?</h2>
-    <p>Diseño, ilustro con IA, maqueto y dejo listo para publicar en Amazon KDP, Hotmart o donde lo necesites — cuadernos de actividades, libros para colorear, lead magnets infantiles y más.</p>
-    <a href="https://wa.me/18492763532?text=Hola%20Andy%2C%20quiero%20hablar%20sobre%20un%20ebook%20infantil" target="_blank" rel="noopener" class="eb-btn eb-btn-fill">
-      <i class="bx bxl-whatsapp"></i> Escríbeme por WhatsApp
+  <nav class="eb-nav" aria-label="Navegación">
+    <span class="eb-wordmark">Andy Rosado</span>
+    <a href="https://wa.me/18492763532?text=Hola%20Andy%2C%20estoy%20interesado%2Fa%20en%20crear%20un%20eBook.%20Me%20gustar%C3%ADa%20contarte%20mi%20idea%20y%20conocer%20c%C3%B3mo%20podr%C3%ADamos%20desarrollarla." target="_blank" rel="noopener" class="eb-nav-cta">
+      <i class="bx bxl-whatsapp"></i> Hablemos
     </a>
-  </div>
+  </nav>
+
+  <main id="eb-main">
+    <!-- HERO -->
+    <section class="eb-hero container">
+      <div class="eb-hero-grid">
+        <div>
+          <span class="eb-eyebrow">Diseño Editorial · Amazon KDP · Hotmart</span>
+          <h1>Creo eBooks profesionales listos para publicar, vender y representar tu marca</h1>
+          <p class="eb-hero-sub">
+            Desde la idea inicial hasta el archivo final. Diseño, maquetación, imágenes, portada y
+            preparación técnica para Amazon KDP, Hotmart o distribución directa.
+          </p>
+          <div class="eb-cta-row">
+            <a href="https://wa.me/18492763532?text=Hola%20Andy%2C%20estoy%20interesado%2Fa%20en%20crear%20un%20eBook.%20Me%20gustar%C3%ADa%20contarte%20mi%20idea%20y%20conocer%20c%C3%B3mo%20podr%C3%ADamos%20desarrollarla." target="_blank" rel="noopener" class="eb-btn eb-btn-primary">
+              <i class="bx bxl-whatsapp"></i> Quiero crear mi eBook
+            </a>
+            <a href="#casos" class="eb-btn eb-btn-secondary">Ver proyectos reales</a>
+          </div>
+          <p class="eb-trustline"><strong>Concepto</strong> · <strong>Diseño</strong> · <strong>Maquetación</strong> · <strong>Imágenes</strong> · <strong>KDP</strong> · <strong>Hotmart</strong></p>
+        </div>
+
+        <div class="eb-hero-visual">
+          <div class="eb-badge-float"><i class="bx bxs-badge-check"></i> Publicado en Hotmart</div>
+          <img class="eb-cover-behind" src="../image/ebook-jonas.webp" alt="" loading="eager" decoding="async" />
+          <img class="eb-cover-main" src="../image/ebook-exploradores.webp" alt="Portada del eBook Aventuras de la Biblia para Colorear, diseñado por Andy Rosado" loading="eager" decoding="async" />
+          <img class="eb-page-float" src="../image/eb-exp-interior-1.webp" alt="" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <!-- AUTHORITY STRIP -->
+    <section class="eb-authority" aria-labelledby="eb-flow-heading">
+      <div class="container">
+        <h2 id="eb-flow-heading">De la idea a la publicación</h2>
+        <div class="eb-flow">
+          <span class="eb-flow-step"><i class="bx bx-bulb"></i> Concepto</span>
+          <span class="eb-flow-arrow">→</span>
+          <span class="eb-flow-step"><i class="bx bx-pencil"></i> Diseño</span>
+          <span class="eb-flow-arrow">→</span>
+          <span class="eb-flow-step"><i class="bx bx-grid-alt"></i> Maquetación</span>
+          <span class="eb-flow-arrow">→</span>
+          <span class="eb-flow-step"><i class="bx bx-file-blank"></i> Archivo final</span>
+          <span class="eb-flow-arrow">→</span>
+          <span class="eb-flow-step"><i class="bx bx-rocket"></i> Publicación</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="eb-section">
+      <div class="container">
+        <div class="eb-problem-grid">
+          <div>
+            <span class="eb-kicker">El punto de partida</span>
+            <h2 style="font-size:clamp(2.4rem,3.2vw,3.4rem); line-height:1.25; margin-bottom:2rem;">Tener una buena idea no significa tener un libro listo para publicar.</h2>
+            <ul class="eb-problem-list">
+              <li><i class="bx bx-x-circle"></i> Contenido sin estructura editorial clara</li>
+              <li><i class="bx bx-x-circle"></i> Portadas poco profesionales</li>
+              <li><i class="bx bx-x-circle"></i> Imágenes mal integradas con el texto</li>
+              <li><i class="bx bx-x-circle"></i> Errores de márgenes y sangrado</li>
+              <li><i class="bx bx-x-circle"></i> Archivos rechazados por las plataformas</li>
+              <li><i class="bx bx-x-circle"></i> PDF mal optimizado para impresión o lectura digital</li>
+              <li><i class="bx bx-x-circle"></i> Problemas técnicos al subir a Amazon KDP</li>
+              <li><i class="bx bx-x-circle"></i> Ninguna landing o estrategia para venderlo</li>
+            </ul>
+          </div>
+          <div style="display:flex; align-items:center; height:100%;">
+            <p class="eb-bridge">Yo puedo ayudarte a convertir esa idea en un producto editorial terminado — diseñado, maquetado y técnicamente listo para el canal donde lo vas a vender.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="eb-section eb-section-alt">
+      <div class="container">
+        <div class="eb-section-head">
+          <span class="eb-kicker">Servicios</span>
+          <h2>Todo lo que tu eBook necesita</h2>
+        </div>
+        <div class="eb-services-grid">
+          <div class="eb-service-item">
+            <i class="bx bx-layout"></i>
+            <h3>Diseño editorial</h3>
+            <p>Estructura visual coherente para que el contenido se lea y se sienta profesional de principio a fin.</p>
+          </div>
+          <div class="eb-service-item">
+            <i class="bx bx-grid-alt"></i>
+            <h3>Maquetación profesional</h3>
+            <p>Márgenes, tipografía y composición correctos para pantalla e impresión.</p>
+          </div>
+          <div class="eb-service-item">
+            <i class="bx bx-image-alt"></i>
+            <h3>Diseño de portada</h3>
+            <p>La primera impresión de tu producto, pensada para vender desde la miniatura.</p>
+          </div>
+          <div class="eb-service-item">
+            <i class="bx bx-images"></i>
+            <h3>Integración de imágenes</h3>
+            <p>Ilustraciones y gráficos alineados con el texto, sin verse "pegados" ni forzados.</p>
+          </div>
+          <div class="eb-service-item">
+            <i class="bx bxs-magic-wand"></i>
+            <h3>Ilustración asistida con IA</h3>
+            <p>Cuando el proyecto lo requiere, para acelerar el proceso creativo con dirección humana.</p>
+          </div>
+          <div class="eb-service-item">
+            <i class="bx bxl-amazon"></i>
+            <h3>Preparación Amazon KDP</h3>
+            <p>Dimensiones, sangrado y resolución correctos para que tu archivo pase sin rechazos.</p>
+          </div>
+          <div class="eb-service-item">
+            <i class="bx bx-store-alt"></i>
+            <h3>Preparación Hotmart</h3>
+            <p>Producto digital listo para vender: PDF, portada y material descargable.</p>
+          </div>
+          <div class="eb-service-item">
+            <i class="bx bx-file-blank"></i>
+            <h3>PDF digital e imprimible</h3>
+            <p>Un mismo proyecto, optimizado para cómo lo va a consumir tu cliente final.</p>
+          </div>
+          <div class="eb-service-item">
+            <i class="bx bx-globe"></i>
+            <h3>Landing page de venta</h3>
+            <p>Si lo necesitas, también diseño y desarrollo la página donde se vende tu eBook.</p>
+          </div>
+          <div class="eb-service-item">
+            <i class="bx bx-check-shield"></i>
+            <h3>Optimización visual y técnica</h3>
+            <p>Revisión final antes de publicar, para que el archivo llegue impecable a tu canal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section class="eb-section" id="casos">
+      <div class="container">
+        <div class="eb-section-head">
+          <span class="eb-kicker">Proyectos reales</span>
+          <h2>No son conceptos de portafolio. Son productos que he desarrollado y llevado hasta su publicación.</h2>
+        </div>
+
+        <article class="eb-case">
+          <div class="eb-case-grid">
+            <div class="eb-case-visual">
+              <div class="eb-case-pages eb-pages-left">
+                <img src="../image/eb-exp-interior-1.webp" alt="" loading="lazy" decoding="async" />
+                <img src="../image/eb-exp-certificate.webp" alt="" loading="lazy" decoding="async" />
+              </div>
+              <img class="eb-case-cover" src="../image/ebook-exploradores.webp" alt="Portada de Pequeños Exploradores, Aventuras de la Biblia para Colorear" loading="lazy" decoding="async" />
+            </div>
+            <div class="eb-case-body">
+              <span class="eb-case-num">Caso 01</span>
+              <h3>Pequeños Exploradores</h3>
+              <p class="eb-case-sub">Aventuras de la Biblia para Colorear</p>
+              <ul class="eb-case-facts">
+                <li><i class="bx bx-book-open"></i> 20 historias completas</li>
+                <li><i class="bx bx-palette"></i> Actividades para colorear</li>
+                <li><i class="bx bx-printer"></i> Material imprimible</li>
+                <li><i class="bx bx-certification"></i> Certificado final incluido</li>
+                <li><i class="bx bx-layout"></i> Diseño editorial y portada</li>
+                <li><i class="bx bx-cloud-upload"></i> Preparado para distribución digital</li>
+              </ul>
+              <div class="eb-case-buttons">
+                <a href="https://pequenos-exploradores-landing.vercel.app" target="_blank" rel="noopener" class="eb-btn eb-btn-secondary eb-btn-sm">Ver landing</a>
+                <a href="https://pay.hotmart.com/J107069218D" target="_blank" rel="noopener" class="eb-btn eb-btn-primary eb-btn-sm">Ver producto</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="eb-case">
+          <div class="eb-case-grid">
+            <div class="eb-case-visual">
+              <div class="eb-case-pages eb-pages-left">
+                <img src="../image/eb-jonas-interior-1.webp" alt="" loading="lazy" decoding="async" />
+                <img src="../image/eb-jonas-diploma.webp" alt="" loading="lazy" decoding="async" />
+              </div>
+              <img class="eb-case-cover" src="../image/ebook-jonas.webp" alt="Portada de Jonás y el Gran Pez para Colorear" loading="lazy" decoding="async" />
+            </div>
+            <div class="eb-case-body">
+              <span class="eb-case-num">Caso 02</span>
+              <h3>Jonás y el Gran Pez</h3>
+              <p class="eb-case-sub">Para colorear · niños de 4 a 8 años</p>
+              <ul class="eb-case-facts">
+                <li><i class="bx bx-book-open"></i> 30 páginas para colorear</li>
+                <li><i class="bx bx-gift"></i> 5 bonus incluidos</li>
+                <li><i class="bx bx-certification"></i> Diploma y medalla</li>
+                <li><i class="bx bx-shapes"></i> Separadores de sección</li>
+                <li><i class="bx bx-printer"></i> Material imprimible</li>
+                <li><i class="bx bx-layout"></i> Diseño y maquetación completa</li>
+              </ul>
+              <div class="eb-case-buttons">
+                <a href="https://landing-pages-jonas.vercel.app/#beneficios" target="_blank" rel="noopener" class="eb-btn eb-btn-secondary eb-btn-sm">Ver landing</a>
+                <a href="https://pay.hotmart.com/I107083005Y" target="_blank" rel="noopener" class="eb-btn eb-btn-primary eb-btn-sm">Ver producto</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- KDP + HOTMART -->
+    <section class="eb-section eb-section-alt">
+      <div class="container">
+        <div class="eb-section-head">
+          <span class="eb-kicker">Preparación técnica</span>
+          <h2>Listo para publicar</h2>
+          <p>El diseño no termina cuando una página "se ve bonita". El archivo debe estar correctamente preparado para el canal donde será publicado.</p>
+        </div>
+
+        <div class="eb-channels">
+          <div class="eb-channel-card">
+            <div class="eb-channel-head">
+              <i class="bx bxl-amazon"></i>
+              <h3>Amazon KDP</h3>
+            </div>
+            <p>Preparación técnica del archivo para que cumpla con los estándares de publicación: dimensiones correctas, márgenes y sangrado, resolución de imagen adecuada, portada e interior por separado, PDF revisado antes de subir.</p>
+            <div class="eb-chip-row">
+              <span class="eb-chip">Dimensiones</span>
+              <span class="eb-chip">Márgenes y sangrado</span>
+              <span class="eb-chip">Resolución</span>
+              <span class="eb-chip">Portada e interior</span>
+              <span class="eb-chip">Revisión técnica</span>
+            </div>
+          </div>
+
+          <div class="eb-channel-card">
+            <div class="eb-channel-head">
+              <i class="bx bx-store-alt"></i>
+              <h3>Hotmart</h3>
+            </div>
+            <p>Producto digital listo para vender: PDF final, portada comercial, material descargable complementario, y si lo necesitas, la landing donde se presenta y se vende.</p>
+            <div class="eb-chip-row">
+              <span class="eb-chip">Producto digital</span>
+              <span class="eb-chip">PDF final</span>
+              <span class="eb-chip">Portada comercial</span>
+              <span class="eb-chip">Material descargable</span>
+              <span class="eb-chip">Landing de venta</span>
+            </div>
+          </div>
+        </div>
+        <p class="eb-channel-note">No soy socio ni representante oficial de Amazon ni de Hotmart — preparo tus archivos para cumplir con lo que cada plataforma exige al publicar.</p>
+      </div>
+    </section>
+
+    <!-- AI BLOCK -->
+    <section class="eb-section">
+      <div class="container">
+        <div class="eb-ai-block">
+          <span class="eb-kicker">Tecnología + criterio editorial</span>
+          <h2>La IA acelera, el criterio editorial decide</h2>
+          <p>La inteligencia artificial puede acelerar partes del proceso creativo, pero el resultado final requiere dirección visual, selección, corrección, consistencia, maquetación y revisión humana. No genero imágenes al azar: construyo un producto editorial coherente.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="eb-section eb-section-alt">
+      <div class="container">
+        <div class="eb-section-head">
+          <span class="eb-kicker">Cómo trabajaremos</span>
+          <h2>Un proceso simple, de la idea al archivo publicado</h2>
+        </div>
+        <div class="eb-process">
+          <div class="eb-process-step">
+            <span class="eb-process-num">01</span>
+            <h3>Cuéntame tu idea</h3>
+            <p>Analizamos objetivo, público y tipo de publicación.</p>
+          </div>
+          <div class="eb-process-step">
+            <span class="eb-process-num">02</span>
+            <h3>Definimos estructura</h3>
+            <p>Formato, páginas, contenido, estilo visual y plataforma.</p>
+          </div>
+          <div class="eb-process-step">
+            <span class="eb-process-num">03</span>
+            <h3>Creo el producto</h3>
+            <p>Diseño, ilustraciones, maquetación y portada.</p>
+          </div>
+          <div class="eb-process-step">
+            <span class="eb-process-num">04</span>
+            <h3>Revisamos</h3>
+            <p>Realizamos ajustes antes de cerrar los archivos.</p>
+          </div>
+          <div class="eb-process-step">
+            <span class="eb-process-num">05</span>
+            <h3>Publicamos</h3>
+            <p>Entrego los archivos preparados para KDP, Hotmart o el canal definido.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I CAN CREATE -->
+    <section class="eb-section">
+      <div class="container">
+        <div class="eb-section-head">
+          <span class="eb-kicker">Alcance</span>
+          <h2>Qué puedo crear</h2>
+          <p>Mis proyectos publicados son de temática cristiana infantil — son la evidencia del trabajo, no una limitación. El mismo proceso aplica a cualquier tipo de producto editorial.</p>
+        </div>
+        <div class="eb-create-tags">
+          <span class="eb-create-tag">eBooks</span>
+          <span class="eb-create-tag">Libros infantiles</span>
+          <span class="eb-create-tag">Libros para colorear</span>
+          <span class="eb-create-tag">Cuadernos de actividades</span>
+          <span class="eb-create-tag">Recetarios</span>
+          <span class="eb-create-tag">Guías</span>
+          <span class="eb-create-tag">Manuales</span>
+          <span class="eb-create-tag">Lead magnets</span>
+          <span class="eb-create-tag">Workbooks</span>
+          <span class="eb-create-tag">Material educativo</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY WORK WITH ME -->
+    <section class="eb-section eb-section-alt">
+      <div class="container">
+        <div class="eb-section-head">
+          <span class="eb-kicker">Por qué trabajar conmigo</span>
+          <h2>Diferenciadores demostrables, no frases genéricas</h2>
+        </div>
+        <div class="eb-why-grid">
+          <div class="eb-why-item">
+            <i class="bx bx-crop"></i>
+            <div><h3>Visión completa del proyecto</h3><p>De la idea al archivo final, sin depender de intermediarios entre etapas.</p></div>
+          </div>
+          <div class="eb-why-item">
+            <i class="bx bx-code-curly"></i>
+            <div><h3>Diseño + tecnología</h3><p>Combino criterio editorial con herramientas de desarrollo y automatización.</p></div>
+          </div>
+          <div class="eb-why-item">
+            <i class="bx bx-badge-check"></i>
+            <div><h3>Experiencia creando productos reales</h3><p>No conceptos: eBooks publicados y con checkout activo.</p></div>
+          </div>
+          <div class="eb-why-item">
+            <i class="bx bxl-amazon"></i>
+            <div><h3>Preparación para publicación</h3><p>Conozco los requisitos técnicos de KDP y Hotmart de primera mano.</p></div>
+          </div>
+          <div class="eb-why-item">
+            <i class="bx bx-globe"></i>
+            <div><h3>También construyo la landing</h3><p>Si necesitas vender tu eBook, puedo diseñar y desarrollar esa página también.</p></div>
+          </div>
+          <div class="eb-why-item">
+            <i class="bx bx-trending-up"></i>
+            <div><h3>Comprensión del proceso comercial</h3><p>Entiendo cómo se presenta y se vende un producto digital, no solo cómo se diseña.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOT JUST A PDF -->
+    <section class="eb-section">
+      <div class="container">
+        <div class="eb-notpdf">
+          <div class="eb-notpdf-head">
+            <span>La diferencia</span>
+            <h2>No solo recibes un PDF. Recibes un producto listo para presentar.</h2>
+          </div>
+          <div class="eb-notpdf-grid">
+            <div class="eb-notpdf-item"><i class="bx bx-check-circle"></i><span>Contenido estructurado</span></div>
+            <div class="eb-notpdf-item"><i class="bx bx-check-circle"></i><span>Diseño editorial</span></div>
+            <div class="eb-notpdf-item"><i class="bx bx-check-circle"></i><span>Portada profesional</span></div>
+            <div class="eb-notpdf-item"><i class="bx bx-check-circle"></i><span>Archivo optimizado</span></div>
+            <div class="eb-notpdf-item"><i class="bx bx-check-circle"></i><span>Material gráfico</span></div>
+            <div class="eb-notpdf-item"><i class="bx bx-check-circle"></i><span>Preparación de publicación</span></div>
+            <div class="eb-notpdf-item"><i class="bx bx-check-circle"></i><span>Landing comercial (opcional)</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="eb-section eb-section-alt">
+      <div class="container">
+        <div class="eb-final-cta">
+          <span class="eb-kicker">¿Empezamos?</span>
+          <h2>¿Tienes una idea para un eBook?</h2>
+          <p>Cuéntame qué quieres crear, para quién es y dónde quieres publicarlo. Puedo ayudarte a convertirlo en un producto editorial profesional desde cero.</p>
+          <a href="https://wa.me/18492763532?text=Hola%20Andy%2C%20quiero%20hablar%20de%20mi%20eBook." target="_blank" rel="noopener" class="eb-btn eb-btn-primary" style="font-size:1.7rem; padding:1.7rem 3.2rem;">
+            <i class="bx bxl-whatsapp"></i> Hablemos de tu eBook
+          </a>
+          <small>Puedes escribirme aunque todavía solo tengas la idea.</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="eb-section">
+      <div class="container">
+        <div class="eb-section-head">
+          <span class="eb-kicker">Preguntas frecuentes</span>
+          <h2>Todo lo que necesitas saber antes de empezar</h2>
+        </div>
+        <div class="eb-faq">
+          <details class="eb-faq-item">
+            <summary>¿Puedes crear el eBook desde cero?</summary>
+            <p>Sí. Podemos partir solo de una idea: definimos juntos el tema, la estructura y el público, y yo me encargo del desarrollo del contenido, diseño y maquetación.</p>
+          </details>
+          <details class="eb-faq-item">
+            <summary>¿Puedo entregarte el contenido ya escrito?</summary>
+            <p>Sí, sin problema. En ese caso me enfoco en diseño editorial, maquetación, portada e imágenes sobre el contenido que ya tienes.</p>
+          </details>
+          <details class="eb-faq-item">
+            <summary>¿Trabajas con Amazon KDP?</summary>
+            <p>Sí. Preparo los archivos según los requisitos técnicos de KDP (dimensiones, márgenes, sangrado y resolución) para publicación en tapa blanda o eBook.</p>
+          </details>
+          <details class="eb-faq-item">
+            <summary>¿Puedes preparar libros impresos?</summary>
+            <p>Sí, puedo maquetar pensando en impresión (márgenes internos, sangrado, resolución) además de la versión digital.</p>
+          </details>
+          <details class="eb-faq-item">
+            <summary>¿También haces eBooks digitales?</summary>
+            <p>Sí, es una de mis líneas principales: PDF digital optimizado para lectura en pantalla, tablet o descarga directa.</p>
+          </details>
+          <details class="eb-faq-item">
+            <summary>¿Puedes crear las imágenes?</summary>
+            <p>Sí. Cuando el proyecto lo requiere, uso ilustración asistida con IA bajo dirección editorial — selección, consistencia visual y ajustes manuales incluidos.</p>
+          </details>
+          <details class="eb-faq-item">
+            <summary>¿Trabajas únicamente con libros infantiles?</summary>
+            <p>No. Mis proyectos publicados hasta ahora son infantiles, pero el mismo proceso aplica a guías, manuales, recetarios, workbooks y lead magnets para cualquier nicho.</p>
+          </details>
+          <details class="eb-faq-item">
+            <summary>¿Puedes crear una landing para vender el eBook?</summary>
+            <p>Sí, es un servicio adicional. Diseño y desarrollo la página de venta, como las que ves enlazadas en los casos de arriba.</p>
+          </details>
+          <details class="eb-faq-item">
+            <summary>¿Qué necesito enviarte para comenzar?</summary>
+            <p>Con contarme tu idea, objetivo y público es suficiente para empezar. Si ya tienes contenido, referencias visuales o un formato en mente, ayuda a ir más rápido — pero no es obligatorio.</p>
+          </details>
+          <details class="eb-faq-item">
+            <summary>¿Entregas los archivos editables?</summary>
+            <p>Los términos de entrega (formatos finales vs. editables) se acuerdan según cada proyecto — lo definimos juntos antes de empezar.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a href="https://wa.me/18492763532?text=Hola%20Andy%2C%20tengo%20una%20idea%20para%20un%20eBook." target="_blank" rel="noopener" class="eb-float" aria-label="Contactar por WhatsApp sobre tu eBook">
+    <i class="bx bxl-whatsapp"></i> <span>¿Tienes una idea? Hablemos</span>
+  </a>
 
   <footer class="eb-footer">
-    &copy; <span id="eb-year"></span> Pequeños Exploradores. Todos los derechos reservados.
+    <div class="container">
+      <div class="eb-footer-grid">
+        <div class="eb-footer-brand">
+          <h3>Andy Rosado</h3>
+          <p>Diseño, desarrollo y publicación de productos digitales.</p>
+        </div>
+        <ul class="eb-footer-links">
+          <li><a href="../index.html#home">Portafolio</a></li>
+          <li><a href="#eb-main">eBooks</a></li>
+          <li><a href="../index.html#contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="eb-footer-bottom">
+        &copy; <span id="eb-year"></span> Andy Rosado.
+      </div>
+    </div>
   </footer>
 
   <script>document.getElementById('eb-year').textContent = new Date().getFullYear();</script>
