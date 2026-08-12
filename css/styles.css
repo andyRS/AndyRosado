@@ -324,6 +324,24 @@ span {
     margin-bottom: 1.5rem;
 }
 
+.tech-tags-group {
+    margin-bottom: 1.8rem;
+}
+
+.tech-tags-group:last-child {
+    margin-bottom: 0;
+}
+
+.tech-tags-label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08rem;
+    color: var(--main-color);
+    margin-bottom: .8rem;
+}
+
 .tech-tags {
     display: flex;
     flex-wrap: wrap;
@@ -1015,6 +1033,19 @@ span {
 .testimonial-info span {
     font-size: 1.2rem;
     color: #9aa1ad;
+}
+
+.testimonial-verify {
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+    font-size: 1.1rem;
+    color: var(--main-color);
+    margin-top: .4rem;
+}
+
+.testimonial-verify:hover {
+    text-decoration: underline;
 }
 
 .carousel-dots {
