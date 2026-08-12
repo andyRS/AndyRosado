@@ -149,7 +149,7 @@
         <li><a href="#about">Sobre mí</a></li>
         <li><a href="#services">Servicios</a></li>
         <li><a href="#pricing">Precios</a></li>
-        <li><a href="#portfolio">Portafolio</a></li>
+        <li><a href="portafolio/">Portafolio</a></li>
         <li><a href="#testimonials">Testimonios</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="#contact">Contacto</a></li>
@@ -499,523 +499,66 @@
 
   <!-- PORTFOLIO -->
   <section class="portfolio" id="portfolio" aria-labelledby="portfolio-heading">
-    <h2 class="heading" id="portfolio-heading">Últimos <span>Proyectos</span></h2>
+    <h2 class="heading" id="portfolio-heading">Proyectos <span>Destacados</span></h2>
+    <p style="text-align:center; max-width:65ch; margin: -2rem auto 4rem; color: #d9dde5;">
+      Una selección de mi trabajo más reciente y complejo. Tengo un portafolio completo con
+      más de 20 proyectos organizados por tipo — landing pages, plataformas SaaS, e-commerce
+      y sitios corporativos.
+    </p>
 
-    <div class="portfolio-filters" role="tablist" aria-label="Filtrar proyectos">
-      <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">Todos</button>
-      <button class="filter-btn" role="tab" aria-selected="false" data-filter="fullstack">Full-Stack</button>
-      <button class="filter-btn" role="tab" aria-selected="false" data-filter="frontend">Frontend</button>
-      <button class="filter-btn" role="tab" aria-selected="false" data-filter="ecommerce">E-commerce</button>
-      <button class="filter-btn" role="tab" aria-selected="false" data-filter="labs">Labs / Experimentos</button>
-    </div>
-
-    <div class="portfolio-container">
-
-      <!-- FEATURED: CoopDinámica -->
-      <article class="portfolio-box featured" data-category="fullstack">
-        <div class="portfolio-badge">Destacado</div>
-        <img src="image/copDinamica.webp"
-            alt="CoopDinámica — Sitio web moderno para cooperativa financiera dominicana"
-            loading="lazy" decoding="async" />
-        <div class="portfolio-layer">
+    <div class="service-projects">
+      <article class="service-project-card">
+        <picture><img src="image/kingdom-studio-dashboard.webp" alt="Kingdom Studio — Plataforma SaaS de automatización editorial con IA" width="600" height="400" loading="lazy" decoding="async" /></picture>
+        <div class="card-body">
+          <h3>Kingdom Studio</h3>
+          <p>Plataforma SaaS que genera, revisa, aprueba, programa y publica contenido editorial con IA, con panel de control y analíticas. FastAPI, Next.js, Supabase.</p>
+          <a href="case-studies/kingdom-studio.html" class="btn">Ver Case Study</a>
+        </div>
+      </article>
+      <article class="service-project-card">
+        <picture><img src="image/luxury-concierge.webp" alt="Concierge CR — Plataforma de concierge de lujo para Costa Rica" width="600" height="400" loading="lazy" decoding="async" /></picture>
+        <div class="card-body">
+          <h3>Concierge CR</h3>
+          <p>Plataforma full-stack de concierge de lujo: villas, transporte premium, pagos con Stripe y panel admin con roles. Next.js, TypeScript, Prisma.</p>
+          <a href="case-studies/concierge-cr.html" class="btn">Ver Case Study</a>
+        </div>
+      </article>
+      <article class="service-project-card">
+        <picture><img src="image/schoolpay-rd.webp" alt="SchoolPay RD — Plataforma de cobros y gestión para colegios dominicanos" width="600" height="400" loading="lazy" decoding="async" /></picture>
+        <div class="card-body">
+          <h3>SchoolPay RD</h3>
+          <p>Plataforma de cobros y gestión para colegios: mensualidades, morosidad, inscripciones y comunicados por WhatsApp. React, Vite, Tailwind CSS 4.</p>
+          <a href="case-studies/schoolpay-rd.html" class="btn">Ver Case Study</a>
+        </div>
+      </article>
+      <article class="service-project-card">
+        <picture><img src="image/vitaglossrd.webp" alt="VitaGloss RD — Plataforma e-commerce para distribuidores Amway en RD" width="600" height="400" loading="lazy" decoding="async" /></picture>
+        <div class="card-body">
+          <h3>VitaGloss RD</h3>
+          <p>Plataforma e-commerce y sistema de gestión de ventas para distribuidores Amway independientes en RD. React, Node.js, MongoDB.</p>
+          <a href="https://www.vitaglossrd.com/" class="btn" target="_blank" rel="noopener">Ver proyecto</a>
+        </div>
+      </article>
+      <article class="service-project-card">
+        <picture><img src="image/copDinamica.webp" alt="CoopDinámica — Sitio web moderno para cooperativa financiera dominicana" width="600" height="400" loading="lazy" decoding="async" /></picture>
+        <div class="card-body">
           <h3>CoopDinámica</h3>
-          <p>
-            Sitio web moderno para cooperativa financiera con React, glassmorphism, dark mode,
-            animaciones con Framer Motion y navegación con mega menú.
-          </p>
-          <div class="portfolio-tech">
-            <span>React</span><span>Framer Motion</span><span>Vercel</span>
-          </div>
-          <a href="https://coopdinamica.vercel.app/" target="_blank"
-            rel="noopener" aria-label="Ver proyecto CoopDinámica">
-            <i class="bx bx-link-external" aria-hidden="true"></i>
-          </a>
+          <p>Sitio web moderno para cooperativa financiera con React, glassmorphism, dark mode y animaciones con Framer Motion.</p>
+          <a href="https://coopdinamica.vercel.app/" class="btn" target="_blank" rel="noopener">Ver proyecto</a>
         </div>
       </article>
-
-      <!-- Elizabeth Mendez -->
-      <article class="portfolio-box" data-category="frontend ecommerce">
-        <img src="image/Proyecto_Eli.webp"
-            alt="Elizabeth Mendez — Portafolio de diseñadora de moda con catálogo y calculadora de presupuesto"
-            loading="lazy" decoding="async" />
-        <div class="portfolio-layer">
-          <h3>Elizabeth Mendez</h3>
-          <p>
-            Portafolio para diseñadora de moda de lujo con catálogo interactivo, calculadora de presupuesto
-            dual-currency y filtrado inteligente de colecciones.
-          </p>
-          <div class="portfolio-tech">
-            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
-          </div>
-          <a href="https://andyrs.github.io/proy_eli/" target="_blank" rel="noopener"
-            aria-label="Ver proyecto Elizabeth Mendez">
-            <i class="bx bx-link-external" aria-hidden="true"></i>
-          </a>
+      <article class="service-project-card">
+        <picture><img src="image/restauratumatrimonio-blog.webp" alt="Restaura Tu Matrimonio - Blog — Blog en Next.js con MDX y CI/CD" width="600" height="400" loading="lazy" decoding="async" /></picture>
+        <div class="card-body">
+          <h3>Restaura Tu Matrimonio — Blog</h3>
+          <p>Blog en Next.js con MDX, CI/CD y tracking dual GA4/Meta Pixel. Motor orgánico del embudo hacia el curso, con publicación automática vía PRs desde Kingdom Studio.</p>
+          <a href="https://www.restauratumatrimonio-blog.com/" class="btn" target="_blank" rel="noopener">Ver proyecto</a>
         </div>
       </article>
-
-      <!-- Blog IA -->
-      <article class="portfolio-box" data-category="fullstack">
-        <img src="image/Blog_IA.webp"
-            alt="AI Trends Blog — Blog moderno de tendencias en IA con React y Tailwind"
-            loading="lazy" decoding="async" />
-        <div class="portfolio-layer">
-          <h3>AI Trends Blog</h3>
-          <p>
-            Blog interactivo sobre tendencias en IA, desarrollado con React + Vite + Tailwind.
-            Optimizado para Google AdSense y SEO avanzado.
-          </p>
-          <div class="portfolio-tech">
-            <span>React</span><span>Vite</span><span>Tailwind</span><span>SEO</span>
-          </div>
-          <a href="https://ai-blog-redesign.vercel.app/" target="_blank" rel="noopener"
-            aria-label="Ver proyecto AI Trends Blog">
-            <i class="bx bx-link-external" aria-hidden="true"></i>
-          </a>
-        </div>
-      </article>
-
-      <!-- Landing Premium -->
-      <article class="portfolio-box" data-category="frontend">
-        <img src="image/landing-premium.webp"
-            alt="Landing Page Premium con sistema multi-tema para 5 industrias"
-            loading="lazy" decoding="async" />
-        <div class="portfolio-layer">
-          <h3>Landing Premium Multi-Tema</h3>
-          <p>
-            Sistema de landing page con 5 temas intercambiables para diferentes industrias:
-            Cafetería, Tech, Fitness, Restaurante y Spa.
-          </p>
-          <div class="portfolio-tech">
-            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
-          </div>
-          <a href="https://landing-premium-nine.vercel.app/" target="_blank"
-            rel="noopener" aria-label="Ver proyecto Landing Premium">
-            <i class="bx bx-link-external" aria-hidden="true"></i>
-          </a>
-        </div>
-      </article>
-
-      <!-- Landing Creativa -->
-      <article class="portfolio-box" data-category="frontend">
-        <img src="image/LadingPage.webp"
-            alt="Landing page creativa con animaciones y CTA claros"
-            loading="lazy" decoding="async" />
-        <div class="portfolio-layer">
-          <h3>Landing Creativa</h3>
-          <p>
-            Landing page moderna con animaciones CSS, estructura de conversión
-            y CTAs optimizados.
-          </p>
-          <div class="portfolio-tech">
-            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
-          </div>
-          <a href="https://andyrs.github.io/landingPage/" target="_blank" rel="noopener"
-            aria-label="Ver proyecto Landing Creativa">
-            <i class="bx bx-link-external" aria-hidden="true"></i>
-          </a>
-        </div>
-      </article>
-
-      <!-- Tienda Online -->
-      <article class="portfolio-box" data-category="frontend ecommerce">
-        <img src="image/proyectoTienda.webp"
-            alt="Tienda online con catálogo e-commerce"
-            loading="lazy" decoding="async" />
-        <div class="portfolio-layer">
-          <h3>Tienda Online</h3>
-          <p>
-            Catálogo digital con estructura e-commerce, navegación ágil
-            y diseño orientado a conversión.
-          </p>
-          <div class="portfolio-tech">
-            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
-          </div>
-          <a href="https://andyrs.github.io/ProyectoTienda/" target="_blank" rel="noopener"
-            aria-label="Ver proyecto Tienda Online">
-            <i class="bx bx-link-external" aria-hidden="true"></i>
-          </a>
-        </div>
-      </article>
-
-      <!-- Polanco Graphics -->
-      <article class="portfolio-box" data-category="frontend">
-        <img src="image/pg.webp"
-            alt="Polanco Graphics — Sitio web profesional para estudio creativo"
-            loading="lazy" decoding="async" />
-        <div class="portfolio-layer">
-          <h3>Polanco Graphics</h3>
-          <p>
-            Sitio web para estudio creativo con presentación de servicios,
-            galería de portafolio e identidad visual profesional.
-          </p>
-          <div class="portfolio-tech">
-            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
-          </div>
-          <a href="https://andyrs.github.io/PolancoGraphics/" target="_blank" rel="noopener"
-            aria-label="Ver proyecto Polanco Graphics">
-            <i class="bx bx-link-external" aria-hidden="true"></i>
-          </a>
-        </div>
-      </article>
-
-      <!-- FreisiWeb -->
-      <article class="portfolio-box" data-category="frontend">
-        <img src="image/fschez.webp"
-            alt="FreisiWeb — Sitio web de trading y mentoría financiera"
-            loading="lazy" decoding="async" />
-        <div class="portfolio-layer">
-          <h3>FreisiWeb</h3>
-          <p>
-            Sitio web profesional de trading y mentoría financiera con diseño premium,
-            secciones de cursos y testimonios.
-          </p>
-          <div class="portfolio-tech">
-            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
-          </div>
-          <a href="https://andyrs.github.io/FreisiWeb/" target="_blank" rel="noopener"
-            aria-label="Ver proyecto FreisiWeb">
-            <i class="bx bx-link-external" aria-hidden="true"></i>
-          </a>
-        </div>
-      </article>
-
-      <!-- Pokedex API -->
-      <article class="portfolio-box" data-category="frontend labs">
-        <div class="portfolio-badge" style="background: var(--second-bgcolor); color: var(--main-color); border: .1rem solid var(--main-color);">Experimento</div>
-        <img src="image/WebApiPoketApi.webp"
-            alt="Pokedex API — Aplicación web con consumo de API REST"
-            loading="lazy" decoding="async" />
-        <div class="portfolio-layer">
-          <h3>Pokedex API</h3>
-          <p>
-            Aplicación web interactiva que consume la PokeAPI con búsqueda en tiempo real,
-            filtros y diseño totalmente responsive.
-          </p>
-          <div class="portfolio-tech">
-            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>REST API</span>
-          </div>
-          <a href="https://andyrs.github.io/ProyectoPokedexAPI/" target="_blank" rel="noopener"
-            aria-label="Ver proyecto Pokedex API">
-            <i class="bx bx-link-external" aria-hidden="true"></i>
-          </a>
-        </div>
-      </article>
-
-      <!-- Andy Trading -->
-      <article class="portfolio-box" data-category="frontend">
-        <img src="image/proyectoTrading.webp"
-            alt="Andy Trading — Landing page financiera profesional"
-            loading="lazy" decoding="async" />
-        <div class="portfolio-layer">
-          <h3>Andy Trading</h3>
-          <p>
-            Landing page financiera con estructura visual clara, secciones de servicios
-            y formulario de captación de leads.
-          </p>
-          <div class="portfolio-tech">
-            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
-          </div>
-          <a href="https://andyrs.github.io/Andytrading/" target="_blank" rel="noopener"
-            aria-label="Ver proyecto Andy Trading">
-            <i class="bx bx-link-external" aria-hidden="true"></i>
-          </a>
-        </div>
-      </article>
-      
-      
-      <!-- Luxe-Shop -->
-<article class="portfolio-box" data-category="fullstack ecommerce">
-  <img
-    src="image/luxe-shop.webp"
-    alt="Luxe-Shop — Tienda e-commerce moderna"
-    loading="lazy"
-    decoding="async"
-  />
-  <div class="portfolio-layer">
-    <h3>Luxe-Shop</h3>
-    <p>
-      Tienda e-commerce moderna enfocada en productos premium, con catálogo,
-      carrito de compras y experiencia de usuario optimizada.
-    </p>
-    <div class="portfolio-tech">
-      <span>React</span><span>Node.js</span><span>MongoDB</span>
     </div>
-    <a href="https://frontend-nine-tan-82.vercel.app/" aria-label="Proyecto Luxe-Shop">
-      <i class="bx bx-link-external" aria-hidden="true"></i>
-    </a>
-  </div>
-</article>
 
-<!-- CRM Lite -->
-<article class="portfolio-box" data-category="fullstack">
-  <img
-    src="image/crm-lite.png"
-    alt="CRM Lite — Sistema CRM para gestión de clientes"
-    loading="lazy"
-    decoding="async"
-  />
-  <div class="portfolio-layer">
-    <h3>CRM Lite</h3>
-    <p>
-      Sistema CRM ligero para gestión de clientes, usuarios, roles,
-      seguimiento de actividades y panel administrativo.
-    </p>
-    <div class="portfolio-tech">
-      <span>React</span><span>Node.js</span><span>MySQL</span>
-    </div>
-    <a href="https://crm-lite-six.vercel.app/" aria-label="Proyecto CRM Lite">
-      <i class="bx bx-link-external" aria-hidden="true"></i>
-    </a>
-  </div>
-</article>
-
-<!-- Task Manager API -->
-<article class="portfolio-box" data-category="fullstack labs">
-  <div class="portfolio-badge" style="background: var(--second-bgcolor); color: var(--main-color); border: .1rem solid var(--main-color);">Experimento</div>
-  <img
-    src="image/task-manager.webp"
-    alt="Task Manager API — API REST para gestión de tareas"
-    loading="lazy"
-    decoding="async"
-  />
-  <div class="portfolio-layer">
-    <h3>Task Manager API</h3>
-    <p>
-      API REST para gestión de tareas con autenticación JWT,
-      roles de usuario y estructura escalable.
-    </p>
-    <div class="portfolio-tech">
-      <span>Node.js</span><span>Express</span><span>JWT</span>
-    </div>
-    <a href="https://task-manager-api-689t.onrender.com/api/docs/#/">
-      <i class="bx bx-link-external" aria-hidden="true"></i>
-    </a>
-  </div>
-</article>
-
-<!-- Restaura Tu Matrimonio -->
-<article class="portfolio-box" data-category="frontend">
-  <img
-    src="image/restaura-matrimonio.webp"
-    alt="Restaura Tu Matrimonio — Landing page de consejería matrimonial"
-    loading="lazy"
-    decoding="async"
-  />
-  <div class="portfolio-layer">
-    <h3>Restaura Tu Matrimonio</h3>
-    <p>
-      Landing page para curso de recuperación matrimonial, enfocada en
-      conversión, confianza y captación de leads.
-    </p>
-    <div class="portfolio-tech">
-      <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
-    </div>
-    <a href="https://restauratumatrimonio.org/" target="_blank" rel="noopener"
-      aria-label="Ver proyecto Restaura Tu Matrimonio">
-      <i class="bx bx-link-external" aria-hidden="true"></i>
-    </a>
-  </div>
-</article>
-
-<!-- Kingdom Studio -->
-<article class="portfolio-box featured" data-category="fullstack">
-  <div class="portfolio-badge">Destacado</div>
-  <img
-    src="image/kingdom-studio-dashboard.webp"
-    alt="Kingdom Studio — Plataforma SaaS de automatización editorial con IA"
-    loading="lazy"
-    decoding="async"
-  />
-  <div class="portfolio-layer">
-    <h3>Kingdom Studio</h3>
-    <p>
-      Plataforma SaaS que genera, revisa, aprueba, programa y publica
-      contenido editorial con IA, con panel de control y analíticas.
-    </p>
-    <div class="portfolio-tech">
-      <span>FastAPI</span><span>Next.js</span><span>Supabase</span><span>IA</span>
-    </div>
-    <a href="case-studies/kingdom-studio.html"
-      aria-label="Ver caso de estudio Kingdom Studio">
-      <i class="bx bx-file-find" aria-hidden="true"></i>
-    </a>
-  </div>
-</article>
-
-<!-- VitaGloss RD -->
-<article class="portfolio-box" data-category="fullstack ecommerce">
-  <img
-    src="image/vitaglossrd.webp"
-    alt="VitaGloss RD — Plataforma e-commerce para distribuidores Amway en RD"
-    loading="lazy"
-    decoding="async"
-  />
-  <div class="portfolio-layer">
-    <h3>VitaGloss RD</h3>
-    <p>
-      Plataforma e-commerce y sistema de gestión de ventas para distribuidores
-      Amway independientes en República Dominicana.
-    </p>
-    <div class="portfolio-tech">
-      <span>React</span><span>Node.js</span><span>MongoDB</span><span>Tailwind</span>
-    </div>
-    <a href="https://www.vitaglossrd.com/" target="_blank" rel="noopener"
-      aria-label="Ver proyecto VitaGloss RD">
-      <i class="bx bx-link-external" aria-hidden="true"></i>
-    </a>
-  </div>
-</article>
-
-<!-- Restaura Tu Matrimonio - Blog -->
-<article class="portfolio-box featured" data-category="fullstack">
-  <div class="portfolio-badge">Destacado</div>
-  <img
-    src="image/restauratumatrimonio-blog.webp"
-    alt="Restaura Tu Matrimonio - Blog — Blog en Next.js con MDX y CI/CD"
-    loading="lazy"
-    decoding="async"
-  />
-  <div class="portfolio-layer">
-    <h3>Restaura Tu Matrimonio — Blog</h3>
-    <p>
-      Blog en Next.js (App Router) con contenido MDX, CI/CD y tracking dual
-      GA4/Meta Pixel. Funciona como motor orgánico del embudo hacia el curso
-      del ministerio, con publicación automática vía PRs desde Kingdom Studio.
-    </p>
-    <div class="portfolio-tech">
-      <span>Next.js</span><span>MDX</span><span>Vercel</span><span>GitHub Actions</span>
-    </div>
-    <a href="https://www.restauratumatrimonio-blog.com/" target="_blank" rel="noopener"
-      aria-label="Ver proyecto Restaura Tu Matrimonio Blog">
-      <i class="bx bx-link-external" aria-hidden="true"></i>
-    </a>
-  </div>
-</article>
-
-<!-- Concierge CR -->
-<article class="portfolio-box featured" data-category="fullstack">
-  <div class="portfolio-badge">Destacado</div>
-  <img
-    src="image/luxury-concierge.webp"
-    alt="Concierge CR — Plataforma de concierge de lujo para Costa Rica"
-    loading="lazy"
-    decoding="async"
-  />
-  <div class="portfolio-layer">
-    <h3>Concierge CR</h3>
-    <p>
-      Plataforma full-stack de concierge de lujo para clientes internacionales
-      en Costa Rica: alquiler de villas, transporte premium, pagos con Stripe,
-      panel admin con roles y sistema de solicitudes multi-paso.
-    </p>
-    <div class="portfolio-tech">
-      <span>Next.js</span><span>TypeScript</span><span>Prisma</span><span>Stripe</span>
-    </div>
-    <a href="case-studies/concierge-cr.html"
-      aria-label="Ver caso de estudio Concierge CR">
-      <i class="bx bx-file-find" aria-hidden="true"></i>
-    </a>
-  </div>
-</article>
-
-<!-- DarkNitido LLC -->
-<article class="portfolio-box" data-category="frontend">
-  <img
-    src="image/darknitido-llc.webp"
-    alt="DarkNitido LLC — Landing page institucional para holding empresarial"
-    loading="lazy"
-    decoding="async"
-  />
-  <div class="portfolio-layer">
-    <h3>DarkNitido LLC</h3>
-    <p>
-      Landing page institucional para holding empresarial, con formulario de
-      contacto seguro (honeypot, rate limiting) y envío de correos vía Resend.
-    </p>
-    <div class="portfolio-tech">
-      <span>Next.js 16</span><span>TypeScript</span><span>React 19</span><span>Tailwind CSS 4</span>
-    </div>
-    <a href="https://darknitido.com/" target="_blank" rel="noopener"
-      aria-label="Ver proyecto DarkNitido LLC">
-      <i class="bx bx-link-external" aria-hidden="true"></i>
-    </a>
-  </div>
-</article>
-
-<!-- SchoolPay RD -->
-<article class="portfolio-box" data-category="frontend">
-  <img
-    src="image/schoolpay-rd.webp"
-    alt="SchoolPay RD — Plataforma de cobros y gestión para colegios dominicanos"
-    loading="lazy"
-    decoding="async"
-  />
-  <div class="portfolio-layer">
-    <h3>SchoolPay RD</h3>
-    <p>
-      Plataforma de cobros y gestión para colegios dominicanos: mensualidades,
-      morosidad, inscripciones, transporte y comunicados por WhatsApp
-      desde un solo panel.
-    </p>
-    <div class="portfolio-tech">
-      <span>React</span><span>Vite</span><span>Tailwind CSS 4</span>
-    </div>
-    <a href="case-studies/schoolpay-rd.html"
-      aria-label="Ver caso de estudio SchoolPay RD">
-      <i class="bx bx-file-find" aria-hidden="true"></i>
-    </a>
-  </div>
-</article>
-
-<!-- Oasis Dental -->
-<article class="portfolio-box" data-category="frontend">
-  <img
-    src="image/oasis-dental.webp"
-    alt="Oasis Dental — Sitio web para clínica dental de alta gama"
-    loading="lazy"
-    decoding="async"
-  />
-  <div class="portfolio-layer">
-    <h3>Oasis Dental</h3>
-    <p>
-      Sitio web para clínica dental premium: implantes, ortodoncia invisible,
-      estética dental y agenda de citas.
-    </p>
-    <div class="portfolio-tech">
-      <span>Lovable</span><span>React</span><span>Tailwind CSS 4</span>
-    </div>
-    <a href="https://smile-sparkle-haven.lovable.app" target="_blank" rel="noopener"
-      aria-label="Ver proyecto Oasis Dental">
-      <i class="bx bx-link-external" aria-hidden="true"></i>
-    </a>
-  </div>
-</article>
-
-<!-- Recetas que Transforman21 -->
-<article class="portfolio-box" data-category="frontend">
-  <img
-    src="image/recetas21.webp"
-    alt="Recetas que Transforman21 — Landing de ventas para programa de recetas y plan de alimentación"
-    loading="lazy"
-    decoding="async"
-  />
-  <div class="portfolio-layer">
-    <h3>Recetas que Transforman21</h3>
-    <p>
-      Landing de ventas para un programa digital de 120 recetas y plan de
-      alimentación de 21 días, con checkout integrado vía Hotmart.
-    </p>
-    <div class="portfolio-tech">
-      <span>Next.js</span><span>Tailwind CSS</span><span>Hotmart</span>
-    </div>
-    <a href="https://www.recetasquetransforman21.com/" target="_blank" rel="noopener"
-      aria-label="Ver proyecto Recetas que Transforman21">
-      <i class="bx bx-link-external" aria-hidden="true"></i>
-    </a>
-  </div>
-</article>
-
+    <div style="text-align:center; margin-top: 4rem;">
+      <a href="portafolio/" class="btn"><i class="bx bx-grid-alt" aria-hidden="true"></i> Ver Portafolio Completo</a>
     </div>
   </section>
 
@@ -1267,7 +810,7 @@
             <li><a href="#about">Sobre mí</a></li>
             <li><a href="#services">Servicios</a></li>
             <li><a href="#pricing">Precios</a></li>
-            <li><a href="#portfolio">Portafolio</a></li>
+            <li><a href="portafolio/">Portafolio</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="#contact">Contacto</a></li>
           </ul>
