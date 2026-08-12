@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RD83KQL7E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3RD83KQL7E');
+  </script>
+  <meta name="description" content="Caso de estudio: Concierge CR, plataforma de concierge de lujo para Costa Rica. Next.js, TypeScript, Prisma, Stripe y control de acceso por roles." />
+  <title>Caso de Estudio: Concierge CR | Andy Rosado</title>
+  <link rel="canonical" href="https://andyrosado.com/case-studies/concierge-cr.html" />
+  <meta name="robots" content="noindex, follow" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#case-content">Saltar al contenido principal</a>
+
+  <header class="header">
+    <a href="../index.html#home" class="logo">Andy<span>Dev</span></a>
+    <button class="menu-button" id="menu-icon" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-navigation" type="button">
+      <i class="bx bx-menu" aria-hidden="true"></i>
+    </button>
+    <nav class="navbar" id="primary-navigation" aria-label="Navegación principal">
+      <ul role="list">
+        <li><a href="../index.html#home">Inicio</a></li>
+        <li><a href="../index.html#about">Sobre mí</a></li>
+        <li><a href="../index.html#services">Servicios</a></li>
+        <li><a href="../index.html#pricing">Precios</a></li>
+        <li><a href="../index.html#portfolio">Portafolio</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../index.html#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="article-page" id="case-content">
+    <div class="article-hero">
+      <img class="article-cover" src="../image/luxury-concierge.webp" alt="Concierge CR — Plataforma de concierge de lujo para Costa Rica" loading="eager" decoding="async" />
+      <span class="blog-date">Caso de Estudio · SaaS &amp; Plataformas</span>
+      <h1>Concierge CR: una plataforma de concierge de lujo con pagos, roles y solicitudes en tiempo real</h1>
+    </div>
+
+    <div class="article-body">
+      <h2>El contexto</h2>
+      <p>
+        Concierge CR es una plataforma dirigida a clientes internacionales de alto poder adquisitivo que
+        visitan Jacó, Santa Teresa y Tamarindo en Costa Rica. No es una landing informativa — es una
+        plataforma operativa completa: sitio público premium más un panel de administración con roles,
+        pensada para que un equipo real gestione solicitudes, pagos y reservas todos los días.
+      </p>
+
+      <h2>El reto</h2>
+      <p>
+        Un servicio de concierge de lujo vende experiencias distintas (villas, transporte privado,
+        actividades) cada una con su propia lógica de precio y disponibilidad, y necesita procesar
+        depósitos y pagos reales sin fricción, mientras un equipo interno (no solo el dueño) da seguimiento
+        a cada solicitud desde un panel con permisos diferenciados.
+      </p>
+
+      <h2>La solución</h2>
+      <p>
+        Una plataforma full-stack sobre Next.js 14 y TypeScript, con Prisma y PostgreSQL como capa de
+        datos, autenticación con NextAuth, pagos con Stripe en USD, y un panel administrativo con roles
+        de <strong>Admin</strong> y <strong>Staff</strong> — cada uno con distinto nivel de acceso — más un
+        dashboard de analíticas para dar seguimiento a las solicitudes en tiempo real.
+      </p>
+
+      <h2>Funcionalidades clave</h2>
+      <ul>
+        <li>Alquiler de villas: galería, amenidades, precios y disponibilidad por propiedad</li>
+        <li>Transporte premium: transfers en helicóptero, alquiler de yates y más</li>
+        <li>Experiencias: surf coaching, retiros de bienestar, eventos exclusivos</li>
+        <li>Sistema de solicitudes multi-paso con validación en tiempo real (Zod)</li>
+        <li>Emails automatizados de confirmación y seguimiento vía Resend</li>
+        <li>Pagos en línea (depósitos y pagos completos) integrados con Stripe</li>
+        <li>Panel administrativo con roles Admin / Staff y control de acceso diferenciado</li>
+        <li>Dashboard de analíticas y gestión de solicitudes</li>
+        <li>Widget de WhatsApp con mensajes predefinidos para contacto directo</li>
+      </ul>
+
+      <h2>El desafío técnico más interesante</h2>
+      <p>
+        Más allá del catálogo de servicios, el punto crítico fue la <strong>capa de seguridad</strong>: rate
+        limiting en los endpoints públicos, protección CSRF en formularios, sanitización de inputs contra
+        XSS, cabeceras de seguridad (CSP, HSTS, X-Frame-Options), validación server-side con Zod en cada
+        ruta de API, prevención de inyección SQL vía Prisma ORM (queries parametrizadas), y un log de
+        auditoría que registra cada acción realizada dentro del panel administrativo. Para una plataforma
+        que maneja pagos reales y datos de huéspedes, esa capa no es opcional — es tan parte del producto
+        como el catálogo de villas.
+      </p>
+
+      <h2>Stack técnico</h2>
+      <p>Next.js 14 · TypeScript · Tailwind CSS · Prisma · PostgreSQL · NextAuth · Stripe · Resend · Framer Motion · Zod</p>
+    </div>
+
+    <div class="article-cta">
+      <h3>¿Necesitas una plataforma con pagos, roles y seguridad real?</h3>
+      <p>Si tu negocio maneja reservas, pagos o un equipo con distintos niveles de acceso, puedo construir esa plataforma desde cero.</p>
+      <div class="cta-buttons">
+        <a href="https://proyect-concierge.vercel.app/" class="btn-outline" target="_blank" rel="noopener">
+          <i class="bx bx-link-external" aria-hidden="true"></i> Ver Concierge CR
+        </a>
+        <a href="../index.html#contact" class="btn"><i class="bx bx-send" aria-hidden="true"></i> Solicitar Cotización</a>
+        <a href="https://wa.me/18492763532?text=Hola%20Andy%2C%20me%20interesa%20un%20proyecto%20de%20desarrollo" class="btn-whatsapp" target="_blank" rel="noopener">
+          <i class="bx bxl-whatsapp" aria-hidden="true"></i> Escríbeme por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> Andy Rosado Web | Todos los derechos reservados.</p>
+      <div class="footer-iconTop">
+        <a href="#case-content" aria-label="Volver arriba"><i class="bx bx-up-arrow-alt" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/18492763532?text=Hola%20Andy%2C%20me%20interesa%20un%20proyecto%20de%20desarrollo"
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <i class="bx bxl-whatsapp" aria-hidden="true"></i>
+  </a>
+</body>
+</html>

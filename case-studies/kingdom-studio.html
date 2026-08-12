@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RD83KQL7E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3RD83KQL7E');
+  </script>
+  <meta name="description" content="Caso de estudio: Kingdom Studio, plataforma SaaS de generación editorial con IA. FastAPI, Next.js, Supabase, y publicación automática vía Pull Requests de GitHub." />
+  <title>Caso de Estudio: Kingdom Studio | Andy Rosado</title>
+  <link rel="canonical" href="https://andyrosado.com/case-studies/kingdom-studio.html" />
+  <meta name="robots" content="noindex, follow" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#case-content">Saltar al contenido principal</a>
+
+  <header class="header">
+    <a href="../index.html#home" class="logo">Andy<span>Dev</span></a>
+    <button class="menu-button" id="menu-icon" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-navigation" type="button">
+      <i class="bx bx-menu" aria-hidden="true"></i>
+    </button>
+    <nav class="navbar" id="primary-navigation" aria-label="Navegación principal">
+      <ul role="list">
+        <li><a href="../index.html#home">Inicio</a></li>
+        <li><a href="../index.html#about">Sobre mí</a></li>
+        <li><a href="../index.html#services">Servicios</a></li>
+        <li><a href="../index.html#pricing">Precios</a></li>
+        <li><a href="../index.html#portfolio">Portafolio</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../index.html#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="article-page" id="case-content">
+    <div class="article-hero">
+      <img class="article-cover" src="../image/kingdom-studio-dashboard.webp" alt="Kingdom Studio — Dashboard de la plataforma de generación editorial con IA" loading="eager" decoding="async" />
+      <span class="blog-date">Caso de Estudio · SaaS &amp; Plataformas</span>
+      <h1>Kingdom Studio: un SaaS que genera y publica contenido editorial con IA</h1>
+    </div>
+
+    <div class="article-body">
+      <h2>El contexto</h2>
+      <p>
+        Kingdom Studio es un producto propio: una plataforma SaaS que automatiza el ciclo completo de
+        contenido editorial de un ministerio — desde la generación con IA hasta la publicación final —
+        sin que un humano tenga que escribir, formatear y subir cada artículo a mano.
+      </p>
+
+      <h2>El reto</h2>
+      <p>
+        Automatizar contenido con IA no es solo "generar texto" — es integrar generación, revisión,
+        aprobación y publicación en un flujo que un equipo no técnico pueda operar desde un panel, con
+        control real sobre qué se publica y cuándo. Además, el destino final del contenido
+        (<a href="https://www.restauratumatrimonio-blog.com/" target="_blank" rel="noopener">el blog de Restaura Tu Matrimonio</a>,
+        construido en Next.js y desplegado en Vercel) es un entorno <em>serverless</em>: no existe un disco donde
+        simplemente "guardar un archivo nuevo".
+      </p>
+
+      <h2>La solución</h2>
+      <p>
+        Un panel de control donde el contenido pasa por etapas — generación, revisión, aprobación,
+        programación y publicación — con métricas y analíticas visibles en todo momento. La arquitectura
+        se apoya en FastAPI para el backend, Next.js para el panel, y Supabase como base de datos y
+        autenticación.
+      </p>
+
+      <h2>El desafío técnico más interesante</h2>
+      <p>
+        Como Vercel no permite escribir archivos directamente en producción, Kingdom Studio no "sube" el
+        contenido al blog — publica a través de un <strong>adaptador que abre un Pull Request en GitHub</strong>
+        (vía la API de GitHub) contra el repositorio del blog, en una rama nueva, con el artículo en formato
+        MDX y el frontmatter correcto. El CI del blog (lint, type-check, tests y build) corre automáticamente
+        sobre ese PR antes de que un humano lo revise y apruebe — es la primera línea de defensa contra un
+        artículo mal formado. Mientras el PR no se mergea, Kingdom Studio refleja el estado real:
+        <code>DRY_RUN</code>, no <code>PUBLISHED</code>. Es una solución que respeta las restricciones reales
+        de una arquitectura serverless en vez de forzar un atajo.
+      </p>
+
+      <h2>Funcionalidades clave</h2>
+      <ul>
+        <li>Generación de contenido asistida por IA (OpenAI/Claude)</li>
+        <li>Flujo de revisión y aprobación antes de publicar</li>
+        <li>Programación de publicaciones</li>
+        <li>Publicación automática vía Pull Requests de GitHub, no escritura directa</li>
+        <li>Dashboard con métricas y analíticas del contenido publicado</li>
+      </ul>
+
+      <h2>Stack técnico</h2>
+      <p>FastAPI · Next.js · Supabase · API de GitHub · Integración con OpenAI/Claude</p>
+
+      <h2>Estado actual</h2>
+      <p>
+        El producto tiene sus fases fundacionales (estructura, base de datos, panel, sistema de
+        solicitudes) completadas, con el panel administrativo y las integraciones de pago en curso de
+        desarrollo activo. Es un producto propio en evolución, no un proyecto cerrado.
+      </p>
+    </div>
+
+    <div class="article-cta">
+      <h3>¿Necesitas una plataforma que automatice un flujo de contenido o de negocio?</h3>
+      <p>Si tu operación depende de procesos manuales repetitivos, puedo ayudarte a convertirlos en una plataforma real.</p>
+      <div class="cta-buttons">
+        <a href="https://kingdom-studio.vercel.app/login" class="btn-outline" target="_blank" rel="noopener">
+          <i class="bx bx-link-external" aria-hidden="true"></i> Ver Kingdom Studio
+        </a>
+        <a href="../index.html#contact" class="btn"><i class="bx bx-send" aria-hidden="true"></i> Solicitar Cotización</a>
+        <a href="https://wa.me/18492763532?text=Hola%20Andy%2C%20me%20interesa%20un%20proyecto%20de%20desarrollo" class="btn-whatsapp" target="_blank" rel="noopener">
+          <i class="bx bxl-whatsapp" aria-hidden="true"></i> Escríbeme por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> Andy Rosado Web | Todos los derechos reservados.</p>
+      <div class="footer-iconTop">
+        <a href="#case-content" aria-label="Volver arriba"><i class="bx bx-up-arrow-alt" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/18492763532?text=Hola%20Andy%2C%20me%20interesa%20un%20proyecto%20de%20desarrollo"
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <i class="bx bxl-whatsapp" aria-hidden="true"></i>
+  </a>
+</body>
+</html>
