@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RD83KQL7E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3RD83KQL7E');
+  </script>
+  <meta name="description" content="Caso de estudio: el embudo completo de Restaura Tu Matrimonio — landing de ventas + blog en Next.js con CI/CD como motor orgánico, conectados por Kingdom Studio." />
+  <title>Caso de Estudio: Restaura Tu Matrimonio (Embudo Completo) | Andy Rosado</title>
+  <link rel="canonical" href="https://andyrosado.com/case-studies/restaura-tu-matrimonio.html" />
+  <meta name="robots" content="noindex, follow" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#case-content">Saltar al contenido principal</a>
+
+  <header class="header">
+    <a href="../index.html#home" class="logo">Andy<span>Dev</span></a>
+    <button class="menu-button" id="menu-icon" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-navigation" type="button">
+      <i class="bx bx-menu" aria-hidden="true"></i>
+    </button>
+    <nav class="navbar" id="primary-navigation" aria-label="Navegación principal">
+      <ul role="list">
+        <li><a href="../index.html#home">Inicio</a></li>
+        <li><a href="../index.html#about">Sobre mí</a></li>
+        <li><a href="../index.html#services">Servicios</a></li>
+        <li><a href="../index.html#pricing">Precios</a></li>
+        <li><a href="../portafolio/">Portafolio</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../index.html#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="article-page" id="case-content">
+    <div class="article-hero">
+      <img class="article-cover" src="../image/restauratumatrimonio-blog.webp" alt="Restaura Tu Matrimonio — Landing y blog trabajando como un solo embudo" loading="eager" decoding="async" />
+      <span class="blog-date">Caso de Estudio · Embudo Completo</span>
+      <h1>Restaura Tu Matrimonio: una landing de ventas y un blog trabajando como un solo embudo</h1>
+    </div>
+
+    <div class="article-body">
+      <h2>El contexto</h2>
+      <p>
+        Restaura Tu Matrimonio es un curso de recuperación matrimonial del Pastor Andrés Arango, vendido
+        por Hotmart. En vez de tratarlo como un solo proyecto, este caso muestra las <strong>dos piezas
+        que trabajan juntas</strong>: la landing de ventas y el blog que le trae tráfico — una arquitectura
+        de dos dominios a propósito, no una migración accidental.
+      </p>
+
+      <h2>El reto</h2>
+      <p>
+        Una landing de venta por sí sola solo convierte al tráfico que ya le llega — no genera tráfico
+        nuevo. Para que el embudo completo funcione, hacía falta un motor de contenido orgánico separado
+        que atrajera visitantes con problemas reales de pareja, los educara, y los enviara hacia el
+        checkout — sin que ambas piezas compitieran entre sí ni duplicaran esfuerzo.
+      </p>
+
+      <h2>La solución: dos propiedades, un embudo</h2>
+      <p>
+        <strong>restauratumatrimonio.org</strong> — la landing de ventas, con el checkout de Hotmart y su
+        propio tracking de conversión en producción.
+      </p>
+      <p>
+        <strong>restauratumatrimonio-blog.com</strong> — el blog, construido en Next.js (App Router) con
+        contenido en MDX, pensado exclusivamente como motor orgánico: cada artículo apunta hacia la
+        landing con CTAs contextuales según la posición en el artículo (arriba, en medio, al final) y con
+        parámetros UTM para medir qué contenido realmente empuja tráfico hacia la venta.
+      </p>
+
+      <h2>El desafío técnico más interesante: publicación sin fricción</h2>
+      <p>
+        El blog no depende de que alguien escriba y suba artículos manualmente. Kingdom Studio (el SaaS
+        de generación editorial con IA de este mismo portafolio) publica aquí a través de un adaptador que
+        abre Pull Requests contra el repositorio del blog — nunca escribe directo a producción. El CI del
+        blog (lint, type-check, tests y build) corre automáticamente sobre cada PR antes de que un humano
+        lo revise y apruebe, y solo entonces se publica de verdad. Es una cadena de generación → validación
+        → aprobación → publicación completamente trazable.
+      </p>
+
+      <h2>Funcionalidades clave</h2>
+      <ul>
+        <li>CTAs contextuales por posición del artículo, con UTM para atribución</li>
+        <li>Contenido en MDX con CI/CD vía GitHub Actions</li>
+        <li>Tracking dual: Google Analytics 4 y Meta Pixel</li>
+        <li>Publicación automática vía Pull Requests desde Kingdom Studio</li>
+        <li>Landing de ventas con checkout de Hotmart en producción</li>
+      </ul>
+
+      <h2>Stack técnico</h2>
+      <p>Next.js (App Router) · MDX · GitHub Actions · Vercel · GA4 · Meta Pixel · HTML/CSS/JS (landing)</p>
+    </div>
+
+    <div class="article-cta">
+      <h3>¿Vendes un producto digital pero no tienes motor de tráfico propio?</h3>
+      <p>Puedo construir tu landing de ventas y el blog que le trae tráfico orgánico, conectados como un solo embudo.</p>
+      <div class="cta-buttons">
+        <a href="https://www.restauratumatrimonio-blog.com/" class="btn-outline" target="_blank" rel="noopener">
+          <i class="bx bx-link-external" aria-hidden="true"></i> Ver el Blog
+        </a>
+        <a href="https://restauratumatrimonio.org/" class="btn-outline" target="_blank" rel="noopener">
+          <i class="bx bx-link-external" aria-hidden="true"></i> Ver la Landing
+        </a>
+        <a href="../index.html#contact" class="btn"><i class="bx bx-send" aria-hidden="true"></i> Solicitar Cotización</a>
+        <a href="https://wa.me/18492763532?text=Hola%20Andy%2C%20me%20interesa%20un%20proyecto%20de%20desarrollo" class="btn-whatsapp" target="_blank" rel="noopener">
+          <i class="bx bxl-whatsapp" aria-hidden="true"></i> Escríbeme por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> Andy Rosado Web | Todos los derechos reservados.</p>
+      <div class="footer-iconTop">
+        <a href="#case-content" aria-label="Volver arriba"><i class="bx bx-up-arrow-alt" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/18492763532?text=Hola%20Andy%2C%20me%20interesa%20un%20proyecto%20de%20desarrollo"
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <i class="bx bxl-whatsapp" aria-hidden="true"></i>
+  </a>
+</body>
+</html>
