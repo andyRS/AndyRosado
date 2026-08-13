@@ -2404,11 +2404,11 @@ section {
 
 .about-img img {
     width: 100%;
-    max-width: 44rem;
-    aspect-ratio: 4 / 5;
+    max-width: 22rem;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     border: .1rem solid var(--border-color);
-    border-radius: 1.6rem;
+    border-radius: 50%;
     box-shadow: var(--premium-shadow);
 }
 
@@ -3091,8 +3091,9 @@ main .pf-hero p {
     }
 
     .about-img img {
-        max-width: 50rem;
-        aspect-ratio: 5 / 3;
+        max-width: 18rem;
+        aspect-ratio: 1 / 1;
+        margin: 0 auto;
     }
 
     .services-container {
