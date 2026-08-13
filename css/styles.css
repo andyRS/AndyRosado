@@ -1656,3 +1656,386 @@ span {
         justify-content: center;
     }
 }
+
+/* Visual refinement: stack, pricing and project cards */
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+    margin-top: 3rem;
+}
+
+.tech-stack h4 {
+    grid-column: 1 / -1;
+    margin: 0 0 .4rem;
+}
+
+.tech-tags-group,
+.tech-tags-group:last-child {
+    margin: 0;
+    padding: 1.5rem;
+    background: rgba(31, 36, 45, .72);
+    border: .1rem solid rgba(255, 255, 255, .08);
+    border-radius: 1.4rem;
+}
+
+.tech-tags-label {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin-bottom: 1rem;
+}
+
+.tech-tags-label::before {
+    content: '';
+    width: .7rem;
+    height: .7rem;
+    border-radius: 50%;
+    background: var(--main-color);
+    box-shadow: 0 0 .8rem rgba(0, 238, 255, .65);
+}
+
+.tech-tags {
+    gap: .7rem;
+}
+
+.tech-tag {
+    padding: .55rem 1rem;
+    background: rgba(15, 18, 23, .55);
+    border: .1rem solid rgba(255, 255, 255, .06);
+    font-size: 1.2rem;
+}
+
+.pricing-group-title {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 118rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+}
+
+.pricing-group-title::after {
+    content: '';
+    flex: 1;
+    height: .1rem;
+    background: linear-gradient(90deg, rgba(0, 238, 255, .55), transparent);
+}
+
+.pricing-container {
+    max-width: 118rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2.4rem;
+    background: linear-gradient(145deg, rgba(50, 57, 70, .48), rgba(31, 36, 45, .28));
+    border: .1rem solid rgba(255, 255, 255, .08);
+    border-radius: 2.4rem;
+}
+
+.pricing-box {
+    background: rgba(31, 36, 45, .94);
+    border-color: rgba(255, 255, 255, .08);
+    text-align: left;
+}
+
+.pricing-box.pricing-featured {
+    background: linear-gradient(180deg, rgba(0, 238, 255, .08), rgba(31, 36, 45, .96) 32%);
+}
+
+.pricing-box h3,
+.pricing-amount {
+    text-align: center;
+}
+
+.pricing-box .btn,
+.pricing-box .btn-outline {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.service-project-card {
+    position: relative;
+    border: .1rem solid rgba(255, 255, 255, .08);
+    box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, .22);
+    transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+
+.service-project-card:hover,
+.service-project-card:focus-within {
+    transform: translateY(-.6rem);
+    border-color: rgba(0, 238, 255, .55);
+    box-shadow: 0 1.8rem 4rem rgba(0, 0, 0, .3);
+}
+
+.service-project-card img {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-position: center;
+}
+
+.service-project-card .card-body {
+    padding: 2.4rem;
+    gap: 1.2rem;
+}
+
+.service-project-card h3 {
+    line-height: 1.25;
+}
+
+.service-project-card p {
+    line-height: 1.65;
+}
+
+.service-project-card .btn,
+.service-project-card .btn-outline {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.portfolio-container {
+    align-items: stretch;
+}
+
+.portfolio-container .portfolio-box {
+    min-width: 0;
+    height: 100%;
+    flex-direction: column;
+    background: var(--bgcolor);
+    border-color: rgba(255, 255, 255, .08);
+    box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, .24);
+}
+
+.portfolio-container .portfolio-box:hover,
+.portfolio-container .portfolio-box:focus-within {
+    transform: translateY(-.6rem);
+    border-color: rgba(0, 238, 255, .55);
+    box-shadow: 0 1.8rem 4rem rgba(0, 0, 0, .32);
+}
+
+.portfolio-badge {
+    top: 1.2rem;
+    left: 1.2rem;
+    background: rgba(15, 18, 23, .9) !important;
+    color: var(--main-color) !important;
+    border: .1rem solid rgba(0, 238, 255, .65) !important;
+    box-shadow: 0 .6rem 1.8rem rgba(0, 0, 0, .35);
+    backdrop-filter: blur(.8rem);
+}
+
+.portfolio-box img {
+    aspect-ratio: 16 / 9;
+    background: #171b22;
+}
+
+.portfolio-box:hover img {
+    transform: scale(1.035);
+}
+
+.portfolio-box .portfolio-layer {
+    position: static;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    min-height: 27rem;
+    padding: 2.2rem;
+    overflow: visible;
+    background: linear-gradient(180deg, #292f3a 0%, #232832 100%);
+    text-align: left;
+    opacity: 1;
+    transform: none;
+}
+
+.portfolio-layer h3 {
+    font-size: 2rem;
+    line-height: 1.25;
+}
+
+.portfolio-layer p {
+    flex: 1;
+    font-size: 1.35rem;
+    line-height: 1.65;
+    color: #d9dde5;
+}
+
+.portfolio-tech {
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.portfolio-tech span {
+    color: #b8f9ff;
+    background: rgba(0, 238, 255, .06);
+    border-color: rgba(0, 238, 255, .35);
+}
+
+.portfolio-layer a {
+    width: auto;
+    min-height: 4.4rem;
+    height: auto;
+    gap: .7rem;
+    margin-top: .4rem;
+    padding: .9rem 1.6rem;
+    border-radius: 4rem;
+    color: var(--second-bgcolor);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.portfolio-layer a::after {
+    content: 'Ver detalle';
+}
+
+.portfolio-layer a[target='_blank']::after {
+    content: 'Ver sitio';
+}
+
+.portfolio-layer a[href*='case-studies']::after {
+    content: 'Caso de estudio';
+}
+
+.portfolio-layer a i {
+    font-size: 1.8rem;
+}
+
+@media(max-width: 991px) {
+    .tech-stack {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-container {
+        padding: 2rem;
+    }
+}
+
+@media(max-width: 617px) {
+    .portfolio-box .portfolio-layer {
+        min-height: 0;
+    }
+
+    .portfolio-badge {
+        font-size: 1.05rem;
+    }
+
+    .pricing-container {
+        padding: 1.4rem;
+        border-radius: 1.8rem;
+    }
+}
+
+@media(max-width: 617px) {
+    .portfolio,
+    .portfolio-container,
+    .portfolio-box {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .portfolio-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .portfolio {
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+
+    .heading {
+        overflow-wrap: anywhere;
+    }
+
+    .portfolio-filters {
+        width: 100%;
+        gap: .8rem;
+    }
+
+    .filter-btn {
+        max-width: 100%;
+        padding: .8rem 1.4rem;
+        white-space: normal;
+        line-height: 1.25;
+    }
+
+    .portfolio-filters + p {
+        overflow-wrap: anywhere;
+        line-height: 1.7;
+    }
+
+    .portfolio-box img {
+        min-width: 0;
+    }
+
+    .portfolio-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-container .portfolio-box {
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .portfolio-box .portfolio-layer {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .portfolio-layer p {
+        width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .portfolio-filters {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .filter-btn {
+        width: 100%;
+    }
+
+    .portfolio-filters .filter-btn:first-child {
+        grid-column: 1 / -1;
+        width: auto;
+        justify-self: center;
+    }
+}
+@media(max-width: 617px) {
+    .portfolio {
+        width: 100vw;
+        max-width: 100vw;
+        overflow-x: clip;
+    }
+
+    .portfolio .heading {
+        width: calc(100vw - 3.2rem);
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 3.4rem;
+        line-height: 1.2;
+    }
+
+    .portfolio-container,
+    .portfolio-filters,
+    .portfolio-filters + p {
+        width: calc(100vw - 3.2rem);
+        max-width: calc(100vw - 3.2rem);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .filter-btn {
+        min-width: 0;
+        overflow-wrap: anywhere;
+        font-size: 1.2rem;
+    }
+
+    .portfolio-box .portfolio-layer {
+        max-width: 100%;
+    }
+}
