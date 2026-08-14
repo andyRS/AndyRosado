@@ -3333,3 +3333,67 @@ main .pf-hero p {
         margin-top: 0;
     }
 }
+
+/* Lightbox (image gallery zoom) */
+.gallery-zoomable {
+    cursor: zoom-in;
+    transition: opacity .2s ease;
+}
+
+.gallery-zoomable:hover {
+    opacity: .88;
+}
+
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background: rgba(4, 6, 9, .92);
+    backdrop-filter: blur(.4rem);
+}
+
+.lightbox-overlay.active {
+    display: flex;
+}
+
+.lightbox-overlay img {
+    max-width: min(120rem, 92vw);
+    max-height: 88vh;
+    width: auto;
+    border-radius: 1rem;
+    box-shadow: var(--premium-shadow);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
+    width: 4.4rem;
+    height: 4.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    background: var(--surface-elevated);
+    border: .1rem solid var(--border-color);
+    border-radius: 50%;
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+
+.lightbox-close:hover {
+    color: var(--main-color);
+}
+
+@media (max-width: 617px) {
+    .lightbox-close {
+        top: 1.2rem;
+        right: 1.2rem;
+        width: 3.8rem;
+        height: 3.8rem;
+    }
+}

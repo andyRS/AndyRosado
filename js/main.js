@@ -365,3 +365,57 @@ window.addEventListener('load', () => {
     }
   });
 });
+
+// Lightbox for zoomable gallery images
+window.addEventListener('load', () => {
+  const zoomables = document.querySelectorAll('.gallery-zoomable');
+  if (!zoomables.length) return;
+
+  const overlay = document.createElement('div');
+  overlay.className = 'lightbox-overlay';
+  overlay.setAttribute('role', 'dialog');
+  overlay.setAttribute('aria-modal', 'true');
+  overlay.innerHTML = '<button type="button" class="lightbox-close" aria-label="Cerrar imagen ampliada"><i class="bx bx-x" aria-hidden="true"></i></button><img src="" alt="" />';
+  document.body.appendChild(overlay);
+
+  const overlayImg = overlay.querySelector('img');
+  const closeBtn = overlay.querySelector('.lightbox-close');
+  let lastFocused = null;
+
+  function openLightbox(img) {
+    overlayImg.src = img.currentSrc || img.src;
+    overlayImg.alt = img.alt || '';
+    overlay.classList.add('active');
+    lastFocused = document.activeElement;
+    closeBtn.focus();
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    overlay.classList.remove('active');
+    overlayImg.src = '';
+    document.body.style.overflow = '';
+    if (lastFocused) lastFocused.focus();
+  }
+
+  zoomables.forEach((img) => {
+    img.setAttribute('tabindex', '0');
+    img.setAttribute('role', 'button');
+    img.setAttribute('aria-label', 'Ver imagen ampliada: ' + (img.alt || ''));
+    img.addEventListener('click', () => openLightbox(img));
+    img.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openLightbox(img);
+      }
+    });
+  });
+
+  closeBtn.addEventListener('click', closeLightbox);
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && overlay.classList.contains('active')) closeLightbox();
+  });
+});
