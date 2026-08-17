@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RD83KQL7E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3RD83KQL7E');
+  </script>
+  <meta name="description" content="Case study: Church Program Manager, a multi-tenant system for managing church service programs. Node.js/TypeScript, React, MongoDB, Redis." />
+  <title>Case Study: Church Program Manager | Andy Rosado</title>
+  <link rel="canonical" href="https://andyrosado.com/en/case-studies/church-program-manager.html" />
+  <meta name="robots" content="noindex, follow" />
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="es" href="https://andyrosado.com/case-studies/church-program-manager.html" />
+  <link rel="alternate" hreflang="en" href="https://andyrosado.com/en/case-studies/church-program-manager.html" />
+  <link rel="alternate" hreflang="x-default" href="https://andyrosado.com/case-studies/church-program-manager.html" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+  <script src="../../js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#case-content">Skip to main content</a>
+
+  <header class="header">
+    <a href="../index.html#home" class="logo">Andy<span>Dev</span></a>
+    <button class="menu-button" id="menu-icon" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation" type="button">
+      <i class="bx bx-menu" aria-hidden="true"></i>
+    </button>
+    <nav class="navbar" id="primary-navigation" aria-label="Main navigation">
+      <ul role="list">
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#services">Services</a></li>
+        <li><a href="../portfolio/">Portfolio</a></li>
+        <li><a href="/en/blog.html">Blog</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+        <li><a href="../../case-studies/church-program-manager.html" class="lang-switch" hreflang="es">ES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="article-page" id="case-content">
+    <div class="article-hero">
+      <img class="article-cover" src="../../image/church-pm-dashboard.webp" alt="Church Program Manager — Dashboard of the church service program management system" loading="eager" decoding="async" />
+      <span class="blog-date">Case Study · SaaS &amp; Platforms</span>
+      <h1>Church Program Manager: from a buggy assigner to a production-ready multi-tenant platform</h1>
+    </div>
+
+    <div class="article-body">
+      <h2>The context</h2>
+      <p>
+        Iglesia Dios Fuerte Arca Evangélica needed to organize its weekly service programs — who leads,
+        who worships, who preaches, who cleans — without relying on a spreadsheet or a coordinator's
+        memory. The system, <strong>Church Program Manager</strong>, already existed in a first version
+        (v1), but had real underlying problems that this project (v2) set out to fix at the root.
+      </p>
+
+      <h2>The challenge</h2>
+      <p>
+        v1 had a critical bug in the assignment engine: the fairness algorithm didn't correctly
+        prioritize people with less recent participation, and it also generated N+1 database queries on
+        every calculation. On top of that, there was a serious security gap for a system handling data
+        from multiple churches: the <code>churchId</code> could arrive tampered with from the request body
+        instead of always being derived from the authentication token — meaning nothing in the code
+        prevented one church from seeing or modifying another church's data.
+      </p>
+
+      <h2>The solution</h2>
+      <p>
+        v2 was a rewrite focused on security, correctness, and automation, not cosmetic features:
+      </p>
+      <ul>
+        <li><strong>Tenant Guard</strong> — middleware that forces the <code>churchId</code> to always come
+          from the JWT, never from the body, and verifies the church is active against the database (with
+          a 5-minute Redis cache so that check doesn't cost an extra query on every request).</li>
+        <li><strong>6-role RBAC</strong> — a SUPER_ADMIN &gt; PASTOR &gt; ADMIN &gt;
+          MINISTRY_LEADER &gt; EDITOR &gt; VIEWER hierarchy, enforced at the middleware level on every route.</li>
+        <li><strong>AssignmentEngine v2</strong> — the assignment engine was split into a
+          <code>FairnessCalculator</code> (a normalized 3-component score, where lower recent
+          participation now correctly means higher priority) and a <code>HistoryAnalyzer</code> that
+          preloads history into memory before calculating, eliminating v1's N+1 antipattern.</li>
+        <li><strong>Redis cache with fallback</strong> — if Redis isn't available, the system automatically
+          falls back to an in-memory Map instead of failing.</li>
+        <li><strong>Asynchronous notifications</strong> — Bull + Redis queues to send email and WhatsApp
+          reminders 48 hours before each service, triggered when a program is published.</li>
+        <li><strong>PDF generation</strong> — Puppeteer + Handlebars templates to export the program with
+          each church's logo, brand colors, and pastor's signature, with a watermark on the free plan.</li>
+      </ul>
+
+      <h2>The most interesting technical challenge: real multi-tenant isolation</h2>
+      <p>
+        In a system serving multiple churches from the same database, the line between "my data" and
+        "another church's data" can't depend on the client sending the right value — it has to be
+        guaranteed on the server, always. Tenant Guard solves this by overwriting any
+        <code>churchId</code> that arrives in the request body with the one signed into the JWT, and it
+        also validates against the database that the church is active before letting the request through
+        — with caching so that validation doesn't cost an extra query on every request. It's the
+        difference between "trusting the client" and "verifying on the server," applied consistently
+        through a single middleware at every endpoint, not case by case.
+      </p>
+
+      <h2>Key features</h2>
+      <ul>
+        <li>Automatic assignment engine with a corrected fairness algorithm and no N+1 queries</li>
+        <li>Multi-tenant security with Tenant Guard and 6-role RBAC</li>
+        <li>PDF generation for programs with dynamic per-church branding (logo, colors, signature)</li>
+        <li>Automatic email and WhatsApp reminders 48h before each service</li>
+        <li>Management of people, ministries, roles, and recurring activities</li>
+        <li>Invitation letter system with a step-by-step wizard and PDF export</li>
+        <li>Dashboard with metrics and direct program downloads</li>
+        <li>Per-church plans (FREE / PRO / ENTERPRISE) with configurable limits</li>
+      </ul>
+
+      <h2>System screenshots</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:1.5rem; margin-top:2rem;">
+        <img class="gallery-zoomable" src="../../image/church-pm-login.webp" alt="Church Program Manager — Login screen with the church's identity" loading="lazy" decoding="async" style="width:100%; height:100%; aspect-ratio:4/3; object-fit:cover; object-position:top; border-radius:1rem;" />
+        <img class="gallery-zoomable" src="../../image/church-pm-actividades.webp" alt="Church Program Manager — Activity type configuration and program format" loading="lazy" decoding="async" style="width:100%; height:100%; aspect-ratio:4/3; object-fit:cover; object-position:top; border-radius:1rem;" />
+        <img class="gallery-zoomable" src="../../image/church-pm-calendario.webp" alt="Church Program Manager — Program calendar" loading="lazy" decoding="async" style="width:100%; height:100%; aspect-ratio:4/3; object-fit:cover; object-position:top; border-radius:1rem;" />
+        <img class="gallery-zoomable" src="../../image/church-pm-generar-programa.webp" alt="Church Program Manager — Automatic program generation with the AssignmentEngine" loading="lazy" decoding="async" style="width:100%; height:100%; aspect-ratio:4/3; object-fit:cover; object-position:top; border-radius:1rem;" />
+        <img class="gallery-zoomable" src="../../image/church-pm-programa-generado.webp" alt="Church Program Manager — Real-time preview of the generated program flyer" loading="lazy" decoding="async" style="width:100%; height:100%; aspect-ratio:4/3; object-fit:cover; object-position:top; border-radius:1rem;" />
+        <img class="gallery-zoomable" src="../../image/church-pm-personas.webp" alt="Church Program Manager — People and roles management" loading="lazy" decoding="async" style="width:100%; height:100%; aspect-ratio:4/3; object-fit:cover; object-position:top; border-radius:1rem;" />
+        <img class="gallery-zoomable" src="../../image/church-pm-cartas-lista.webp" alt="Church Program Manager — Invitation letters module" loading="lazy" decoding="async" style="width:100%; height:100%; aspect-ratio:4/3; object-fit:cover; object-position:top; border-radius:1rem;" />
+        <img class="gallery-zoomable" src="../../image/church-pm-carta-preview.webp" alt="Church Program Manager — Preview and download of a generated letter" loading="lazy" decoding="async" style="width:100%; height:100%; aspect-ratio:4/3; object-fit:cover; object-position:top; border-radius:1rem;" />
+        <img class="gallery-zoomable" src="../../image/church-pm-carta-pdf.webp" alt="Church Program Manager — Invitation letter PDF with the church's letterhead" loading="lazy" decoding="async" style="width:100%; height:100%; aspect-ratio:4/3; object-fit:cover; object-position:top; border-radius:1rem;" />
+      </div>
+
+      <h2>Tech stack</h2>
+      <p>Backend: Node.js · TypeScript · MongoDB · Redis · Bull · Puppeteer · Handlebars · JWT</p>
+      <p>Frontend: React · Vite · TypeScript</p>
+    </div>
+
+    <div class="article-cta">
+      <h3>Does your organization need to coordinate people and schedules without spreadsheets?</h3>
+      <p>I can build management systems with real multi-tenant security from the design stage, not patched on afterward.</p>
+      <div class="cta-buttons">
+        <a href="https://software-iglesias-frontend.vercel.app/login" class="btn-outline" target="_blank" rel="noopener">
+          <i class="bx bx-link-external" aria-hidden="true"></i> View Church Program Manager
+        </a>
+        <a href="../index.html#contact" class="btn"><i class="bx bx-send" aria-hidden="true"></i> Request a Quote</a>
+        <a href="https://wa.me/18492763532?text=Hi%20Andy%2C%20I%27m%20interested%20in%20a%20development%20project" class="btn-whatsapp" target="_blank" rel="noopener">
+          <i class="bx bxl-whatsapp" aria-hidden="true"></i> Message me on WhatsApp
+        </a>
+      </div>
+      <p style="text-align:center; margin: 2.5rem 0 0;"><a href="../portfolio/saas-platforms/">View more SaaS &amp; Platforms projects &rarr;</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> Andy Rosado Web | All rights reserved.</p>
+      <div class="footer-iconTop">
+        <a href="#case-content" aria-label="Back to top"><i class="bx bx-up-arrow-alt" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/18492763532?text=Hi%20Andy%2C%20I%27m%20interested%20in%20a%20development%20project"
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact via WhatsApp">
+    <i class="bx bxl-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

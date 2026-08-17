@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RD83KQL7E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3RD83KQL7E');
+  </script>
+  <meta name="description" content="Case study: Kingdom Studio, an AI-powered editorial SaaS platform. FastAPI, Next.js, Supabase, and automatic publishing via GitHub Pull Requests." />
+  <title>Case Study: Kingdom Studio | Andy Rosado</title>
+  <link rel="canonical" href="https://andyrosado.com/en/case-studies/kingdom-studio.html" />
+  <meta name="robots" content="noindex, follow" />
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="es" href="https://andyrosado.com/case-studies/kingdom-studio.html" />
+  <link rel="alternate" hreflang="en" href="https://andyrosado.com/en/case-studies/kingdom-studio.html" />
+  <link rel="alternate" hreflang="x-default" href="https://andyrosado.com/case-studies/kingdom-studio.html" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+  <script src="../../js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#case-content">Skip to main content</a>
+
+  <header class="header">
+    <a href="../index.html#home" class="logo">Andy<span>Dev</span></a>
+    <button class="menu-button" id="menu-icon" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation" type="button">
+      <i class="bx bx-menu" aria-hidden="true"></i>
+    </button>
+    <nav class="navbar" id="primary-navigation" aria-label="Main navigation">
+      <ul role="list">
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#services">Services</a></li>
+        <li><a href="../index.html#pricing">Pricing</a></li>
+        <li><a href="../portfolio/">Portfolio</a></li>
+        <li><a href="/en/blog.html">Blog</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+        <li><a href="../../case-studies/kingdom-studio.html" class="lang-switch" hreflang="es">ES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="article-page" id="case-content">
+    <div class="article-hero">
+      <img class="article-cover" src="../../image/kingdom-studio-dashboard.webp" alt="Kingdom Studio — Dashboard of the AI-powered editorial platform" loading="eager" decoding="async" />
+      <span class="blog-date">Case Study · SaaS &amp; Platforms</span>
+      <h1>Kingdom Studio: a SaaS that generates and publishes editorial content with AI</h1>
+    </div>
+
+    <div class="article-body">
+      <h2>The context</h2>
+      <p>
+        Kingdom Studio is a proprietary product: a SaaS platform that automates a ministry's entire
+        editorial content cycle — from AI generation to final publication — without a human having to
+        write, format, and upload every article by hand.
+      </p>
+
+      <h2>The challenge</h2>
+      <p>
+        Automating content with AI isn't just "generating text" — it's integrating generation, review,
+        approval, and publishing into a workflow a non-technical team can operate from a dashboard, with
+        real control over what gets published and when. On top of that, the content's final destination
+        (<a href="https://www.restauratumatrimonio-blog.com/" target="_blank" rel="noopener">the Restaura Tu Matrimonio blog</a>,
+        built in Next.js and deployed on Vercel) is a <em>serverless</em> environment: there's no disk where
+        you can simply "save a new file."
+      </p>
+
+      <h2>The solution</h2>
+      <p>
+        A control panel where content moves through stages — generation, review, approval, scheduling,
+        and publishing — with metrics and analytics visible at every step. The architecture relies on
+        FastAPI for the backend, Next.js for the dashboard, and Supabase for the database and
+        authentication.
+      </p>
+
+      <h2>The most interesting technical challenge</h2>
+      <p>
+        Since Vercel doesn't allow writing files directly in production, Kingdom Studio doesn't "upload"
+        content to the blog — it publishes through an <strong>adapter that opens a Pull Request on GitHub</strong>
+        (via the GitHub API) against the blog's repository, on a new branch, with the article in MDX format
+        and the correct frontmatter. The blog's CI (lint, type-check, tests, and build) runs automatically
+        on that PR before a human reviews and approves it — it's the first line of defense against a
+        malformed article. While the PR isn't merged, Kingdom Studio reflects the real status:
+        <code>DRY_RUN</code>, not <code>PUBLISHED</code>. It's a solution that respects the real constraints
+        of a serverless architecture instead of forcing a shortcut.
+      </p>
+
+      <h2>Key features</h2>
+      <ul>
+        <li>AI-assisted content generation (OpenAI/Claude)</li>
+        <li>Review and approval workflow before publishing</li>
+        <li>Publication scheduling</li>
+        <li>Automatic publishing via GitHub Pull Requests, not direct writes</li>
+        <li>Dashboard with metrics and analytics for published content</li>
+      </ul>
+
+      <h2>Tech stack</h2>
+      <p>FastAPI · Next.js · Supabase · GitHub API · OpenAI/Claude integration</p>
+
+      <h2>Current status</h2>
+      <p>
+        The product's foundational phases (structure, database, dashboard, request system) are complete,
+        with the admin panel and payment integrations under active development. It's a proprietary product
+        still evolving, not a closed project.
+      </p>
+    </div>
+
+    <div class="article-cta">
+      <h3>Need a platform that automates a content or business workflow?</h3>
+      <p>If your operation depends on repetitive manual processes, I can help you turn them into a real platform.</p>
+      <p style="text-align:center; margin: -1rem 0 2.5rem;"><a href="../portfolio/saas-platforms/">View more SaaS &amp; Platforms projects &rarr;</a></p>
+      <div class="cta-buttons">
+        <a href="https://kingdom-studio.vercel.app/login" class="btn-outline" target="_blank" rel="noopener">
+          <i class="bx bx-link-external" aria-hidden="true"></i> View Kingdom Studio
+        </a>
+        <a href="../index.html#contact" class="btn"><i class="bx bx-send" aria-hidden="true"></i> Request a Quote</a>
+        <a href="https://wa.me/18492763532?text=Hi%20Andy%2C%20I%27m%20interested%20in%20a%20development%20project" class="btn-whatsapp" target="_blank" rel="noopener">
+          <i class="bx bxl-whatsapp" aria-hidden="true"></i> Message me on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> Andy Rosado Web | All rights reserved.</p>
+      <div class="footer-iconTop">
+        <a href="#case-content" aria-label="Back to top"><i class="bx bx-up-arrow-alt" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/18492763532?text=Hi%20Andy%2C%20I%27m%20interested%20in%20a%20development%20project"
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact via WhatsApp">
+    <i class="bx bxl-whatsapp" aria-hidden="true"></i>
+  </a>
+</body>
+</html>

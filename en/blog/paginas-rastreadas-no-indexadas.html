@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RD83KQL7E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3RD83KQL7E');
+  </script>
+  <meta name="description" content="What 'Crawled - currently not indexed' means in Google Search Console, why it happens, and how it affects your site's crawl budget. Explained without jargon." />
+  <title>Pages Crawled but Not Indexed: the SEO Problem Almost No One Checks | Andy Rosado</title>
+  <link rel="canonical" href="https://andyrosado.com/en/blog/paginas-rastreadas-no-indexadas.html" />
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="es" href="https://andyrosado.com/blog/paginas-rastreadas-no-indexadas.html" />
+  <link rel="alternate" hreflang="en" href="https://andyrosado.com/en/blog/paginas-rastreadas-no-indexadas.html" />
+  <link rel="alternate" hreflang="x-default" href="https://andyrosado.com/blog/paginas-rastreadas-no-indexadas.html" />
+
+  <meta property="og:title" content="Pages Crawled but Not Indexed" />
+  <meta property="og:description" content="Why Google crawls your pages and decides not to index them, and how that takes priority away from your new content." />
+  <meta property="og:url" content="https://andyrosado.com/en/blog/paginas-rastreadas-no-indexadas.html" />
+  <meta property="og:image" content="https://andyrosado.com/image/blog-paginas-no-indexadas.webp" />
+  <meta property="og:type" content="article" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+  <script src="../../js/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Pages Crawled but Not Indexed: the SEO Problem Almost No One Checks",
+    "author": { "@type": "Person", "name": "Andy Rosado" },
+    "publisher": { "@type": "Organization", "name": "Andy Rosado Web" },
+    "mainEntityOfPage": "https://andyrosado.com/en/blog/paginas-rastreadas-no-indexadas.html"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#article-content">Skip to main content</a>
+
+  <header class="header">
+    <a href="../index.html#home" class="logo">Andy<span>Dev</span></a>
+    <button class="menu-button" id="menu-icon" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation" type="button">
+      <i class="bx bx-menu" aria-hidden="true"></i>
+    </button>
+    <nav class="navbar" id="primary-navigation" aria-label="Main navigation">
+      <ul role="list">
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#services">Services</a></li>
+        <li><a href="../index.html#pricing">Pricing</a></li>
+        <li><a href="../portfolio/">Portfolio</a></li>
+        <li><a href="/en/blog.html">Blog</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+        <li><a href="../../blog/paginas-rastreadas-no-indexadas.html" class="lang-switch" hreflang="es">ES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="article-page" id="article-content">
+    <div class="article-hero">
+      <img class="article-cover" src="../../image/blog-paginas-no-indexadas.webp" alt="" loading="eager" decoding="async" />
+      <span class="blog-date">Technical SEO</span>
+      <h1>Pages Crawled but Not Indexed: the SEO Problem Almost No One Checks</h1>
+    </div>
+
+    <div class="article-body">
+      <p>
+        If you go into Google Search Console and check "Pages" (formerly "Coverage"), you'll very likely
+        see a category called <strong>"Crawled - currently not indexed."</strong> Most site owners never
+        check it because it's technically not an "error" — it doesn't break anything visually. But on
+        large sites, this category can pile up thousands of pages, and that does carry a real cost.
+      </p>
+
+      <h2>What does it actually mean?</h2>
+      <p>
+        It means Google visited that page (crawled it), but decided, at its own discretion, not to include
+        it in its search index. It's different from a 404 error or a <code>robots.txt</code> block — the
+        page exists, it works, and Google saw it. It simply didn't consider it worth indexing, almost
+        always for one of these reasons:
+      </p>
+      <ul>
+        <li><strong>Duplicate or very similar content</strong> to another page already indexed on the same site.</li>
+        <li><strong>Low perceived value content</strong> — very thin pages, auto-generated ones, or pages with little unique text.</li>
+        <li><strong>Insufficient quality signals</strong> — no internal links pointing to it, no traffic, no accumulated authority.</li>
+      </ul>
+
+      <h2>Why it matters to your crawl budget</h2>
+      <p>
+        Google doesn't have infinite resources to crawl your site every day — it assigns a
+        <strong>crawl budget</strong> proportional to your domain's size and authority. Every time that
+        budget gets spent visiting pages that will never be indexed, it's budget that isn't being used to
+        discover and re-index your new or updated content faster. On sites with thousands of pages —
+        typically news outlets, large e-commerce stores, or very old blogs — this effect can be
+        significant.
+      </p>
+
+      <h2>How to spot it (without paid tools)</h2>
+      <ol class="clean" style="max-width:70ch">
+        <li>Go to Search Console → Pages → the "Why pages aren't indexed" section.</li>
+        <li>Look specifically for "Crawled - currently not indexed" and "Discovered - currently not indexed."</li>
+        <li>Review a sample of those URLs: are they filter pages, infinite pagination, duplicate content, or just old, low-value pages?</li>
+        <li>Cross-reference that list against your Analytics: if, on top of not being indexed, they also get no meaningful direct or internal traffic, they're strong candidates to improve, consolidate, or remove.</li>
+      </ol>
+
+      <h2>What to do once you find it</h2>
+      <p>
+        There's no one-size-fits-all fix — it depends on why Google decided not to index them. The typical
+        options are: improve and expand the content if it has real potential, consolidate several similar
+        pages into one more complete page (avoiding keyword cannibalization), add internal links from
+        higher-authority pages, or explicitly mark with <code>noindex</code> the pages that should never
+        compete for rankings (like filter results or admin pages). This is exactly the kind of decision I
+        review as part of the 4F Method in every audit: cross-referencing the indexing report against real
+        Analytics performance before deciding what to do with each group of pages.
+      </p>
+    </div>
+
+    <div class="article-cta">
+      <h3>Not sure how many of your site's pages are in this situation?</h3>
+      <p>I review your complete indexing status as part of every technical SEO audit.</p>
+      <div class="cta-buttons">
+        <a href="../seo-marketing.html" class="btn-outline"><i class="bx bx-search-alt" aria-hidden="true"></i> See the SEO Service</a>
+        <a href="../index.html#contact" class="btn"><i class="bx bx-send" aria-hidden="true"></i> Request a Quote</a>
+        <a href="https://wa.me/18492763532?text=Hi%20Andy%2C%20I%27m%20interested%20in%20an%20SEO%20audit" class="btn-whatsapp" target="_blank" rel="noopener">
+          <i class="bx bxl-whatsapp" aria-hidden="true"></i> Message me on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> Andy Rosado Web | All rights reserved.</p>
+      <div class="footer-iconTop">
+        <a href="#article-content" aria-label="Back to top"><i class="bx bx-up-arrow-alt" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/18492763532?text=Hi%20Andy%2C%20I%27m%20interested%20in%20an%20SEO%20audit"
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact via WhatsApp">
+    <i class="bx bxl-whatsapp" aria-hidden="true"></i>
+  </a>
+</body>
+</html>

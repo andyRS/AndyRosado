@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RD83KQL7E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3RD83KQL7E');
+  </script>
+  <meta name="description" content="Case study: a proprietary WhatsApp sales system with four AI agents, routing, memory, campaign attribution, and human hand-off." />
+  <title>Case Study: WhatsApp Sales Agents | Andy Rosado</title>
+  <link rel="canonical" href="https://andyrosado.com/en/case-studies/agentes-ventas-whatsapp.html" />
+  <meta name="robots" content="noindex, follow" />
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="es" href="https://andyrosado.com/case-studies/agentes-ventas-whatsapp.html" />
+  <link rel="alternate" hreflang="en" href="https://andyrosado.com/en/case-studies/agentes-ventas-whatsapp.html" />
+  <link rel="alternate" hreflang="x-default" href="https://andyrosado.com/case-studies/agentes-ventas-whatsapp.html" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+  <script src="../../js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#case-content">Skip to main content</a>
+
+  <header class="header">
+    <a href="../index.html#home" class="logo">Andy<span>Dev</span></a>
+    <button class="menu-button" id="menu-icon" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation" type="button">
+      <i class="bx bx-menu" aria-hidden="true"></i>
+    </button>
+    <nav class="navbar" id="primary-navigation" aria-label="Main navigation">
+      <ul role="list">
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#services">Services</a></li>
+        <li><a href="../index.html#pricing">Pricing</a></li>
+        <li><a href="../portfolio/">Portfolio</a></li>
+        <li><a href="/en/blog.html">Blog</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+        <li><a href="../../case-studies/agentes-ventas-whatsapp.html" class="lang-switch" hreflang="es">ES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="article-page" id="case-content">
+    <div class="article-hero">
+      <img class="article-cover" src="../../image/agentes-ventas-ia.webp" alt="Visual diagram of a sales system with four specialized agents and human hand-off" loading="eager" decoding="async" />
+      <span class="blog-date">Case Study · Proprietary Product · Automation &amp; AI</span>
+      <h1>Four sales agents on a single WhatsApp number, with memory and human control</h1>
+    </div>
+
+    <div class="article-body">
+      <h2>The context</h2>
+      <p>
+        This project was born to handle four different digital offers from the same WhatsApp number. Each
+        product needs a different conversation, tone, landing page, and security rules. A generalist bot
+        could mix up information, repeat questions, or send a person to the wrong page.
+      </p>
+
+      <h2>The challenge</h2>
+      <p>
+        The system had to recognize which product a contact was interested in, remember what had been
+        discussed, answer real questions without turning every turn into a rigid script, and keep a clear
+        path for a person to take over. It also had to distinguish contacts coming from ads versus
+        referrals, and handle external failures without leaving the customer in silence.
+      </p>
+
+      <h2>The solution</h2>
+      <p>
+        I built a central workflow in n8n connected to the WhatsApp Cloud API. A router identifies the
+        product from the customer's selection or the message's origin data and activates the corresponding
+        context. The four journeys work as separate assistants: Sofía, Lucía, Valentina, and Sara — each
+        with its own information, boundaries, conversation style, and landing page.
+      </p>
+
+      <h2>How the journey works</h2>
+      <ol>
+        <li>WhatsApp receives the message and validates it's a real conversation, not a technical event.</li>
+        <li>The system logs the contact and detects whether it came from an ad, a referral, or an unknown source.</li>
+        <li>The router selects the product and isolates memory by phone number and context to prevent cross-talk between agents.</li>
+        <li>The specialized agent responds in short messages and shares only its authorized landing page.</li>
+        <li>Chatwoot keeps a supervision inbox where an operator can observe or take over the conversation.</li>
+        <li>If a person intervenes or a critical failure occurs, the automation pauses and preserves context.</li>
+      </ol>
+
+      <h2>The four agents</h2>
+      <ul>
+        <li><strong>Sofía:</strong> handles questions about a children's biblical ebook and adapts the conversation to the child's age.</li>
+        <li><strong>Lucía:</strong> handles a recreational ebook about Jonah and the Great Fish, with a short, family-friendly journey.</li>
+        <li><strong>Valentina:</strong> presents a recipe program with respectful language and boundaries around medical questions.</li>
+        <li><strong>Sara:</strong> handles a program for married couples, with reinforced rules for signs of violence, risk, or crisis.</li>
+      </ul>
+
+      <h2>Key features</h2>
+      <ul>
+        <li>Routing across four products from a single channel</li>
+        <li>Independent memory per contact and product</li>
+        <li>Attribution of Meta ads and referral links</li>
+        <li>Landing page, pricing, and business rules isolated per agent</li>
+        <li>Human inbox with automatic-message identification</li>
+        <li>Controlled pause and reactivation during human intervention</li>
+        <li>Fallback and assignment protocol when a critical component fails</li>
+      </ul>
+
+      <h2>Tech stack</h2>
+      <p>n8n · WhatsApp Cloud API · Google Gemini · Chatwoot · Docker · Webhooks · JavaScript</p>
+
+      <h2>Current status</h2>
+      <p>
+        Routing, memory, the four commercial journeys, source attribution, and human hand-off have passed
+        functional testing. The system is still under active development, with conversation follow-up and
+        closing logic being refined. For privacy, no panel access is published and no real customer
+        conversations are shown.
+      </p>
+    </div>
+
+    <div class="article-cta">
+      <h3>Does your business handle a lot of repetitive WhatsApp inquiries?</h3>
+      <p>I can help you design an automation that qualifies opportunities, responds with context, and routes each conversation to the right team.</p>
+      <p style="text-align:center; margin: -1rem 0 2.5rem;"><a href="../portfolio/ai-automation/">View more Automation &amp; AI projects &rarr;</a></p>
+      <div class="cta-buttons">
+        <a href="../ai-automation.html" class="btn-outline"><i class="bx bx-bot" aria-hidden="true"></i> See the service</a>
+        <a href="../index.html#contact" class="btn"><i class="bx bx-send" aria-hidden="true"></i> Request a Quote</a>
+        <a href="https://wa.me/18492763532?text=Hi%20Andy%2C%20I%20want%20to%20automate%20my%20business%27s%20support" class="btn-whatsapp" target="_blank" rel="noopener">
+          <i class="bx bxl-whatsapp" aria-hidden="true"></i> Message me on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> Andy Rosado Web | All rights reserved.</p>
+      <div class="footer-iconTop">
+        <a href="#case-content" aria-label="Back to top"><i class="bx bx-up-arrow-alt" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/18492763532?text=Hi%20Andy%2C%20I%20want%20to%20automate%20my%20business%27s%20support"
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact via WhatsApp">
+    <i class="bx bxl-whatsapp" aria-hidden="true"></i>
+  </a>
+</body>
+</html>
