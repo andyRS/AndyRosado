@@ -3397,3 +3397,13 @@ main .pf-hero p {
         height: 3.8rem;
     }
 }
+
+/* Language switch */
+.lang-switch {
+    padding: .3rem .9rem !important;
+    border: .1rem solid var(--border-color);
+    border-radius: .6rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem !important;
+    letter-spacing: .04rem;
+}

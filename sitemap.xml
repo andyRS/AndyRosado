@@ -73,5 +73,60 @@
   <priority>0.70</priority>
 </url>
 
+<url>
+  <loc>https://andyrosado.com/en/</loc>
+  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://andyrosado.com/en/web-development.html</loc>
+  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://andyrosado.com/en/seo-marketing.html</loc>
+  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://andyrosado.com/en/graphic-design.html</loc>
+  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://andyrosado.com/en/ai-automation.html</loc>
+  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://andyrosado.com/en/portfolio/</loc>
+  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://andyrosado.com/en/portfolio/saas-platforms/</loc>
+  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://andyrosado.com/en/portfolio/ecommerce/</loc>
+  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://andyrosado.com/en/portfolio/corporate/</loc>
+  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://andyrosado.com/en/portfolio/landing-pages/</loc>
+  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://andyrosado.com/en/portfolio/ai-automation/</loc>
+  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
 
 </urlset>
