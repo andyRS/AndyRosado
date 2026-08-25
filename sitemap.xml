@@ -1,218 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://andyrosado.com/</loc>
-  <lastmod>2026-02-06T14:03:43+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/servicios-desarrollo-web.html</loc>
-  <lastmod>2026-02-06T14:03:43+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/servicios-diseno-grafico.html</loc>
-  <lastmod>2026-02-06T14:03:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/servicios-marketing-digital.html</loc>
-  <lastmod>2026-02-06T14:03:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/servicios-automatizacion-ia.html</loc>
-  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/portafolio/</loc>
-  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/portafolio/automatizacion-ia/</loc>
-  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
-  <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/index.html</loc>
-  <lastmod>2026-02-06T14:03:43+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/blog.html</loc>
-  <lastmod>2026-07-03T00:00:00+00:00</lastmod>
-  <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/blog/cuanto-cuesta-una-pagina-web-en-republica-dominicana.html</loc>
-  <lastmod>2026-07-03T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/blog/por-que-tu-negocio-necesita-una-pagina-web.html</loc>
-  <lastmod>2026-07-03T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/blog/seo-basico-para-pequenos-negocios.html</loc>
-  <lastmod>2026-07-03T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/ebooks/</loc>
-  <lastmod>2026-08-10T00:00:00+00:00</lastmod>
-  <priority>0.70</priority>
-</url>
-
-<url>
-  <loc>https://andyrosado.com/en/</loc>
-  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/web-development.html</loc>
-  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/seo-marketing.html</loc>
-  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/graphic-design.html</loc>
-  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/ai-automation.html</loc>
-  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/portfolio/</loc>
-  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/portfolio/saas-platforms/</loc>
-  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
-  <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/portfolio/ecommerce/</loc>
-  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
-  <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/portfolio/corporate/</loc>
-  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
-  <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/portfolio/landing-pages/</loc>
-  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
-  <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/portfolio/ai-automation/</loc>
-  <lastmod>2026-08-13T00:00:00+00:00</lastmod>
-  <priority>0.70</priority>
-</url>
-
-<url>
-  <loc>https://andyrosado.com/en/blog.html</loc>
-  <lastmod>2026-08-14T00:00:00+00:00</lastmod>
-  <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/case-studies/kingdom-studio.html</loc>
-  <lastmod>2026-08-14T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/case-studies/concierge-cr.html</loc>
-  <lastmod>2026-08-14T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/case-studies/schoolpay-rd.html</loc>
-  <lastmod>2026-08-14T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/case-studies/vitagloss-rd.html</loc>
-  <lastmod>2026-08-14T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/case-studies/coopdinamica.html</loc>
-  <lastmod>2026-08-14T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/case-studies/darknitido-llc.html</loc>
-  <lastmod>2026-08-14T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/case-studies/restaura-tu-matrimonio.html</loc>
-  <lastmod>2026-08-14T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/case-studies/church-program-manager.html</loc>
-  <lastmod>2026-08-14T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/case-studies/agentes-ventas-whatsapp.html</loc>
-  <lastmod>2026-08-14T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/case-studies/la-agencia-ia.html</loc>
-  <lastmod>2026-08-14T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/case-studies/canarias-en-pleno.html</loc>
-  <lastmod>2026-08-14T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/blog/cuanto-cuesta-una-pagina-web-en-republica-dominicana.html</loc>
-  <lastmod>2026-08-14T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/blog/por-que-tu-negocio-necesita-una-pagina-web.html</loc>
-  <lastmod>2026-08-14T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/blog/seo-basico-para-pequenos-negocios.html</loc>
-  <lastmod>2026-08-14T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/blog/que-es-una-auditoria-seo-tecnica.html</loc>
-  <lastmod>2026-08-14T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://andyrosado.com/en/blog/paginas-rastreadas-no-indexadas.html</loc>
-  <lastmod>2026-08-14T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://andyrosado.com/</loc><lastmod>2026-08-25</lastmod><priority>1.00</priority></url>
+  <url><loc>https://andyrosado.com/servicios-desarrollo-web.html</loc></url>
+  <url><loc>https://andyrosado.com/servicios-diseno-grafico.html</loc></url>
+  <url><loc>https://andyrosado.com/servicios-marketing-digital.html</loc></url>
+  <url><loc>https://andyrosado.com/servicios-automatizacion-ia.html</loc></url>
+  <url><loc>https://andyrosado.com/portafolio/</loc><lastmod>2026-08-25</lastmod><priority>0.90</priority></url>
+  <url><loc>https://andyrosado.com/portafolio/saas-plataformas/</loc></url>
+  <url><loc>https://andyrosado.com/portafolio/full-stack/</loc></url>
+  <url><loc>https://andyrosado.com/portafolio/ecommerce/</loc></url>
+  <url><loc>https://andyrosado.com/portafolio/landing-pages/</loc></url>
+  <url><loc>https://andyrosado.com/portafolio/corporativo/</loc></url>
+  <url><loc>https://andyrosado.com/portafolio/sistemas/</loc></url>
+  <url><loc>https://andyrosado.com/portafolio/automatizacion-ia/</loc></url>
+  <url><loc>https://andyrosado.com/blog.html</loc></url>
+  <url><loc>https://andyrosado.com/blog/cuanto-cuesta-una-pagina-web-en-republica-dominicana.html</loc></url>
+  <url><loc>https://andyrosado.com/blog/por-que-tu-negocio-necesita-una-pagina-web.html</loc></url>
+  <url><loc>https://andyrosado.com/blog/seo-basico-para-pequenos-negocios.html</loc></url>
+  <url><loc>https://andyrosado.com/blog/que-es-una-auditoria-seo-tecnica.html</loc></url>
+  <url><loc>https://andyrosado.com/blog/paginas-rastreadas-no-indexadas.html</loc></url>
+  <url><loc>https://andyrosado.com/ebooks/</loc></url>
+  <url><loc>https://andyrosado.com/case-studies/kingdom-studio.html</loc></url>
+  <url><loc>https://andyrosado.com/case-studies/concierge-cr.html</loc></url>
+  <url><loc>https://andyrosado.com/case-studies/schoolpay-rd.html</loc></url>
+  <url><loc>https://andyrosado.com/case-studies/vitagloss-rd.html</loc></url>
+  <url><loc>https://andyrosado.com/case-studies/coopdinamica.html</loc></url>
+  <url><loc>https://andyrosado.com/case-studies/darknitido-llc.html</loc></url>
+  <url><loc>https://andyrosado.com/case-studies/restaura-tu-matrimonio.html</loc></url>
+  <url><loc>https://andyrosado.com/case-studies/church-program-manager.html</loc></url>
+  <url><loc>https://andyrosado.com/case-studies/agentes-ventas-whatsapp.html</loc></url>
+  <url><loc>https://andyrosado.com/case-studies/la-agencia-ia.html</loc></url>
+  <url><loc>https://andyrosado.com/case-studies/canarias-en-pleno.html</loc></url>
+  <url><loc>https://andyrosado.com/en/</loc><lastmod>2026-08-14</lastmod><priority>1.00</priority></url>
+  <url><loc>https://andyrosado.com/en/web-development.html</loc></url>
+  <url><loc>https://andyrosado.com/en/seo-marketing.html</loc></url>
+  <url><loc>https://andyrosado.com/en/graphic-design.html</loc></url>
+  <url><loc>https://andyrosado.com/en/ai-automation.html</loc></url>
+  <url><loc>https://andyrosado.com/en/portfolio/</loc></url>
+  <url><loc>https://andyrosado.com/en/portfolio/saas-platforms/</loc></url>
+  <url><loc>https://andyrosado.com/en/portfolio/ecommerce/</loc></url>
+  <url><loc>https://andyrosado.com/en/portfolio/corporate/</loc></url>
+  <url><loc>https://andyrosado.com/en/portfolio/landing-pages/</loc></url>
+  <url><loc>https://andyrosado.com/en/portfolio/ai-automation/</loc></url>
+  <url><loc>https://andyrosado.com/en/blog.html</loc></url>
+  <url><loc>https://andyrosado.com/en/blog/cuanto-cuesta-una-pagina-web-en-republica-dominicana.html</loc></url>
+  <url><loc>https://andyrosado.com/en/blog/por-que-tu-negocio-necesita-una-pagina-web.html</loc></url>
+  <url><loc>https://andyrosado.com/en/blog/seo-basico-para-pequenos-negocios.html</loc></url>
+  <url><loc>https://andyrosado.com/en/blog/que-es-una-auditoria-seo-tecnica.html</loc></url>
+  <url><loc>https://andyrosado.com/en/blog/paginas-rastreadas-no-indexadas.html</loc></url>
+  <url><loc>https://andyrosado.com/en/case-studies/kingdom-studio.html</loc></url>
+  <url><loc>https://andyrosado.com/en/case-studies/concierge-cr.html</loc></url>
+  <url><loc>https://andyrosado.com/en/case-studies/schoolpay-rd.html</loc></url>
+  <url><loc>https://andyrosado.com/en/case-studies/vitagloss-rd.html</loc></url>
+  <url><loc>https://andyrosado.com/en/case-studies/coopdinamica.html</loc></url>
+  <url><loc>https://andyrosado.com/en/case-studies/darknitido-llc.html</loc></url>
+  <url><loc>https://andyrosado.com/en/case-studies/restaura-tu-matrimonio.html</loc></url>
+  <url><loc>https://andyrosado.com/en/case-studies/church-program-manager.html</loc></url>
+  <url><loc>https://andyrosado.com/en/case-studies/agentes-ventas-whatsapp.html</loc></url>
+  <url><loc>https://andyrosado.com/en/case-studies/la-agencia-ia.html</loc></url>
+  <url><loc>https://andyrosado.com/en/case-studies/canarias-en-pleno.html</loc></url>
 </urlset>

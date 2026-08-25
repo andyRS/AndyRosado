@@ -93,11 +93,12 @@ window.addEventListener('load', () => {
 
   /*************************** ScrollReveal ***************************/
   if (window.ScrollReveal) {
-    ScrollReveal({ distance: '60px', duration: 1500, delay: 200 });
+    const compactMotion = window.matchMedia('(max-width: 768px)').matches;
+    ScrollReveal({ distance: compactMotion ? '24px' : '60px', duration: 1200, delay: 120 });
     ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
     ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .testimonial-box', { origin: 'bottom' });
-    ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-    ScrollReveal().reveal('.home-desc, .about-content', { origin: 'right' });
+    ScrollReveal().reveal('.home-content h1, .about-img', { origin: compactMotion ? 'bottom' : 'left' });
+    ScrollReveal().reveal('.home-desc, .about-content', { origin: compactMotion ? 'bottom' : 'right' });
     ScrollReveal().reveal('.about-stats, .tech-stack', { origin: 'bottom', delay: 400 });
   }
 
