@@ -3409,6 +3409,132 @@ main .pf-hero p {
     letter-spacing: .04rem;
 }
 
+/* PORTFOLIO CATEGORY DIRECTORY */
+.portfolio-category-nav {
+    display: grid;
+    grid-template-columns: minmax(20rem, .72fr) minmax(0, 2fr);
+    gap: 2.4rem;
+    margin: 0 0 4.5rem;
+    padding: 2.2rem;
+    background:
+        linear-gradient(135deg, rgba(34, 211, 238, .055), transparent 38%),
+        rgba(15, 21, 29, .78);
+    border: .1rem solid var(--border-color);
+    border-radius: 1.4rem;
+}
+
+.portfolio-category-nav__intro {
+    display: flex;
+    min-width: 0;
+    padding: .8rem 1.2rem;
+    flex-direction: column;
+    justify-content: center;
+    border-right: .1rem solid var(--border-color);
+}
+
+.portfolio-category-nav__eyebrow {
+    margin-bottom: .8rem;
+    color: var(--main-color);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .08rem;
+    text-transform: uppercase;
+}
+
+.portfolio-category-nav__intro p {
+    max-width: 28rem;
+    color: #a9b6c4;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.portfolio-category-nav__links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .8rem;
+}
+
+.portfolio-category-nav__links a {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    min-width: 0;
+    min-height: 4.8rem;
+    padding: 1rem 1.2rem;
+    align-items: center;
+    gap: .8rem;
+    color: #dce6ef;
+    background: rgba(24, 33, 44, .62);
+    border: .1rem solid rgba(148, 163, 184, .14);
+    border-radius: .8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: color .2s ease, background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.portfolio-category-nav__links a:hover,
+.portfolio-category-nav__links a:focus-visible {
+    color: #f4f7fa;
+    background: rgba(34, 211, 238, .075);
+    border-color: rgba(34, 211, 238, .36);
+    transform: translateY(-.2rem);
+}
+
+.portfolio-category-nav__links a > i:first-child {
+    color: var(--main-color);
+    font-size: 1.65rem;
+}
+
+.portfolio-category-nav__links a > i:last-child {
+    color: #64748b;
+    font-size: 1.55rem;
+    transition: color .2s ease, transform .2s ease;
+}
+
+.portfolio-category-nav__links a:hover > i:last-child,
+.portfolio-category-nav__links a:focus-visible > i:last-child {
+    color: var(--main-color);
+    transform: translateX(.25rem);
+}
+
+@media(max-width: 1100px) {
+    .portfolio-category-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-category-nav__intro {
+        padding: .2rem 0 1.6rem;
+        border-right: 0;
+        border-bottom: .1rem solid var(--border-color);
+    }
+
+    .portfolio-category-nav__intro p { max-width: none; }
+}
+
+@media(max-width: 768px) {
+    .portfolio-category-nav__links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media(max-width: 480px) {
+    .portfolio-category-nav {
+        padding: 1.4rem;
+    }
+
+    .portfolio-category-nav__links a {
+        min-height: 5.2rem;
+        padding: .9rem 1rem;
+        font-size: 1.08rem;
+    }
+}
+
+@media(max-width: 350px) {
+    .portfolio-category-nav__links {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* CLIENT-LED HOME ARCHITECTURE — AUGUST 2026 */
 .home-flow {
     display: flex;
