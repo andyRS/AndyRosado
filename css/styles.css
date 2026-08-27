@@ -3569,6 +3569,25 @@ main .pf-hero p {
     line-height: 1.75;
 }
 
+.meta-scope-intro {
+    max-width: 62ch;
+    margin: 2.4rem auto 4.5rem;
+    color: #d9e1eb;
+    font-size: clamp(1.8rem, 1.45vw, 2.15rem);
+    font-weight: 500;
+    line-height: 1.65;
+    text-align: center;
+    text-wrap: balance;
+}
+
+@media(max-width: 617px) {
+    .meta-scope-intro {
+        margin-top: 2rem;
+        font-size: 1.75rem;
+        line-height: 1.6;
+    }
+}
+
 .section-kicker {
     margin-bottom: 1.4rem;
     color: var(--main-color);

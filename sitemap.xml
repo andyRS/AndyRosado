@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://andyrosado.com/</loc><lastmod>2026-08-25</lastmod><priority>1.00</priority></url>
-  <url><loc>https://andyrosado.com/servicios-desarrollo-web.html</loc></url>
-  <url><loc>https://andyrosado.com/servicios-diseno-grafico.html</loc></url>
-  <url><loc>https://andyrosado.com/servicios-marketing-digital.html</loc></url>
+  <url><loc>https://andyrosado.com/servicios-desarrollo-web.html</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://andyrosado.com/servicios-diseno-grafico.html</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://andyrosado.com/servicios-marketing-digital.html</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://andyrosado.com/configuracion-meta-business-suite.html</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://andyrosado.com/servicios-automatizacion-ia.html</loc></url>
   <url><loc>https://andyrosado.com/portafolio/</loc><lastmod>2026-08-25</lastmod><priority>0.90</priority></url>
@@ -16,7 +16,7 @@
   <url><loc>https://andyrosado.com/portafolio/automatizacion-ia/</loc></url>
   <url><loc>https://andyrosado.com/blog.html</loc></url>
   <url><loc>https://andyrosado.com/blog/cuanto-cuesta-una-pagina-web-en-republica-dominicana.html</loc></url>
-  <url><loc>https://andyrosado.com/blog/por-que-tu-negocio-necesita-una-pagina-web.html</loc></url>
+  <url><loc>https://andyrosado.com/blog/por-que-tu-negocio-necesita-una-pagina-web.html</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://andyrosado.com/blog/seo-basico-para-pequenos-negocios.html</loc></url>
   <url><loc>https://andyrosado.com/blog/que-es-una-auditoria-seo-tecnica.html</loc></url>
   <url><loc>https://andyrosado.com/blog/paginas-rastreadas-no-indexadas.html</loc></url>
@@ -50,15 +50,15 @@
   <url><loc>https://andyrosado.com/en/blog/seo-basico-para-pequenos-negocios.html</loc></url>
   <url><loc>https://andyrosado.com/en/blog/que-es-una-auditoria-seo-tecnica.html</loc></url>
   <url><loc>https://andyrosado.com/en/blog/paginas-rastreadas-no-indexadas.html</loc></url>
-  <url><loc>https://andyrosado.com/en/case-studies/kingdom-studio.html</loc></url>
-  <url><loc>https://andyrosado.com/en/case-studies/concierge-cr.html</loc></url>
-  <url><loc>https://andyrosado.com/en/case-studies/schoolpay-rd.html</loc></url>
-  <url><loc>https://andyrosado.com/en/case-studies/vitagloss-rd.html</loc></url>
-  <url><loc>https://andyrosado.com/en/case-studies/coopdinamica.html</loc></url>
-  <url><loc>https://andyrosado.com/en/case-studies/darknitido-llc.html</loc></url>
-  <url><loc>https://andyrosado.com/en/case-studies/restaura-tu-matrimonio.html</loc></url>
-  <url><loc>https://andyrosado.com/en/case-studies/church-program-manager.html</loc></url>
-  <url><loc>https://andyrosado.com/en/case-studies/agentes-ventas-whatsapp.html</loc></url>
-  <url><loc>https://andyrosado.com/en/case-studies/la-agencia-ia.html</loc></url>
-  <url><loc>https://andyrosado.com/en/case-studies/canarias-en-pleno.html</loc></url>
+  <url><loc>https://andyrosado.com/en/case-studies/kingdom-studio.html</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://andyrosado.com/en/case-studies/concierge-cr.html</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://andyrosado.com/en/case-studies/schoolpay-rd.html</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://andyrosado.com/en/case-studies/vitagloss-rd.html</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://andyrosado.com/en/case-studies/coopdinamica.html</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://andyrosado.com/en/case-studies/darknitido-llc.html</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://andyrosado.com/en/case-studies/restaura-tu-matrimonio.html</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://andyrosado.com/en/case-studies/church-program-manager.html</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://andyrosado.com/en/case-studies/agentes-ventas-whatsapp.html</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://andyrosado.com/en/case-studies/la-agencia-ia.html</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://andyrosado.com/en/case-studies/canarias-en-pleno.html</loc><lastmod>2026-08-27</lastmod></url>
 </urlset>
