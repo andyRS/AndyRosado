@@ -1,1 +1,17 @@
 ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Force HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Force non-www (canonical host is andyrosado.com)
+  RewriteCond %{HTTP_HOST} ^www\.andyrosado\.com$ [NC]
+  RewriteRule ^ https://andyrosado.com%{REQUEST_URI} [L,R=301]
+
+  # Redirect /index.html and /folder/index.html to the clean directory URL
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.*)index\.html[\ ?] [NC]
+  RewriteRule ^ /%1 [L,R=301]
+</IfModule>
