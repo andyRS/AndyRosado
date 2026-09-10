@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RD83KQL7E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3RD83KQL7E');
+  </script>
+  <meta name="description" content="Caso de estudio: gestión de campañas en Meta Ads y panel propio de atribución por lead para Club Esperanza, con sincronización automática de métricas." />
+  <title>Caso de Estudio: Club Esperanza | Andy Rosado</title>
+  <link rel="canonical" href="https://andyrosado.com/case-studies/club-esperanza.html" />
+  <meta name="robots" content="index, follow" />
+
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#case-content">Saltar al contenido principal</a>
+
+  <header class="header">
+    <a href="../index.html#home" class="logo">Andy<span>Dev</span></a>
+    <button class="menu-button" id="menu-icon" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-navigation" type="button">
+      <i class="bx bx-menu" aria-hidden="true"></i>
+    </button>
+    <nav class="navbar" id="primary-navigation" aria-label="Navegación principal">
+      <ul role="list">
+        <li><a href="../index.html#home">Inicio</a></li>
+        <li><a href="../index.html#about">Sobre mí</a></li>
+        <li><a href="../index.html#services">Servicios</a></li>
+        <li><a href="../index.html#pricing">Precios</a></li>
+        <li><a href="../portafolio/">Portafolio</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../index.html#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="article-page" id="case-content">
+    <div class="article-hero">
+      <img class="article-cover" src="../image/club-esperanza-ads.svg" alt="Club Esperanza — Panel de atribución de leads para campañas en Meta Ads" loading="eager" decoding="async" />
+      <span class="blog-date">Caso de Estudio · Gestión de Anuncios &amp; Meta Ads</span>
+      <h1>Club Esperanza: gestión de Meta Ads con atribución de leads por anuncio</h1>
+    </div>
+
+    <div class="article-body">
+      <h2>El cliente</h2>
+      <p>
+        Club Esperanza necesitaba generar inscripciones para un evento presencial mediante una
+        campaña de captación de leads. El llamado a la acción principal de los anuncios es un
+        formulario de valoración gratuita, y el evento en sí se realiza el 29 y 30 de septiembre de 2026.
+      </p>
+
+      <h2>El reto</h2>
+      <p>
+        Antes de esta gestión, la cuenta no contaba con una forma de saber qué anuncio específico
+        generaba cada lead — solo se veían números agregados dentro de Meta Ads Manager. Además,
+        cualquier cambio sobre un anuncio activo con presupuesto real corre el riesgo de reiniciar
+        su fase de aprendizaje dentro del algoritmo de Meta, por lo que cada ajuste debía evaluarse
+        con cuidado antes de aplicarse.
+      </p>
+
+      <h2>Qué se hizo</h2>
+      <ul>
+        <li><strong>Gestión activa de campañas:</strong> creación, duplicación y pausado de anuncios evaluando en cada caso el impacto sobre la fase de aprendizaje de Meta y el presupuesto ya invertido.</li>
+        <li><strong>Consolidación de presupuesto:</strong> al pausar un anuncio dentro de un conjunto de anuncios compartido, el presupuesto se reasigna automáticamente al resto sin necesidad de reconfigurar montos manualmente.</li>
+        <li><strong>Verificación de URLs de destino:</strong> revisión carácter por carácter de las URLs de seguimiento antes de pausar cualquier anuncio activo con gasto real, para evitar perder datos de atribución.</li>
+        <li><strong>Panel propio de resultados:</strong> aplicación construida en Next.js y desplegada en Vercel para consolidar y visualizar el desempeño de la campaña.</li>
+        <li><strong>Sincronización automática:</strong> un cron job en Vercel sincroniza diariamente los datos de Meta Ads Insights hacia el panel.</li>
+        <li><strong>Atribución por lead:</strong> una ruta de API propia captura el <code>fbclid</code> (identificador de clic de Facebook) de cada visitante y lo redirige al formulario de inscripción, vinculando cada lead individual —no solo el conteo agregado— con el anuncio exacto que lo generó.</li>
+      </ul>
+
+      <h2>Resultados (3–9 de septiembre de 2026)</h2>
+      <p>
+        Datos reales extraídos directamente de la base de datos del panel de atribución, correspondientes
+        a los primeros 7 días de campaña con datos disponibles. El evento aún no se ha realizado, por lo
+        que estas cifras corresponden únicamente a la fase de captación previa al lanzamiento.
+      </p>
+      <div class="blog-grid">
+        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-show" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>6,672</h3><p>Impresiones totales</p></div></article>
+        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-pointer" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>879</h3><p>Clics totales</p></div></article>
+        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-trending-up" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>13.2%</h3><p>CTR</p></div></article>
+        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-euro" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>€15.06</h3><p>Gasto total en Meta Ads</p></div></article>
+        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-user-check" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>4</h3><p>Leads atribuidos a Meta Ads</p></div></article>
+        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-coin-stack" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>≈ €3.77</h3><p>Costo por lead atribuido</p></div></article>
+      </div>
+      <p>
+        Del total de 6 leads registrados en el período, 2 llegaron directamente por el formulario web
+        sin atribución a un anuncio específico. Como el evento se realiza el 29 y 30 de septiembre, las
+        inscripciones —y por tanto el costo por inscripción— todavía están en cero al momento de esta
+        publicación. Esa parte del caso de estudio se completará después del evento.
+      </p>
+
+      <h2>Por qué importa la atribución por lead</h2>
+      <p>
+        La mayoría de los paneles de agencia se quedan en las métricas agregadas que entrega Meta Ads
+        Manager: impresiones, clics, gasto. El panel de Club Esperanza va un paso más allá — cada lead
+        individual queda vinculado al anuncio exacto que lo generó gracias al <code>fbclid</code>, lo que
+        permite decidir con datos reales qué anuncios duplicar, pausar o escalar en lugar de basarse solo
+        en promedios de la cuenta.
+      </p>
+    </div>
+
+    <div class="article-cta">
+      <h3>¿Necesitas que alguien administre y mida tus campañas en Meta Ads?</h3>
+      <p>Gestiono la operación diaria de tus anuncios y, cuando el proyecto lo justifica, construyo un sistema de atribución propio para saber qué anuncio genera cada resultado.</p>
+      <div class="cta-buttons">
+        <a href="../servicios-gestion-anuncios.html" class="btn-outline">
+          <i class="bx bx-target-lock" aria-hidden="true"></i> Ver Servicio de Gestión de Anuncios
+        </a>
+        <a href="../index.html#contact" class="btn"><i class="bx bx-send" aria-hidden="true"></i> Solicitar Cotización</a>
+        <a href="https://wa.me/18492763532?text=Hola%20Andy%2C%20me%20interesa%20la%20gesti%C3%B3n%20de%20anuncios%20en%20Meta%20Ads" class="btn-whatsapp" target="_blank" rel="noopener">
+          <i class="bx bxl-whatsapp" aria-hidden="true"></i> Escríbeme por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> Andy Rosado Web | Todos los derechos reservados.</p>
+      <div class="footer-iconTop">
+        <a href="#case-content" aria-label="Volver arriba"><i class="bx bx-up-arrow-alt" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/18492763532?text=Hola%20Andy%2C%20me%20interesa%20la%20gesti%C3%B3n%20de%20anuncios%20en%20Meta%20Ads"
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <i class="bx bxl-whatsapp" aria-hidden="true"></i>
+  </a>
+</body>
+</html>
