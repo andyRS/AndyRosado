@@ -98,87 +98,93 @@
       <p>Find projects similar to what you need: AI automations, SaaS platforms, e-commerce, landing pages, and corporate websites.</p>
     </section>
 
-    <!-- FEATURED -->
-    <section class="portfolio" aria-labelledby="pf-featured-heading">
-      <h2 class="heading" id="pf-featured-heading">Featured <span>Projects</span></h2>
-      <div class="service-projects">
-        <article class="service-project-card">
-          <picture><img src="../../image/kingdom-studio-dashboard.webp" alt="Kingdom Studio — SaaS platform for AI-powered editorial automation" width="600" height="400" loading="lazy" decoding="async" /></picture>
-          <div class="card-body">
-            <h3>Kingdom Studio</h3>
-            <p>SaaS platform that generates, reviews, approves, schedules, and publishes editorial content with AI, with a control panel and analytics. FastAPI, Next.js, Supabase.</p>
-            <a href="/en/case-studies/kingdom-studio.html" class="btn">View Case Study</a>
-          </div>
-        </article>
-        <article class="service-project-card">
-          <picture><img src="../../image/church-pm-dashboard.webp" alt="Church Program Manager — Service program management system for churches" width="600" height="400" loading="lazy" decoding="async" /></picture>
-          <div class="card-body">
-            <h3>Church Program Manager</h3>
-            <p>Multi-tenant system for a church to organize its service programs with real security between churches: automatic role assignment, RBAC, and PDF generation. Node.js, TypeScript, MongoDB.</p>
-            <a href="/en/case-studies/church-program-manager.html" class="btn">View Case Study</a>
-          </div>
-        </article>
-        <article class="service-project-card">
-          <picture><img src="../../image/schoolpay-rd.webp" alt="SchoolPay RD — Billing and management platform for Dominican schools" width="600" height="400" loading="lazy" decoding="async" /></picture>
-          <div class="card-body">
-            <h3>SchoolPay RD</h3>
-            <p>Billing and management platform for schools: tuition, delinquency, enrollment, and WhatsApp notifications. React, Vite, Tailwind CSS 4.</p>
-            <a href="/en/case-studies/schoolpay-rd.html" class="btn">View Case Study</a>
-          </div>
-        </article>
-        <article class="service-project-card">
-          <picture><img src="../../image/vitaglossrd.webp" alt="VitaGloss RD — E-commerce platform for Amway distributors in the Dominican Republic" width="600" height="400" loading="lazy" decoding="async" /></picture>
-          <div class="card-body">
-            <span class="project-type">E-commerce · Meta Business</span>
-            <h3>VitaGloss RD</h3>
-            <p>E-commerce and sales management with Meta Business Suite infrastructure: connected assets, advertising account, pixel, and product catalog.</p>
-            <a href="/en/case-studies/vitagloss-rd.html" class="btn">View Case Study</a>
-          </div>
-        </article>
-        <article class="service-project-card">
-          <picture><img src="../../image/copDinamica.webp" alt="CoopDinámica — Modern website for a Dominican financial cooperative" width="600" height="400" loading="lazy" decoding="async" /></picture>
-          <div class="card-body">
-            <h3>CoopDinámica</h3>
-            <p>Modern website for a financial cooperative with React, glassmorphism, dark mode, and Framer Motion animations.</p>
-            <a href="/en/case-studies/coopdinamica.html" class="btn">View Case Study</a>
-          </div>
-        </article>
-        <article class="service-project-card">
-          <picture><img src="../../image/agentes-ventas-ia.webp" alt="WhatsApp sales system with four artificial intelligence agents" width="600" height="400" loading="lazy" decoding="async" /></picture>
-          <div class="card-body">
-            <h3>WhatsApp Sales Agents</h3>
-            <p>Proprietary commercial automation with four specialized agents, per-customer memory, campaign attribution, and secure hand-off to human support.</p>
-            <a href="/en/case-studies/agentes-ventas-whatsapp.html" class="btn">View Case Study</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- FILTERABLE GRID -->
+    <!-- FILTERABLE CATALOG -->
     <section class="portfolio" aria-labelledby="pf-grid-heading">
-      <h2 class="heading" id="pf-grid-heading">More <span>Projects</span></h2>
+      <h2 class="heading" id="pf-grid-heading">Explore by what <span>you need to build</span></h2>
+      <p class="portfolio-intro">Filter by the type of project closest to yours. Each card shows who commissioned it, what tech it's built with, and its real status.</p>
 
-      <div class="portfolio-filters" role="tablist" aria-label="Filter projects">
+      <div class="portfolio-filters" role="tablist" aria-label="Filter projects by need">
         <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">All</button>
-        <button class="filter-btn" role="tab" aria-selected="false" data-filter="landing">Landing Pages</button>
-        <button class="filter-btn" role="tab" aria-selected="false" data-filter="saas">SaaS &amp; Platforms</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="ecommerce">Online Store</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="landing">Landing / Funnel</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="saas">Application</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="sistemas">Internal System</button>
         <button class="filter-btn" role="tab" aria-selected="false" data-filter="automation">Automation &amp; AI</button>
-        <button class="filter-btn" role="tab" aria-selected="false" data-filter="ecommerce">E-commerce</button>
-        <button class="filter-btn" role="tab" aria-selected="false" data-filter="corporativo">Corporate</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="corporativo">Corporate Site</button>
       </div>
       <p style="text-align:center; font-size:1.3rem; color:#9aa1ac; margin-bottom:3rem;">
         Browse by category:
+        <a href="../portfolio/ecommerce/">E-commerce</a> ·
         <a href="../portfolio/landing-pages/">Landing Pages</a> ·
         <a href="../portfolio/saas-platforms/">SaaS &amp; Platforms</a> ·
         <a href="../portfolio/ai-automation/">Automation &amp; AI</a> ·
-        <a href="../portfolio/ecommerce/">E-commerce</a> ·
         <a href="../portfolio/corporate/">Corporate</a>
       </p>
 
       <div class="portfolio-container">
 
+        <!-- Kingdom Studio -->
+        <article class="portfolio-box featured" data-category="saas fullstack automation">
+          <div class="portfolio-badge" style="background: var(--second-bgcolor); color: var(--main-color); border: .1rem solid var(--main-color);">Proprietary Product · In development</div>
+          <img src="../../image/kingdom-studio-dashboard.webp" alt="Kingdom Studio — SaaS platform for AI-powered editorial automation" loading="lazy" decoding="async" />
+          <div class="portfolio-layer">
+            <h3>Kingdom Studio</h3>
+            <p>SaaS platform that generates, reviews, approves, schedules, and publishes editorial content with AI, with a control panel and analytics.</p>
+            <div class="portfolio-tech"><span>FastAPI</span><span>Next.js</span><span>Supabase</span></div>
+            <a href="/en/case-studies/kingdom-studio.html" aria-label="View case study: Kingdom Studio"><i class="bx bx-file-find" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <!-- VitaGloss RD -->
+        <article class="portfolio-box featured" data-category="ecommerce fullstack">
+          <div class="portfolio-badge" style="background: var(--second-bgcolor); color: var(--main-color); border: .1rem solid var(--main-color);">Client</div>
+          <img src="../../image/vitaglossrd.webp" alt="VitaGloss RD — E-commerce platform for Amway distributors in the Dominican Republic" loading="lazy" decoding="async" />
+          <div class="portfolio-layer">
+            <h3>VitaGloss RD</h3>
+            <p>E-commerce and sales management with Meta Business Suite infrastructure: connected assets, advertising account, pixel, and product catalog.</p>
+            <div class="portfolio-tech"><span>E-commerce</span><span>Meta Business</span></div>
+            <a href="/en/case-studies/vitagloss-rd.html" aria-label="View case study: VitaGloss RD"><i class="bx bx-file-find" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <!-- Concierge CR -->
+        <article class="portfolio-box featured" data-category="saas fullstack">
+          <div class="portfolio-badge" style="background: var(--second-bgcolor); color: var(--main-color); border: .1rem solid var(--main-color);">Client</div>
+          <img src="../../image/luxury-concierge.webp" alt="Concierge CR — Full-stack luxury concierge platform with payments and roles" loading="lazy" decoding="async" />
+          <div class="portfolio-layer">
+            <h3>Concierge CR</h3>
+            <p>Concierge platform with an experience catalog, requests, Stripe payments, and an admin panel with roles.</p>
+            <div class="portfolio-tech"><span>React</span><span>Node.js</span><span>Stripe</span></div>
+            <a href="/en/case-studies/concierge-cr.html" aria-label="View case study: Concierge CR"><i class="bx bx-file-find" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <!-- DarkNitido LLC -->
+        <article class="portfolio-box featured" data-category="corporativo landing fullstack">
+          <div class="portfolio-badge" style="background: var(--second-bgcolor); color: var(--main-color); border: .1rem solid var(--main-color);">Client</div>
+          <img src="../../image/darknitido-llc.webp" alt="DarkNitido LLC — Institutional landing page for a business holding company" loading="lazy" decoding="async" />
+          <div class="portfolio-layer">
+            <h3>DarkNitido LLC</h3>
+            <p>Institutional landing page for a business holding company, with a secure contact form (honeypot, rate limiting) and email delivery via Resend.</p>
+            <div class="portfolio-tech"><span>Next.js 16</span><span>TypeScript</span><span>React 19</span></div>
+            <a href="/en/case-studies/darknitido-llc.html" aria-label="View case study: DarkNitido LLC"><i class="bx bx-file-find" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <!-- Restaura Tu Matrimonio -->
+        <article class="portfolio-box featured" data-category="landing">
+          <div class="portfolio-badge" style="background: var(--second-bgcolor); color: var(--main-color); border: .1rem solid var(--main-color);">Client</div>
+          <img src="../../image/restaura-matrimonio.webp" alt="Restaura Tu Matrimonio — Marriage counseling landing page" loading="lazy" decoding="async" />
+          <div class="portfolio-layer">
+            <h3>Restaura Tu Matrimonio</h3>
+            <p>Landing page for a marriage recovery course, focused on conversion, trust, and lead capture.</p>
+            <div class="portfolio-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+            <a href="/en/case-studies/restaura-tu-matrimonio.html" aria-label="View case study: Restaura Tu Matrimonio"><i class="bx bx-file-find" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
         <!-- WhatsApp Sales Agents -->
-        <article class="portfolio-box featured" data-category="automation saas">
+        <article class="portfolio-box featured" data-category="automation saas fullstack sistemas">
           <div class="portfolio-badge">Proprietary Product</div>
           <img src="../../image/agentes-ventas-ia.webp" alt="WhatsApp sales system with four artificial intelligence agents" loading="lazy" decoding="async" />
           <div class="portfolio-layer">
@@ -190,7 +196,7 @@
         </article>
 
         <!-- Church Program Manager -->
-        <article class="portfolio-box" data-category="saas">
+        <article class="portfolio-box" data-category="sistemas saas fullstack">
           <div class="portfolio-badge" style="background: var(--second-bgcolor); color: var(--main-color); border: .1rem solid var(--main-color);">Client</div>
           <img src="../../image/church-pm-dashboard.webp" alt="Church Program Manager — Service program management system for churches" loading="lazy" decoding="async" />
           <div class="portfolio-layer">
@@ -201,8 +207,32 @@
           </div>
         </article>
 
+        <!-- SchoolPay RD -->
+        <article class="portfolio-box" data-category="sistemas saas fullstack">
+          <div class="portfolio-badge" style="background: var(--second-bgcolor); color: var(--main-color); border: .1rem solid var(--main-color);">Proprietary Product · Demo</div>
+          <img src="../../image/schoolpay-rd.webp" alt="SchoolPay RD — Billing and management platform for Dominican schools" loading="lazy" decoding="async" />
+          <div class="portfolio-layer">
+            <h3>SchoolPay RD</h3>
+            <p>Billing and management platform for schools: tuition, delinquency, enrollment, and WhatsApp notifications.</p>
+            <div class="portfolio-tech"><span>React</span><span>Vite</span><span>Tailwind CSS 4</span></div>
+            <a href="/en/case-studies/schoolpay-rd.html" aria-label="View case study: SchoolPay RD"><i class="bx bx-file-find" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <!-- Club Esperanza -->
+        <article class="portfolio-box" data-category="automation landing">
+          <div class="portfolio-badge" style="background: var(--second-bgcolor); color: var(--main-color); border: .1rem solid var(--main-color);">Client</div>
+          <img src="../../image/club-esperanza-ads.png" alt="Club Esperanza — Lead attribution panel for Meta Ads campaigns" loading="lazy" decoding="async" />
+          <div class="portfolio-layer">
+            <h3>Club Esperanza</h3>
+            <p>Meta Ads campaign management with a custom attribution panel: daily Meta Ads Insights syncing and per-ad lead tracking via fbclid.</p>
+            <div class="portfolio-tech"><span>Meta Ads</span><span>Next.js</span><span>Vercel Cron</span></div>
+            <a href="/en/case-studies/club-esperanza.html" aria-label="View case study: Club Esperanza"><i class="bx bx-file-find" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
         <!-- CRM Lite -->
-        <article class="portfolio-box" data-category="saas">
+        <article class="portfolio-box" data-category="saas fullstack sistemas">
           <div class="portfolio-badge" style="background: var(--second-bgcolor); color: var(--main-color); border: .1rem solid var(--main-color);">Proprietary Product</div>
           <img src="../../image/crm-lite.webp" alt="CRM Lite — CRM system for client management" loading="lazy" decoding="async" />
           <div class="portfolio-layer">
@@ -214,7 +244,7 @@
         </article>
 
         <!-- Luxe-Shop -->
-        <article class="portfolio-box" data-category="ecommerce">
+        <article class="portfolio-box" data-category="ecommerce fullstack">
           <div class="portfolio-badge" style="background: var(--second-bgcolor); color: var(--main-color); border: .1rem solid var(--main-color);">Proprietary Product</div>
           <img src="../../image/luxe-shop.webp" alt="Luxe-Shop — Modern e-commerce store" loading="lazy" decoding="async" />
           <div class="portfolio-layer">
@@ -226,7 +256,7 @@
         </article>
 
         <!-- Elizabeth Mendez -->
-        <article class="portfolio-box" data-category="corporativo">
+        <article class="portfolio-box" data-category="corporativo landing">
           <div class="portfolio-badge" style="background: var(--second-bgcolor); color: var(--main-color); border: .1rem solid var(--main-color);">Client</div>
           <img src="../../image/Proyecto_Eli.webp" alt="Elizabeth Mendez — Fashion designer portfolio with catalog and budget calculator" loading="lazy" decoding="async" />
           <div class="portfolio-layer">
@@ -238,7 +268,7 @@
         </article>
 
         <!-- Polanco Graphics -->
-        <article class="portfolio-box" data-category="corporativo">
+        <article class="portfolio-box" data-category="corporativo landing">
           <div class="portfolio-badge" style="background: var(--second-bgcolor); color: var(--main-color); border: .1rem solid var(--main-color);">Client</div>
           <img src="../../image/polanco-graphics-portfolio.jpg" alt="New Polanco Graphics website — senior graphic designer José Miguel Méndez's portfolio" loading="lazy" decoding="async" />
           <div class="portfolio-layer">
@@ -249,20 +279,8 @@
           </div>
         </article>
 
-        <!-- DarkNitido LLC -->
-        <article class="portfolio-box" data-category="corporativo">
-          <div class="portfolio-badge" style="background: var(--second-bgcolor); color: var(--main-color); border: .1rem solid var(--main-color);">Client</div>
-          <img src="../../image/darknitido-llc.webp" alt="DarkNitido LLC — Institutional landing page for a business holding company" loading="lazy" decoding="async" />
-          <div class="portfolio-layer">
-            <h3>DarkNitido LLC</h3>
-            <p>Institutional landing page for a business holding company, with a secure contact form (honeypot, rate limiting) and email delivery via Resend.</p>
-            <div class="portfolio-tech"><span>Next.js 16</span><span>TypeScript</span><span>React 19</span></div>
-            <a href="/en/case-studies/darknitido-llc.html" aria-label="View case study: DarkNitido LLC"><i class="bx bx-file-find" aria-hidden="true"></i></a>
-          </div>
-        </article>
-
         <!-- Oasis Dental -->
-        <article class="portfolio-box" data-category="corporativo">
+        <article class="portfolio-box" data-category="corporativo landing">
           <div class="portfolio-badge" style="background: var(--second-bgcolor); color: var(--main-color); border: .1rem solid var(--main-color);">Client</div>
           <img src="../../image/oasis-dental.webp" alt="Oasis Dental — Website for a high-end dental clinic" loading="lazy" decoding="async" />
           <div class="portfolio-layer">
@@ -270,18 +288,6 @@
             <p>Dental clinic that needed to convey a premium positioning and let patients book appointments online, with no calls or friction.</p>
             <div class="portfolio-tech"><span>Lovable</span><span>React</span><span>Tailwind CSS 4</span></div>
             <a href="https://smile-sparkle-haven.lovable.app" target="_blank" rel="noopener" aria-label="View Oasis Dental project"><i class="bx bx-link-external" aria-hidden="true"></i></a>
-          </div>
-        </article>
-
-        <!-- Restaura Tu Matrimonio -->
-        <article class="portfolio-box" data-category="landing">
-          <div class="portfolio-badge" style="background: var(--second-bgcolor); color: var(--main-color); border: .1rem solid var(--main-color);">Client</div>
-          <img src="../../image/restaura-matrimonio.webp" alt="Restaura Tu Matrimonio — Marriage counseling landing page" loading="lazy" decoding="async" />
-          <div class="portfolio-layer">
-            <h3>Restaura Tu Matrimonio</h3>
-            <p>Landing page for a marriage recovery course, focused on conversion, trust, and lead capture.</p>
-            <div class="portfolio-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
-            <a href="/en/case-studies/restaura-tu-matrimonio.html" aria-label="View case study: Restaura Tu Matrimonio"><i class="bx bx-file-find" aria-hidden="true"></i></a>
           </div>
         </article>
 

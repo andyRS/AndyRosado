@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RD83KQL7E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3RD83KQL7E');
+  </script>
+  <meta name="description" content="Case study: Meta Ads campaign management and a custom per-lead attribution panel for Club Esperanza, with automatic metric syncing." />
+  <title>Case Study: Club Esperanza | Andy Rosado</title>
+  <link rel="canonical" href="https://andyrosado.com/en/case-studies/club-esperanza.html" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="es" href="https://andyrosado.com/case-studies/club-esperanza.html" />
+  <link rel="alternate" hreflang="en" href="https://andyrosado.com/en/case-studies/club-esperanza.html" />
+  <link rel="alternate" hreflang="x-default" href="https://andyrosado.com/case-studies/club-esperanza.html" />
+
+  <meta property="og:title" content="Case Study: Club Esperanza — Andy Rosado" />
+  <meta property="og:description" content="Meta Ads campaign management and a custom per-lead attribution panel for Club Esperanza." />
+  <meta property="og:image" content="https://andyrosado.com/image/club-esperanza-ads.png" />
+  <meta property="og:url" content="https://andyrosado.com/en/case-studies/club-esperanza.html" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Case Study: Club Esperanza — Andy Rosado" />
+  <meta name="twitter:description" content="Meta Ads campaign management and a custom per-lead attribution panel." />
+  <meta name="twitter:image" content="https://andyrosado.com/image/club-esperanza-ads.png" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+  <script src="../../js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#case-content">Skip to main content</a>
+
+  <header class="header">
+    <a href="../index.html#home" class="logo">Andy<span>Dev</span></a>
+    <button class="menu-button" id="menu-icon" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation" type="button">
+      <i class="bx bx-menu" aria-hidden="true"></i>
+    </button>
+    <nav class="navbar" id="primary-navigation" aria-label="Main navigation">
+      <ul role="list">
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#services">Services</a></li>
+        <li><a href="../index.html#pricing">Pricing</a></li>
+        <li><a href="../portfolio/">Portfolio</a></li>
+        <li><a href="/en/blog.html">Blog</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+        <li><a href="../../case-studies/club-esperanza.html" class="lang-switch" hreflang="es">ES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="article-page" id="case-content">
+    <div class="article-hero">
+      <img class="article-cover" src="../../image/club-esperanza-ads.png" alt="Club Esperanza — Lead attribution panel for Meta Ads campaigns" loading="eager" decoding="async" />
+      <span class="blog-date">Case Study · Ad Management &amp; Meta Ads</span>
+      <h1>Club Esperanza: Meta Ads management with per-ad lead attribution</h1>
+    </div>
+
+    <div class="article-body">
+      <h2>The client</h2>
+      <p>
+        Club Esperanza needed to generate registrations for an in-person event through a lead-capture
+        campaign. The main call to action on the ads is a free assessment form, and the event itself
+        takes place on September 29–30, 2026.
+      </p>
+
+      <h2>The challenge</h2>
+      <p>
+        Before this engagement, the account had no way of knowing which specific ad generated each
+        lead — only aggregate numbers inside Meta Ads Manager were visible. In addition, any change to
+        a live ad with real spend risks resetting its learning phase inside Meta's algorithm, so every
+        adjustment had to be evaluated carefully before applying it.
+      </p>
+
+      <h2>What was done</h2>
+      <ul>
+        <li><strong>Active campaign management:</strong> creating, duplicating, and pausing ads while evaluating in each case the impact on Meta's learning phase and the budget already spent.</li>
+        <li><strong>Budget consolidation:</strong> pausing an ad within a shared ad set automatically reallocates the budget to the rest, with no need to manually reconfigure amounts.</li>
+        <li><strong>Destination URL verification:</strong> character-by-character review of tracking URLs before pausing any live ad with real spend, to avoid losing attribution data.</li>
+        <li><strong>Custom results panel:</strong> an application built in Next.js and deployed on Vercel to consolidate and visualize campaign performance.</li>
+        <li><strong>Automatic syncing:</strong> a Vercel cron job syncs Meta Ads Insights data into the panel every day.</li>
+        <li><strong>Per-lead attribution:</strong> a custom API route captures each visitor's <code>fbclid</code> (Facebook click identifier) and redirects them to the registration form, linking each individual lead — not just the aggregate count — to the exact ad that generated it.</li>
+      </ul>
+
+      <h2>Results (September 3–9, 2026)</h2>
+      <p>
+        Real data pulled directly from the attribution panel's database, covering the first 7 days of
+        the campaign with available data. The event hasn't taken place yet, so these figures reflect
+        only the acquisition phase ahead of the launch.
+      </p>
+      <div class="blog-grid">
+        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-show" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>6,672</h3><p>Total impressions</p></div></article>
+        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-pointer" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>879</h3><p>Total clicks</p></div></article>
+        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-trending-up" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>13.2%</h3><p>CTR</p></div></article>
+        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-euro" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>€15.06</h3><p>Total Meta Ads spend</p></div></article>
+        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-user-check" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>4</h3><p>Leads attributed to Meta Ads</p></div></article>
+        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-coin-stack" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>≈ €3.77</h3><p>Cost per attributed lead</p></div></article>
+      </div>
+      <p>
+        Of the 6 leads recorded in the period, 2 came in directly through the web form with no ad
+        attribution. Since the event runs on September 29–30, registrations — and therefore the cost
+        per registration — are still at zero as of this publication. That part of the case study will
+        be completed after the event.
+      </p>
+
+      <h2>Why per-lead attribution matters</h2>
+      <p>
+        Most agency dashboards stop at the aggregate metrics Meta Ads Manager provides: impressions,
+        clicks, spend. Club Esperanza's panel goes one step further — every individual lead is linked
+        to the exact ad that generated it via <code>fbclid</code>, making it possible to decide with
+        real data which ads to duplicate, pause, or scale instead of relying only on account-wide
+        averages.
+      </p>
+    </div>
+
+    <div class="article-cta">
+      <h3>Need someone to manage and measure your Meta Ads campaigns?</h3>
+      <p>I run the day-to-day operation of your ads and, when the project justifies it, build a custom attribution system to know which ad generates each result.</p>
+      <div class="cta-buttons">
+        <a href="../ad-management.html" class="btn-outline">
+          <i class="bx bx-target-lock" aria-hidden="true"></i> View Ad Management Service
+        </a>
+        <a href="../index.html#contact" class="btn"><i class="bx bx-send" aria-hidden="true"></i> Request a Quote</a>
+        <a href="https://wa.me/18492763532?text=Hi%20Andy%2C%20I%27m%20interested%20in%20Meta%20Ads%20management" class="btn-whatsapp" target="_blank" rel="noopener">
+          <i class="bx bxl-whatsapp" aria-hidden="true"></i> Message me on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> Andy Rosado Web | All rights reserved.</p>
+      <div class="footer-iconTop">
+        <a href="#case-content" aria-label="Back to top"><i class="bx bx-up-arrow-alt" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/18492763532?text=Hi%20Andy%2C%20I%27m%20interested%20in%20Meta%20Ads%20management"
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact via WhatsApp">
+    <i class="bx bxl-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
