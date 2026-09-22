@@ -13,8 +13,8 @@
 
     gtag('config', 'G-3RD83KQL7E');
   </script>
-  <meta name="description" content="Case study: Meta Ads campaign management and a custom per-lead attribution panel for Club Esperanza, with automatic metric syncing." />
-  <title>Case Study: Club Esperanza | Andy Rosado</title>
+  <meta name="description" content="Case study: Meta Ads campaign (Facebook + Instagram) for the Club Esperanza launch — video creatives, Pixel + Conversions API, and a custom per-lead attribution panel." />
+  <title>Case Study: Club Esperanza Launch — Meta Ads | Andy Rosado</title>
   <link rel="canonical" href="https://andyrosado.com/en/case-studies/club-esperanza.html" />
   <meta name="robots" content="index, follow" />
 
@@ -23,14 +23,14 @@
   <link rel="alternate" hreflang="en" href="https://andyrosado.com/en/case-studies/club-esperanza.html" />
   <link rel="alternate" hreflang="x-default" href="https://andyrosado.com/case-studies/club-esperanza.html" />
 
-  <meta property="og:title" content="Case Study: Club Esperanza — Andy Rosado" />
-  <meta property="og:description" content="Meta Ads campaign management and a custom per-lead attribution panel for Club Esperanza." />
+  <meta property="og:title" content="Club Esperanza Launch — Meta Ads — Andy Rosado" />
+  <meta property="og:description" content="Meta Ads campaign with video creatives, Pixel + Conversions API, and a custom per-lead attribution panel." />
   <meta property="og:image" content="https://andyrosado.com/image/club-esperanza-ads.png" />
   <meta property="og:url" content="https://andyrosado.com/en/case-studies/club-esperanza.html" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Case Study: Club Esperanza — Andy Rosado" />
-  <meta name="twitter:description" content="Meta Ads campaign management and a custom per-lead attribution panel." />
+  <meta name="twitter:title" content="Club Esperanza Launch — Meta Ads — Andy Rosado" />
+  <meta name="twitter:description" content="Meta Ads campaign with video creatives and a custom per-lead attribution panel." />
   <meta name="twitter:image" content="https://andyrosado.com/image/club-esperanza-ads.png" />
 
   <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -43,6 +43,17 @@
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../../css/styles.css" />
   <script src="../../js/main.js" defer></script>
+  <style>
+    .ce-table-wrap { overflow-x: auto; margin: 0 auto 3rem; max-width: 100rem; border-radius: 1.2rem; border: .1rem solid var(--border-color); }
+    .ce-table { width: 100%; border-collapse: collapse; font-size: 1.3rem; min-width: 70rem; }
+    .ce-table caption { caption-side: top; text-align: left; padding: 1.6rem 2rem 0; font-size: 1.3rem; color: #9aa1ac; }
+    .ce-table th, .ce-table td { padding: 1.4rem 1.6rem; text-align: left; border-bottom: .1rem solid var(--border-color); white-space: nowrap; }
+    .ce-table thead th { color: var(--main-color); font-family: 'Roboto Mono', monospace; font-size: 1.15rem; text-transform: uppercase; letter-spacing: .04rem; }
+    .ce-table tbody tr:last-child td { border-bottom: none; }
+    .ce-table td:first-child, .ce-table th:first-child { white-space: normal; min-width: 22rem; }
+    .ce-ad-name { font-weight: 700; }
+    .ce-ad-status { display: block; font-size: 1.1rem; font-weight: 400; color: #9aa1ac; margin-top: .3rem; }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#case-content">Skip to main content</a>
@@ -70,15 +81,17 @@
     <div class="article-hero">
       <img class="article-cover" src="../../image/club-esperanza-ads.png" alt="Club Esperanza — Lead attribution panel for Meta Ads campaigns" loading="eager" decoding="async" />
       <span class="blog-date">Case Study · Ad Management &amp; Meta Ads</span>
-      <h1>Club Esperanza: Meta Ads management with per-ad lead attribution</h1>
+      <h1>Club Esperanza Launch: Meta Ads management with per-ad lead attribution</h1>
     </div>
 
     <div class="article-body">
       <h2>The client</h2>
       <p>
         Club Esperanza needed to generate registrations for an in-person event through a lead-capture
-        campaign. The main call to action on the ads is a free assessment form, and the event itself
-        takes place on September 29–30, 2026.
+        campaign. I ran the full campaign in Meta Ads Manager (Facebook + Instagram): video creative
+        production, audience targeting, Meta Pixel + Conversions API, and ongoing optimization. The main
+        call to action on the ads is a free assessment form, and the event itself takes place on
+        September 29–30, 2026.
       </p>
 
       <h2>The challenge</h2>
@@ -91,6 +104,9 @@
 
       <h2>What was done</h2>
       <ul>
+        <li><strong>Video creatives:</strong> ad production in video format for Facebook and Instagram, adapted to each campaign objective (traffic and lead generation).</li>
+        <li><strong>Targeting and A/B testing:</strong> two variants of the same lead ad tested against each other to decide with data which one to scale.</li>
+        <li><strong>Meta Pixel + Conversions API:</strong> redundant browser-side and server-side measurement so conversion events don't depend solely on the client-side pixel.</li>
         <li><strong>Active campaign management:</strong> creating, duplicating, and pausing ads while evaluating in each case the impact on Meta's learning phase and the budget already spent.</li>
         <li><strong>Budget consolidation:</strong> pausing an ad within a shared ad set automatically reallocates the budget to the rest, with no need to manually reconfigure amounts.</li>
         <li><strong>Destination URL verification:</strong> character-by-character review of tracking URLs before pausing any live ad with real spend, to avoid losing attribution data.</li>
@@ -99,25 +115,98 @@
         <li><strong>Per-lead attribution:</strong> a custom API route captures each visitor's <code>fbclid</code> (Facebook click identifier) and redirects them to the registration form, linking each individual lead — not just the aggregate count — to the exact ad that generated it.</li>
       </ul>
 
-      <h2>Results (September 3–9, 2026)</h2>
+      <h2>Aggregate campaign results</h2>
       <p>
-        Real data pulled directly from the attribution panel's database, covering the first 7 days of
-        the campaign with available data. The event hasn't taken place yet, so these figures reflect
-        only the acquisition phase ahead of the launch.
+        Real data pulled directly from Meta Ads Manager and the custom attribution panel, cumulative as
+        of September 22, 2026. The event hasn't taken place yet (September 29–30), so these figures
+        reflect the acquisition phase ahead of the launch.
       </p>
       <div class="blog-grid">
-        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-show" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>6,672</h3><p>Total impressions</p></div></article>
-        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-pointer" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>879</h3><p>Total clicks</p></div></article>
-        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-trending-up" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>13.2%</h3><p>CTR</p></div></article>
-        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-euro" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>€15.06</h3><p>Total Meta Ads spend</p></div></article>
-        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-user-check" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>4</h3><p>Leads attributed to Meta Ads</p></div></article>
-        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-coin-stack" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>≈ €3.77</h3><p>Cost per attributed lead</p></div></article>
+        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-euro" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>€521.03</h3><p>Total spend</p></div></article>
+        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-show" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>135,486</h3><p>Total impressions</p></div></article>
+        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-group" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>≈ 87,500</h3><p>Total reach (people)</p></div></article>
+        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-pointer" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>14,463</h3><p>Total link clicks</p></div></article>
+        <article class="blog-card"><div class="blog-card-body"><i class="bx bx-trending-up" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>≈ 12.2%</h3><p>Weighted average CTR</p></div></article>
       </div>
+
+      <h2>The 3 ads, compared</h2>
       <p>
-        Of the 6 leads recorded in the period, 2 came in directly through the web form with no ad
-        attribution. Since the event runs on September 29–30, registrations — and therefore the cost
-        per registration — are still at zero as of this publication. That part of the case study will
-        be completed after the event.
+        Spend was split between a traffic ad driving to the landing page and two variants of a lead
+        generation ad, tested against each other.
+      </p>
+      <div class="ce-table-wrap">
+        <table class="ce-table">
+          <caption>Results by ad, cumulative through September 22, 2026</caption>
+          <thead>
+            <tr>
+              <th scope="col">Ad</th>
+              <th scope="col">Objective</th>
+              <th scope="col">Results</th>
+              <th scope="col">Cost / result</th>
+              <th scope="col">Spend</th>
+              <th scope="col">Impressions</th>
+              <th scope="col">Reach</th>
+              <th scope="col">CPM</th>
+              <th scope="col">Clicks</th>
+              <th scope="col">CTR</th>
+              <th scope="col">CPC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="ce-ad-name">F1 – Ad A</span><span class="ce-ad-status">Active</span></td>
+              <td>Traffic / landing page visits</td>
+              <td>12,239 visits</td>
+              <td>€0.02</td>
+              <td>€261.84</td>
+              <td>121,589</td>
+              <td>76,442</td>
+              <td>€2.15</td>
+              <td>13,401</td>
+              <td>12.04%</td>
+              <td>€0.02</td>
+            </tr>
+            <tr>
+              <td><span class="ce-ad-name">F1C – Ad A (subtitled V2)</span><span class="ce-ad-status">Active, scaled</span></td>
+              <td>Leads</td>
+              <td>7 leads</td>
+              <td>€31.24</td>
+              <td>€218.76</td>
+              <td>8,300</td>
+              <td>6,161</td>
+              <td>€26.36</td>
+              <td>736</td>
+              <td>13.12%</td>
+              <td>€0.20</td>
+            </tr>
+            <tr>
+              <td><span class="ce-ad-name">F1C – Ad A (original)</span><span class="ce-ad-status">Paused</span></td>
+              <td>Leads</td>
+              <td>1 lead</td>
+              <td>€40.43</td>
+              <td>€40.43</td>
+              <td>5,597</td>
+              <td>4,901</td>
+              <td>€7.22</td>
+              <td>326</td>
+              <td>9.52%</td>
+              <td>€0.08</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Learnings</h2>
+      <p>
+        The traffic ad (F1) achieved a CPC of just €0.02 and a 12.04% CTR, well above the industry
+        average for this type of campaign. Comparing the two lead-generation creatives, the subtitled
+        version (V2) improved CTR over the original (13.12% vs. 9.52%) and lowered CPM, which is why the
+        original ad was paused and the subtitled version scaled instead.
+      </p>
+      <p>
+        Since the event runs on September 29–30, registrations — and therefore the cost per registration
+        — are still at zero as of this publication. That part of the case study will be completed after
+        the event.
       </p>
 
       <h2>Why per-lead attribution matters</h2>
