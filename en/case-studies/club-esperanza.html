@@ -102,6 +102,17 @@
         adjustment had to be evaluated carefully before applying it.
       </p>
 
+      <h2>WhatsApp automation with Clara and n8n</h2>
+      <p><strong>Published Meta app with an approved review:</strong> WhatsApp messaging, WhatsApp management and public profile permissions were confirmed as approved, alongside the Embedded Signup configuration used by the coexistence assistant. Each future customer still requires individual assessment and authorization.</p>
+      <p>The project now includes a WhatsApp assistant connected through n8n and an administrative control to pause or enable automatic replies without disconnecting WhatsApp.</p>
+      <ul>
+        <li><strong>Operational control:</strong> the workflow checks the saved state before responding. Pausing does not cancel replies already in progress.</li>
+        <li><strong>Message handling:</strong> deduplication by WhatsApp message ID and up to three configured attempts at the model node.</li>
+        <li><strong>Lead filtering:</strong> the workflow checks advertising origin before registering a lead, separating manual conversations from ad-driven contacts.</li>
+        <li><strong>Full-stack implementation:</strong> a Next.js panel, MongoDB persistence and n8n integration.</li>
+      </ul>
+      <p>Technical update: September 30, 2026. Workflow configuration has been reviewed; final delivery and pause-control testing with real messages remains pending. No unmeasured business results are attributed to this integration.</p>
+
       <h2>What was done</h2>
       <ul>
         <li><strong>Video creatives:</strong> ad production in video format for Facebook and Instagram, adapted to each campaign objective (traffic and lead generation).</li>
@@ -118,8 +129,8 @@
       <h2>Aggregate campaign results</h2>
       <p>
         Real data pulled directly from Meta Ads Manager and the custom attribution panel, cumulative as
-        of September 22, 2026. The event hasn't taken place yet (September 29–30), so these figures
-        reflect the acquisition phase ahead of the launch.
+        of September 22, 2026. These are historical acquisition figures ahead of the September 29–30
+        event, not current totals or the final event report.
       </p>
       <div class="blog-grid">
         <article class="blog-card"><div class="blog-card-body"><i class="bx bx-euro" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>€521.03</h3><p>Total spend</p></div></article>
@@ -204,9 +215,8 @@
         original ad was paused and the subtitled version scaled instead.
       </p>
       <p>
-        Since the event runs on September 29–30, registrations — and therefore the cost per registration
-        — are still at zero as of this publication. That part of the case study will be completed after
-        the event.
+        Final registrations and cost per registration require a post-event report. Those metrics
+        have not been updated as part of this technical review.
       </p>
 
       <h2>Why per-lead attribution matters</h2>

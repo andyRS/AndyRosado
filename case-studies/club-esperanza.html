@@ -115,11 +115,22 @@
         <li><strong>Atribución por lead:</strong> una ruta de API propia captura el <code>fbclid</code> (identificador de clic de Facebook) de cada visitante y lo redirige al formulario de inscripción, vinculando cada lead individual —no solo el conteo agregado— con el anuncio exacto que lo generó.</li>
       </ul>
 
+      <h2>Automatización de WhatsApp con Clara y n8n</h2>
+      <p><strong>App de Meta publicada y revisión aprobada:</strong> se comprobó la aprobación de los permisos de mensajería y gestión de WhatsApp, junto con <code>public_profile</code>, y la configuración de registro integrado para coexistencia. Este trabajo sirve como experiencia de implementación; cada nuevo cliente requiere su propia evaluación y autorización.</p>
+      <p>El proyecto incorpora un asistente de WhatsApp conectado mediante n8n y un control en el panel administrativo para activar o pausar sus respuestas sin desconectar la cuenta.</p>
+      <ul>
+        <li><strong>Control operativo:</strong> el flujo consulta el estado de Clara antes de responder a mensajes nuevos. La pausa no cancela respuestas que ya estén en curso.</li>
+        <li><strong>Tratamiento de mensajes:</strong> deduplicación por identificador de WhatsApp y hasta tres intentos configurados en el nodo del modelo ante fallos temporales.</li>
+        <li><strong>Captación diferenciada:</strong> el flujo filtra el origen publicitario antes de registrar un contacto como lead; una conversación manual no se trata automáticamente como una oportunidad de anuncio.</li>
+        <li><strong>Desarrollo full stack:</strong> panel Next.js, persistencia en MongoDB e integración con la automatización de n8n.</li>
+      </ul>
+      <p>Actualización técnica del 30 de septiembre de 2026. La configuración del flujo fue revisada; la comprobación final de entrega y del interruptor con mensajes reales queda pendiente. No se atribuyen a esta integración resultados comerciales todavía no medidos.</p>
+
       <h2>Resultados agregados de la campaña</h2>
       <p>
         Datos reales extraídos directamente de Meta Ads Manager y del panel de atribución propio,
-        acumulados al 22 de septiembre de 2026. El evento aún no se ha realizado (29–30 de septiembre),
-        por lo que estas cifras corresponden a la fase de captación previa al lanzamiento.
+        acumulados al 22 de septiembre de 2026. Estas cifras son un corte histórico de la fase de
+        captación previa al evento del 29–30 de septiembre, no los resultados actuales ni el cierre del evento.
       </p>
       <div class="blog-grid">
         <article class="blog-card"><div class="blog-card-body"><i class="bx bx-euro" style="font-size:3.2rem;color:var(--main-color);margin-bottom:1.5rem;" aria-hidden="true"></i><h3>€521.03</h3><p>Inversión total</p></div></article>
@@ -204,9 +215,8 @@
         el CPM, lo que motivó pausar el anuncio original y escalar la versión subtitulada.
       </p>
       <p>
-        Como el evento se realiza el 29 y 30 de septiembre, las inscripciones —y por tanto el costo por
-        inscripción— todavía están en cero al momento de esta publicación. Esa parte del caso de estudio
-        se completará después del evento.
+        El cierre de inscripciones y el costo por inscripción requieren un informe posterior al evento.
+        No se han actualizado esas métricas en esta revisión técnica.
       </p>
 
       <h2>Por qué importa la atribución por lead</h2>
@@ -220,6 +230,7 @@
     </div>
 
     <div class="article-cta">
+      <p><a href="../automatizacion-whatsapp.html">Ver servicio de WhatsApp Business, coexistencia y automatización →</a></p>
       <h3>¿Necesitas que alguien administre y mida tus campañas en Meta Ads?</h3>
       <p>Gestiono la operación diaria de tus anuncios y, cuando el proyecto lo justifica, construyo un sistema de atribución propio para saber qué anuncio genera cada resultado.</p>
       <div class="cta-buttons">
