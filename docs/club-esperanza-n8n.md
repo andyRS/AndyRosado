@@ -11,3 +11,18 @@ La pausa afecta a mensajes que aún no han superado la consulta de estado. Las e
 La guía operativa completa se mantiene en `docs/clara-n8n.md` del repositorio del panel. Incluye configuración, límites y pruebas pendientes. No publicar credenciales, direcciones privadas del editor, teléfonos, conversaciones ni exportaciones de ejecuciones.
 
 Esta revisión no añade métricas de campaña ni certifica una prueba de entrega real. Las cifras del caso de estudio conservan su corte histórico del 22 de septiembre de 2026.
+
+## Registro consolidado de entregables
+
+1. Gestión de campaña de Meta Ads: creativos, segmentación, pruebas y optimización.
+2. Meta Pixel, Conversions API y atribución por referencia publicitaria.
+3. Panel Next.js/MongoDB con métricas, leads y sincronización de Ads Insights.
+4. Activos comerciales y app de mensajería de Meta; app publicada y permisos aprobados.
+5. Embedded Signup y coexistencia de WhatsApp Business con Cloud API para el cliente.
+6. Workflow de Clara en n8n con webhook, memoria, IA, deduplicación y reintentos.
+7. Envío corregido para conservar el teléfono desde el mensaje original.
+8. Filtro de leads provenientes de anuncios y prevención de registros manuales malformados.
+9. Control administrativo para activar o pausar a Clara sin desactivar el workflow.
+10. Documentación operativa y definición del servicio para implementaciones futuras.
+
+Este inventario distingue entregables técnicos de resultados comerciales. El caso público solo usa métricas históricas verificadas y no publica credenciales, datos de contactos ni exportaciones privadas del workflow.

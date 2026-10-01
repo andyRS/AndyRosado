@@ -13,8 +13,8 @@
 
     gtag('config', 'G-3RD83KQL7E');
   </script>
-  <meta name="description" content="Case study: Meta Ads campaign (Facebook + Instagram) for the Club Esperanza launch — video creatives, Pixel + Conversions API, and a custom per-lead attribution panel." />
-  <title>Case Study: Club Esperanza Launch — Meta Ads | Andy Rosado</title>
+  <meta name="description" content="Club Esperanza full-stack case study: Meta Ads, attribution dashboard, approved WhatsApp app, coexistence, n8n automation and Clara assistant." />
+  <title>Club Esperanza: Meta Ads, WhatsApp, n8n and Clara | Andy Rosado</title>
   <link rel="canonical" href="https://andyrosado.com/en/case-studies/club-esperanza.html" />
   <meta name="robots" content="index, follow" />
 
@@ -23,14 +23,14 @@
   <link rel="alternate" hreflang="en" href="https://andyrosado.com/en/case-studies/club-esperanza.html" />
   <link rel="alternate" hreflang="x-default" href="https://andyrosado.com/case-studies/club-esperanza.html" />
 
-  <meta property="og:title" content="Club Esperanza Launch — Meta Ads — Andy Rosado" />
-  <meta property="og:description" content="Meta Ads campaign with video creatives, Pixel + Conversions API, and a custom per-lead attribution panel." />
+  <meta property="og:title" content="Club Esperanza: Meta Ads, WhatsApp, n8n and Clara — Andy Rosado" />
+  <meta property="og:description" content="From paid acquisition to WhatsApp automation: attribution dashboard, approved Meta app, coexistence and Clara." />
   <meta property="og:image" content="https://andyrosado.com/image/club-esperanza-cover-v2.png" />
   <meta property="og:url" content="https://andyrosado.com/en/case-studies/club-esperanza.html" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Club Esperanza Launch — Meta Ads — Andy Rosado" />
-  <meta name="twitter:description" content="Meta Ads campaign with video creatives and a custom per-lead attribution panel." />
+  <meta name="twitter:title" content="Club Esperanza: Meta Ads, WhatsApp, n8n and Clara" />
+  <meta name="twitter:description" content="Full-stack case study: ads, attribution, WhatsApp coexistence and automation with Clara." />
   <meta name="twitter:image" content="https://andyrosado.com/image/club-esperanza-cover-v2.png" />
 
   <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -80,8 +80,8 @@
   <section class="article-page" id="case-content">
     <div class="article-hero">
       <img class="article-cover" src="../../image/club-esperanza-cover-v2.png" alt="Club Esperanza — Lead attribution panel for Meta Ads campaigns" loading="eager" decoding="async" />
-      <span class="blog-date">Case Study · Ad Management &amp; Meta Ads</span>
-      <h1>Club Esperanza Launch: Meta Ads management with per-ad lead attribution</h1>
+      <span class="blog-date">Case Study · Meta Ads · Full Stack · Automation</span>
+      <h1>Club Esperanza: from Meta Ads to Clara on WhatsApp</h1>
     </div>
 
     <div class="article-body">
@@ -111,7 +111,7 @@
         <li><strong>Lead filtering:</strong> the workflow checks advertising origin before registering a lead, separating manual conversations from ad-driven contacts.</li>
         <li><strong>Full-stack implementation:</strong> a Next.js panel, MongoDB persistence and n8n integration.</li>
       </ul>
-      <p>Technical update: September 30, 2026. Workflow configuration has been reviewed; final delivery and pause-control testing with real messages remains pending. No unmeasured business results are attributed to this integration.</p>
+      <p>The implementation was delivered operational and the Meta app passed review. The September 30, 2026 technical audit verified publication, permissions and the active workflow; it did not repeat onboarding or send real messages. No unmeasured business results are attributed to Clara.</p>
 
       <h2>What was done</h2>
       <ul>
@@ -125,6 +125,18 @@
         <li><strong>Automatic syncing:</strong> a Vercel cron job syncs Meta Ads Insights data into the panel every day.</li>
         <li><strong>Per-lead attribution:</strong> a custom API route captures each visitor's <code>fbclid</code> (Facebook click identifier) and redirects them to the registration form, linking each individual lead — not just the aggregate count — to the exact ad that generated it.</li>
       </ul>
+
+      <h2>Complete project evolution</h2>
+      <ol>
+        <li><strong>Advertising strategy and production:</strong> objectives, video creative, targeting, A/B testing and daily Meta Ads budget management.</li>
+        <li><strong>Measurement and attribution:</strong> Meta Pixel, Conversions API, destination-link verification and lead tracking from advertising references.</li>
+        <li><strong>Control panel:</strong> full-stack Next.js and MongoDB development, Meta Ads Insights synchronization, metrics and lead administration.</li>
+        <li><strong>Official WhatsApp infrastructure:</strong> Meta assets, a published messaging app and approved messaging, management and public-profile permissions.</li>
+        <li><strong>Coexistence:</strong> Embedded Signup configuration and testing to use WhatsApp Business alongside Cloud API within Club Esperanza's approved scope.</li>
+        <li><strong>Clara and n8n:</strong> webhook connection, message extraction, conversational memory, AI replies, deduplication and retries for temporary failures.</li>
+        <li><strong>Control and lead quality:</strong> an administrative pause switch and an ad-origin filter before a contact is registered as a lead.</li>
+        <li><strong>Documentation and reuse:</strong> operational guidance, known limits and a checklist for future client-specific implementations.</li>
+      </ol>
 
       <h2>Aggregate campaign results</h2>
       <p>
