@@ -3169,6 +3169,60 @@ main .pf-hero p {
     border: .1rem solid var(--border-color);
 }
 
+/* Enlaces editoriales: evita el azul predeterminado del navegador */
+.article-body a:not(.btn):not(.btn-outline):not(.btn-whatsapp),
+.article-page > p a,
+.pf-breadcrumb a {
+    color: var(--main-color);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: rgba(34, 211, 238, .42);
+    text-decoration-thickness: .12rem;
+    text-underline-offset: .35rem;
+    transition: color .2s ease, text-decoration-color .2s ease;
+}
+
+.article-body a:not(.btn):not(.btn-outline):not(.btn-whatsapp):hover,
+.article-body a:not(.btn):not(.btn-outline):not(.btn-whatsapp):focus-visible,
+.article-page > p a:hover,
+.article-page > p a:focus-visible,
+.pf-breadcrumb a:hover,
+.pf-breadcrumb a:focus-visible {
+    color: var(--text-color);
+    text-decoration-color: var(--main-color);
+}
+
+.article-cta > p a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 1rem 1.5rem;
+    border: .1rem solid rgba(34, 211, 238, .36);
+    border-radius: 999rem;
+    background: rgba(34, 211, 238, .08);
+    color: var(--main-color);
+    font-weight: 700;
+    line-height: 1.45;
+    text-decoration: none;
+    transition: color .2s ease, background-color .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.article-cta > p a:hover,
+.article-cta > p a:focus-visible {
+    color: var(--bgcolor);
+    background: var(--main-color);
+    border-color: var(--main-color);
+    transform: translateY(-.2rem);
+}
+
+@media (max-width: 600px) {
+    .article-cta > p a {
+        width: 100%;
+        border-radius: 1.2rem;
+    }
+}
+
 /* Small refinements */
 .whatsapp-float {
     width: 5.2rem;
