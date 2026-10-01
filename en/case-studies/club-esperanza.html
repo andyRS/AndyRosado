@@ -41,7 +41,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;600&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="../../css/styles.css?v=20261001-expand" />
   <script src="../../js/main.js" defer></script>
   <style>
     .ce-table-wrap { overflow-x: auto; margin: 0 auto 3rem; max-width: 100rem; border-radius: 1.2rem; border: .1rem solid var(--border-color); }
@@ -106,9 +106,12 @@
       <p><strong>Published Meta app with an approved review:</strong> WhatsApp messaging, WhatsApp management and public profile permissions were confirmed as approved, alongside the Embedded Signup configuration used by the coexistence assistant. Each future customer still requires individual assessment and authorization.</p>
       <p>The project now includes a WhatsApp assistant connected through n8n and an administrative control to pause or enable automatic replies without disconnecting WhatsApp.</p>
       <figure class="workflow-figure">
-        <div class="workflow-figure__viewport" tabindex="0" role="region" aria-label="Scrollable diagram of Clara's n8n workflow">
-          <img src="../../image/club-esperanza-n8n-flow.svg" alt="Clara n8n workflow: WhatsApp message, deduplication, state control, AI agent, reply, advertising-source filter and lead registration" width="1600" height="900" loading="lazy" decoding="async" />
-        </div>
+        <a href="../../image/club-esperanza-n8n-flow.svg" class="workflow-figure__link" target="_blank" rel="noopener" data-expand-label="Enlarge ↗" aria-label="Open the n8n diagram at full size">
+          <span class="expand-label" aria-hidden="true">Enlarge ↗</span>
+          <div class="workflow-figure__viewport" tabindex="0" role="region" aria-label="Scrollable diagram of Clara's n8n workflow">
+            <img src="../../image/club-esperanza-n8n-flow.svg" alt="Clara n8n workflow: WhatsApp message, deduplication, state control, AI agent, reply, advertising-source filter and lead registration" width="1600" height="900" loading="lazy" decoding="async" />
+          </div>
+        </a>
         <figcaption>Public view based on the active n8n workflow. It shows the real decisions and connections while omitting credentials, phone numbers, internal identifiers and private addresses.</figcaption>
       </figure>
       <ul>
@@ -121,15 +124,15 @@
       <p>These are real frames from the recordings prepared for Meta testing and review. Phone numbers, conversations, identifiers and private technical data were hidden before publication.</p>
       <div class="proof-grid">
         <figure class="proof-card">
-          <img src="../../image/club-esperanza-proof-n8n.webp" alt="Successful Club Esperanza messaging workflow execution in n8n" width="1280" height="720" loading="lazy" decoding="async" />
+          <a href="../../image/club-esperanza-proof-n8n.webp" class="proof-card__image-link" target="_blank" rel="noopener" data-expand-label="Enlarge ↗" aria-label="Open the n8n execution evidence at full size"><span class="expand-label" aria-hidden="true">Enlarge ↗</span><img src="../../image/club-esperanza-proof-n8n.webp" alt="Successful Club Esperanza messaging workflow execution in n8n" width="1280" height="720" loading="lazy" decoding="async" /></a>
           <figcaption><strong>Successful n8n execution</strong>The messaging path finishes correctly and uses the official WhatsApp reply node.</figcaption>
         </figure>
         <figure class="proof-card">
-          <img src="../../image/club-esperanza-proof-whatsapp.webp" alt="Sanitized evidence of a Meta-confirmed WhatsApp test message" width="1280" height="720" loading="lazy" decoding="async" />
+          <a href="../../image/club-esperanza-proof-whatsapp.webp" class="proof-card__image-link" target="_blank" rel="noopener" data-expand-label="Enlarge ↗" aria-label="Open the WhatsApp message test evidence at full size"><span class="expand-label" aria-hidden="true">Enlarge ↗</span><img src="../../image/club-esperanza-proof-whatsapp.webp" alt="Sanitized evidence of a Meta-confirmed WhatsApp test message" width="1280" height="720" loading="lazy" decoding="async" /></a>
           <figcaption><strong>Message test completed</strong>Meta confirmed delivery to the authorized number and recorded the webhook events.</figcaption>
         </figure>
         <figure class="proof-card">
-          <img src="../../image/club-esperanza-proof-permission.webp" alt="Sanitized evidence for the WhatsApp Business Management permission review" width="1280" height="720" loading="lazy" decoding="async" />
+          <a href="../../image/club-esperanza-proof-permission.webp" class="proof-card__image-link" target="_blank" rel="noopener" data-expand-label="Enlarge ↗" aria-label="Open the permission review evidence at full size"><span class="expand-label" aria-hidden="true">Enlarge ↗</span><img src="../../image/club-esperanza-proof-permission.webp" alt="Sanitized evidence for the WhatsApp Business Management permission review" width="1280" height="720" loading="lazy" decoding="async" /></a>
           <figcaption><strong>Management permission review</strong>The demonstration explains the use of <code>whatsapp_business_management</code> and documents the test call.</figcaption>
         </figure>
       </div>

@@ -751,6 +751,52 @@ span {
     height: auto;
 }
 
+.workflow-figure__link,
+.proof-card__image-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    color: inherit;
+    text-decoration: none !important;
+    cursor: zoom-in;
+}
+
+.workflow-figure__link {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.expand-label {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+    padding: .65rem 1rem;
+    border: .1rem solid rgba(255, 255, 255, .18);
+    border-radius: 999rem;
+    background: rgba(11, 15, 20, .86);
+    color: var(--text-color);
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1;
+    box-shadow: 0 .8rem 2rem rgba(0, 0, 0, .28);
+    backdrop-filter: blur(.8rem);
+}
+
+.workflow-figure__link img,
+.proof-card__image-link img {
+    transition: transform .28s ease, filter .28s ease;
+}
+
+.workflow-figure__link:hover img,
+.workflow-figure__link:focus-visible img,
+.proof-card__image-link:hover img,
+.proof-card__image-link:focus-visible img {
+    transform: scale(1.018);
+    filter: brightness(.82);
+}
+
 .workflow-figure figcaption {
     margin-top: 1.2rem;
     color: var(--muted-color);
