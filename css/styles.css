@@ -834,6 +834,10 @@ span {
     background: #f4f6f8;
 }
 
+.proof-card--featured {
+    grid-column: 1 / -1;
+}
+
 .proof-card figcaption {
     padding: 1.4rem 1.5rem 1.6rem;
     color: var(--muted-color);
@@ -851,6 +855,7 @@ span {
 @media (max-width: 700px) {
     .workflow-figure img { min-width: 72rem; }
     .proof-grid { grid-template-columns: 1fr; }
+    .proof-card--featured { grid-column: auto; }
 }
 
 .article-cta {
