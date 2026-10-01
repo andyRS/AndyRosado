@@ -105,12 +105,35 @@
       <h2>WhatsApp automation with Clara and n8n</h2>
       <p><strong>Published Meta app with an approved review:</strong> WhatsApp messaging, WhatsApp management and public profile permissions were confirmed as approved, alongside the Embedded Signup configuration used by the coexistence assistant. Each future customer still requires individual assessment and authorization.</p>
       <p>The project now includes a WhatsApp assistant connected through n8n and an administrative control to pause or enable automatic replies without disconnecting WhatsApp.</p>
+      <figure class="workflow-figure">
+        <div class="workflow-figure__viewport" tabindex="0" role="region" aria-label="Scrollable diagram of Clara's n8n workflow">
+          <img src="../../image/club-esperanza-n8n-flow.svg" alt="Clara n8n workflow: WhatsApp message, deduplication, state control, AI agent, reply, advertising-source filter and lead registration" width="1600" height="900" loading="lazy" decoding="async" />
+        </div>
+        <figcaption>Public view based on the active n8n workflow. It shows the real decisions and connections while omitting credentials, phone numbers, internal identifiers and private addresses.</figcaption>
+      </figure>
       <ul>
         <li><strong>Operational control:</strong> the workflow checks the saved state before responding. Pausing does not cancel replies already in progress.</li>
         <li><strong>Message handling:</strong> deduplication by WhatsApp message ID and up to three configured attempts at the model node.</li>
         <li><strong>Lead filtering:</strong> the workflow checks advertising origin before registering a lead, separating manual conversations from ad-driven contacts.</li>
         <li><strong>Full-stack implementation:</strong> a Next.js panel, MongoDB persistence and n8n integration.</li>
       </ul>
+      <h2>Implementation and test evidence</h2>
+      <p>These are real frames from the recordings prepared for Meta testing and review. Phone numbers, conversations, identifiers and private technical data were hidden before publication.</p>
+      <div class="proof-grid">
+        <figure class="proof-card">
+          <img src="../../image/club-esperanza-proof-n8n.webp" alt="Successful Club Esperanza messaging workflow execution in n8n" width="1280" height="720" loading="lazy" decoding="async" />
+          <figcaption><strong>Successful n8n execution</strong>The messaging path finishes correctly and uses the official WhatsApp reply node.</figcaption>
+        </figure>
+        <figure class="proof-card">
+          <img src="../../image/club-esperanza-proof-whatsapp.webp" alt="Sanitized evidence of a Meta-confirmed WhatsApp test message" width="1280" height="720" loading="lazy" decoding="async" />
+          <figcaption><strong>Message test completed</strong>Meta confirmed delivery to the authorized number and recorded the webhook events.</figcaption>
+        </figure>
+        <figure class="proof-card">
+          <img src="../../image/club-esperanza-proof-permission.webp" alt="Sanitized evidence for the WhatsApp Business Management permission review" width="1280" height="720" loading="lazy" decoding="async" />
+          <figcaption><strong>Management permission review</strong>The demonstration explains the use of <code>whatsapp_business_management</code> and documents the test call.</figcaption>
+        </figure>
+      </div>
+      <p><strong>Verified outcome:</strong> the app is published and Meta approved <code>whatsapp_business_messaging</code>, <code>whatsapp_business_management</code> and <code>public_profile</code>. Original recordings remain private because they contain third-party information.</p>
       <p>The implementation was delivered operational and the Meta app passed review. The September 30, 2026 technical audit verified publication, permissions and the active workflow; it did not repeat onboarding or send real messages. No unmeasured business results are attributed to Clara.</p>
 
       <h2>What was done</h2>

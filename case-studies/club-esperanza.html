@@ -118,12 +118,36 @@
       <h2>Automatización de WhatsApp con Clara y n8n</h2>
       <p><strong>App de Meta publicada y revisión aprobada:</strong> se comprobó la aprobación de los permisos de mensajería y gestión de WhatsApp, junto con <code>public_profile</code>, y la configuración de registro integrado para coexistencia. Este trabajo sirve como experiencia de implementación; cada nuevo cliente requiere su propia evaluación y autorización.</p>
       <p>El proyecto incorpora un asistente de WhatsApp conectado mediante n8n y un control en el panel administrativo para activar o pausar sus respuestas sin desconectar la cuenta.</p>
+      <figure class="workflow-figure">
+        <div class="workflow-figure__viewport" tabindex="0" role="region" aria-label="Diagrama desplazable del workflow de Clara en n8n">
+          <img src="../image/club-esperanza-n8n-flow.svg" alt="Workflow de Clara en n8n: mensaje de WhatsApp, deduplicación, control de estado, agente de IA, respuesta, filtro de anuncio y registro del lead" width="1600" height="900" loading="lazy" decoding="async" />
+        </div>
+        <figcaption>Vista pública basada en el workflow activo de n8n. Se muestran las decisiones y conexiones reales; se omiten credenciales, teléfonos, identificadores internos y direcciones privadas.</figcaption>
+      </figure>
       <ul>
         <li><strong>Control operativo:</strong> el flujo consulta el estado de Clara antes de responder a mensajes nuevos. La pausa no cancela respuestas que ya estén en curso.</li>
         <li><strong>Tratamiento de mensajes:</strong> deduplicación por identificador de WhatsApp y hasta tres intentos configurados en el nodo del modelo ante fallos temporales.</li>
         <li><strong>Captación diferenciada:</strong> el flujo filtra el origen publicitario antes de registrar un contacto como lead; una conversación manual no se trata automáticamente como una oportunidad de anuncio.</li>
         <li><strong>Desarrollo full stack:</strong> panel Next.js, persistencia en MongoDB e integración con la automatización de n8n.</li>
       </ul>
+
+      <h2>Evidencias de implementación y pruebas</h2>
+      <p>Estas imágenes son fotogramas reales de las grabaciones preparadas para las pruebas y la revisión de Meta. Los teléfonos, conversaciones, identificadores y datos técnicos privados fueron ocultados antes de publicarlas.</p>
+      <div class="proof-grid">
+        <figure class="proof-card">
+          <img src="../image/club-esperanza-proof-n8n.webp" alt="Ejecución exitosa del workflow de mensajería de Club Esperanza en n8n" width="1280" height="720" loading="lazy" decoding="async" />
+          <figcaption><strong>Ejecución exitosa en n8n</strong>La ruta de mensajería termina correctamente y utiliza el nodo oficial de respuesta de WhatsApp.</figcaption>
+        </figure>
+        <figure class="proof-card">
+          <img src="../image/club-esperanza-proof-whatsapp.webp" alt="Evidencia saneada de una prueba de envío confirmada por Meta" width="1280" height="720" loading="lazy" decoding="async" />
+          <figcaption><strong>Prueba de envío completada</strong>Meta confirmó el envío al número autorizado y registró los eventos del webhook.</figcaption>
+        </figure>
+        <figure class="proof-card">
+          <img src="../image/club-esperanza-proof-permission.webp" alt="Evidencia saneada de la solicitud del permiso WhatsApp Business Management" width="1280" height="720" loading="lazy" decoding="async" />
+          <figcaption><strong>Revisión del permiso de gestión</strong>La demostración explica el uso de <code>whatsapp_business_management</code> y documenta la llamada de prueba.</figcaption>
+        </figure>
+      </div>
+      <p><strong>Resultado comprobado:</strong> la app quedó publicada y Meta aprobó <code>whatsapp_business_messaging</code>, <code>whatsapp_business_management</code> y <code>public_profile</code>. Las grabaciones originales se conservan como evidencia privada y no se publican porque contienen información de terceros.</p>
 
       <h2>Evolución completa del proyecto</h2>
       <ol>

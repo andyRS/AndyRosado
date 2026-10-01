@@ -731,6 +731,77 @@ span {
     margin-bottom: .8rem;
 }
 
+.workflow-figure {
+    margin: 2.8rem 0 3.2rem;
+}
+
+.workflow-figure__viewport {
+    overflow-x: auto;
+    border: .1rem solid var(--border-color);
+    border-radius: 1.8rem;
+    background: var(--surface-soft);
+    box-shadow: var(--premium-shadow);
+    scrollbar-color: var(--main-color) var(--surface-elevated);
+}
+
+.workflow-figure img {
+    display: block;
+    width: 100%;
+    min-width: 82rem;
+    height: auto;
+}
+
+.workflow-figure figcaption {
+    margin-top: 1.2rem;
+    color: var(--muted-color);
+    font-size: 1.3rem;
+    line-height: 1.65;
+}
+
+.proof-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.6rem;
+    margin: 2.4rem 0 3.2rem;
+}
+
+.proof-card {
+    overflow: hidden;
+    margin: 0;
+    border: .1rem solid var(--border-color);
+    border-radius: 1.6rem;
+    background: var(--surface-elevated);
+    box-shadow: 0 1.6rem 4rem rgba(0, 0, 0, .2);
+}
+
+.proof-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-bottom: .1rem solid var(--border-color);
+}
+
+.proof-card figcaption {
+    padding: 1.4rem 1.5rem 1.6rem;
+    color: var(--muted-color);
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.proof-card figcaption strong {
+    display: block;
+    margin-bottom: .35rem;
+    color: var(--text-color);
+    font-size: 1.45rem;
+}
+
+@media (max-width: 700px) {
+    .workflow-figure img { min-width: 72rem; }
+    .proof-grid { grid-template-columns: 1fr; }
+}
+
 .article-cta {
     max-width: 76rem;
     margin: 4rem auto 0;

@@ -26,3 +26,17 @@ Esta revisión no añade métricas de campaña ni certifica una prueba de entreg
 10. Documentación operativa y definición del servicio para implementaciones futuras.
 
 Este inventario distingue entregables técnicos de resultados comerciales. El caso público solo usa métricas históricas verificadas y no publica credenciales, datos de contactos ni exportaciones privadas del workflow.
+
+## Visualización pública
+
+El caso de estudio incrusta `image/club-esperanza-n8n-flow.svg`, un diagrama derivado de la configuración activa revisada. Representa el flujo principal, las bifurcaciones, el modelo, la memoria y la rama de verificación de Meta. Es deliberadamente una versión saneada: no debe sustituirse por una exportación de n8n ni por una captura que muestre credenciales, URLs privadas, números o datos de ejecuciones.
+
+## Evidencias de revisión de Meta
+
+Se revisaron cuatro grabaciones WebM suministradas por el propietario:
+
+- Dos demostraciones de `whatsapp_business_messaging`, con workflow, envío de prueba y ejecución de n8n.
+- Una demostración de `whatsapp_business_management`, con selección del activo, descripción del uso y llamada de prueba.
+- Una grabación de la prueba de coexistencia y mensajería en WhatsApp Web.
+
+Los originales no se publican porque muestran números, contactos y conversaciones. El caso usa tres fotogramas derivados y saneados: `club-esperanza-proof-n8n.webp`, `club-esperanza-proof-whatsapp.webp` y `club-esperanza-proof-permission.webp`. Esta selección demuestra la ejecución, el envío y la preparación de la revisión sin divulgar datos de terceros. La aprobación final se verificó por separado en Meta for Developers el 30 de septiembre de 2026.
